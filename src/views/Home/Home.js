@@ -7,7 +7,7 @@ import Container from 'components/Container';
 import {
   Partners,
   OnlineReviews,
-  CaseStudy2,
+  Messaging,
   CaseStudy3,
   Hero,
   Contact,
@@ -28,7 +28,7 @@ const Home = () => {
         <OnlineReviews />
       </Container>
       <Container paddingY={'0 !important'}>
-        <CaseStudy2 />
+        <Messaging />
       </Container>
       <Container>
         <CaseStudy3 />

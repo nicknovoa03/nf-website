@@ -10,7 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-const CaseStudy2 = () => {
+const Messaging = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -28,7 +28,7 @@ const CaseStudy2 = () => {
       <Grid
         container
         spacing={isMd ? 4 : 2}
-        flexDirection={{ xs: 'column-reverse', md: 'row' }}
+        flexDirection={{ xs: 'column', md: 'row' }}
       >
         <Grid item xs={12} md={4}>
           <Box
@@ -39,7 +39,7 @@ const CaseStudy2 = () => {
           >
             <Box>
               <Typography variant={'h4'} fontWeight={700} gutterBottom>
-                Nike
+                Every Conversation In One Place
               </Typography>
               <Typography
                 color={
@@ -48,46 +48,27 @@ const CaseStudy2 = () => {
                     : 'text.primary'
                 }
               >
-                Nike delivers innovative products, experiences and services to
-                inspire athletes. The affordable designe to elevate your daily
-                routine. Free shipping.
+                Reach your customers wherever they are with text messaging.
+                Request reviews, connect with website visitors, collect
+                payments, respond to Facebook & Google Messages, and market to
+                customers and leads all from one application.
               </Typography>
             </Box>
             <Box
               component={Card}
               marginTop={{ xs: 2, md: 0 }}
+              marginBottom={{ md: 9 }}
               boxShadow={0}
               borderRadius={2}
             >
               <CardContent sx={{ padding: { xs: 2, sm: 4 } }}>
-                <Box
-                  component="img"
-                  height={1}
-                  width={1}
-                  src={
-                    'https://assets.maccarianagency.com/svg/logos/netflix-original.svg'
-                  }
-                  alt="..."
-                  maxWidth={80}
-                  marginBottom={2}
-                  sx={{
-                    filter:
-                      theme.palette.mode === 'dark'
-                        ? 'brightness(0) invert(0.7)'
-                        : 'none',
-                  }}
-                />
-                <Typography component={'p'}>
-                  First class templates. These guys know what they're doing:
-                  great code quality, clear naming conventions and clear code
-                  structure. Plain awesome and a pleasure to work with.
+                <Typography variant={'h6'} fontWeight={700} gutterBottom>
+                  Messaging
                 </Typography>
-                <Box marginTop={{ xs: 2, sm: 4 }}>
-                  <Typography variant={'subtitle1'} sx={{ fontWeight: 700 }}>
-                    Jhon Anderson
-                  </Typography>
-                  <Typography color="text.secondary">MUI lover</Typography>
-                </Box>
+                <Typography component={'p'}>
+                  Manage your messages with a single inbox for text, Facebook
+                  messages, Google messages, and more.
+                </Typography>
               </CardContent>
             </Box>
           </Box>
@@ -119,22 +100,14 @@ const CaseStudy2 = () => {
                 }}
               />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12}>
               <Typography variant={'h6'} fontWeight={700} gutterBottom>
-                Lifetime guarantee
+                Email or Text Message
               </Typography>
               <Typography component={'p'}>
-                If your Goby’s performance is anything less than perfect, we’ll
-                replace it free of charge.
-              </Typography>
-            </Grid>
-            <Grid item xs={6}>
-              <Typography variant={'h6'} fontWeight={700} gutterBottom>
-                Moder design
-              </Typography>
-              <Typography component={'p'}>
-                Righty, lefty, dainty or robust—the soft-touch Goby handle is
-                made for every hand.
+                Some customers don't use email and others may be reluctant to
+                provide their personal cell phone number. No problem! View and
+                send messsages back to your clients or customers with ease!
               </Typography>
             </Grid>
           </Grid>
@@ -144,4 +117,4 @@ const CaseStudy2 = () => {
   );
 };
 
-export default CaseStudy2;
+export default Messaging;
