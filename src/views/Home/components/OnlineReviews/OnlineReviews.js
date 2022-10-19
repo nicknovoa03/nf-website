@@ -85,7 +85,7 @@ const OnlineReviews = () => {
             height={1}
           >
             <Box>
-              <Typography variant={'h5'} fontWeight={700} gutterBottom>
+              <Typography variant={'h4'} fontWeight={700} gutterBottom>
                 Automate Your Online Reviews
               </Typography>
               <Typography
