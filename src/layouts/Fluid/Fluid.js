@@ -50,13 +50,6 @@ const Fluid = ({
         }}
         elevation={0}
       >
-        <Container
-          maxWidth={1500}
-          paddingTop={'8px !important'}
-          paddingBottom={'0 !important'}
-        >
-          <TopNav colorInvert={colorInvert} />
-        </Container>
         <Container paddingY={1} maxWidth={1500}>
           <Box
             display={'flex'}
@@ -82,16 +75,7 @@ const Fluid = ({
                 width={1}
               />
             </Box>
-            <Button
-              variant="contained"
-              color="primary"
-              component="a"
-              target="blank"
-              href="https://mui.com/store/items/the-front-landing-page/"
-              size="large"
-            >
-              Buy now
-            </Button>
+            <TopNav colorInvert={colorInvert} />
           </Box>
         </Container>
       </AppBar>

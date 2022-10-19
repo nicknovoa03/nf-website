@@ -2,6 +2,7 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 
+import { Fluid } from 'layouts';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 import {
@@ -17,7 +18,7 @@ const Home = () => {
   const theme = useTheme();
 
   return (
-    <Main>
+    <Fluid>
       <Container>
         <Hero />
       </Container>
@@ -60,7 +61,7 @@ const Home = () => {
           ></path>
         </Box>
       </Box>
-    </Main>
+    </Fluid>
   );
 };
 
