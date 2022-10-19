@@ -25,6 +25,7 @@ const Home = () => {
         <Partners />
       </Container>
       <Container>
+        <a id="OnlineReviews" />
         <OnlineReviews />
       </Container>
       <Container paddingY={'0 !important'}>
@@ -40,6 +41,7 @@ const Home = () => {
         }}
       >
         <Container>
+          <a id="LearnMore" />
           <Contact />
         </Container>
         <Box

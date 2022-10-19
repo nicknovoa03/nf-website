@@ -8,6 +8,7 @@ import Grid from '@mui/material/Grid';
 
 import PhoneWithData from '../../../../assets/PhoneWithData.svg';
 import Image from 'next/image';
+import { Link } from '@mui/material';
 
 const Hero = () => {
   const theme = useTheme();
@@ -59,8 +60,9 @@ const Hero = () => {
               color="primary"
               size="large"
               fullWidth={isMd ? false : true}
+              href="#OnlineReviews"
             >
-              Case studies
+              Features
             </Button>
             <Box
               component={Button}
@@ -86,7 +88,9 @@ const Hero = () => {
                 </Box>
               }
             >
-              Learn more
+              <Link variant="body1" href="#LearnMore">
+                Contact
+              </Link>
             </Box>
           </Box>
         </Box>
