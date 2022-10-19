@@ -3,7 +3,6 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 
 import { Fluid } from 'layouts';
-import Main from 'layouts/Main';
 import Container from 'components/Container';
 import {
   Partners,
