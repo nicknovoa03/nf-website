@@ -10,7 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-const CaseStudy3 = () => {
+const Payment = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -57,20 +57,20 @@ const CaseStudy3 = () => {
             </Grid>
             <Grid item xs={6}>
               <Typography variant={'h6'} fontWeight={700} gutterBottom>
-                Lifetime guarantee
+                Stripe
               </Typography>
               <Typography component={'p'}>
-                If your Goby’s performance is anything less than perfect, we’ll
-                replace it free of charge.
+                You can easily accept payments online. Stripe provides a simple
+                and powerful way to accept payments over the internet.
               </Typography>
             </Grid>
             <Grid item xs={6}>
               <Typography variant={'h6'} fontWeight={700} gutterBottom>
-                Moder design
+                PayPal
               </Typography>
               <Typography component={'p'}>
-                Righty, lefty, dainty or robust—the soft-touch Goby handle is
-                made for every hand.
+                Online payment service that lets you send payments quickly and
+                securely online using a credit card or bank account.
               </Typography>
             </Grid>
           </Grid>
@@ -84,7 +84,7 @@ const CaseStudy3 = () => {
           >
             <Box>
               <Typography variant={'h4'} fontWeight={700} gutterBottom>
-                Larq
+                Get Paid Faster Than Ever
               </Typography>
               <Typography
                 color={
@@ -93,45 +93,26 @@ const CaseStudy3 = () => {
                     : 'text.primary'
                 }
               >
-                A self-cleaning water bottle that'll help you reach your
-                hydration goal. Odor-causing bacteria using UV-C light.
+                Collecting payments isn’t anyone’s favorite job. Make paying as
+                quick and convenient as possible for your customers with a
+                secure payment link delivered right to their phone.
               </Typography>
             </Box>
             <Box
               component={Card}
               marginTop={{ xs: 2, md: 0 }}
+              marginBottom={{ md: 8 }}
               boxShadow={0}
               borderRadius={2}
             >
               <CardContent sx={{ padding: { xs: 2, sm: 4 } }}>
-                <Box
-                  component="img"
-                  height={1}
-                  width={1}
-                  src={
-                    'https://assets.maccarianagency.com/svg/logos/airbnb-original.svg'
-                  }
-                  alt="..."
-                  maxWidth={80}
-                  marginBottom={2}
-                  sx={{
-                    filter:
-                      theme.palette.mode === 'dark'
-                        ? 'brightness(0) invert(0.7)'
-                        : 'none',
-                  }}
-                />
-                <Typography component={'p'}>
-                  First class templates. These guys know what they're doing:
-                  great code quality, clear naming conventions and clear code
-                  structure. Plain awesome and a pleasure to work with.
+                <Typography variant={'h6'} fontWeight={700} gutterBottom>
+                  Text-To-Pay Links
                 </Typography>
-                <Box marginTop={{ xs: 2, sm: 4 }}>
-                  <Typography variant={'subtitle1'} sx={{ fontWeight: 700 }}>
-                    Jhon Anderson
-                  </Typography>
-                  <Typography color="text.secondary">MUI lover</Typography>
-                </Box>
+                <Typography component={'p'}>
+                  With just a few simple steps, you're able to deliver an
+                  invoice within a conversation
+                </Typography>
               </CardContent>
             </Box>
           </Box>
@@ -141,4 +122,4 @@ const CaseStudy3 = () => {
   );
 };
 
-export default CaseStudy3;
+export default Payment;

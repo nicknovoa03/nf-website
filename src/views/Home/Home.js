@@ -8,7 +8,7 @@ import {
   Partners,
   OnlineReviews,
   Messaging,
-  CaseStudy3,
+  Payment,
   Hero,
   Contact,
 } from './components';
@@ -31,7 +31,7 @@ const Home = () => {
         <Messaging />
       </Container>
       <Container>
-        <CaseStudy3 />
+        <Payment />
       </Container>
       <Box
         position={'relative'}
