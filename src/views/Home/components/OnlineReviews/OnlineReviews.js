@@ -28,7 +28,7 @@ const OnlineReviews = () => {
       <Grid
         container
         spacing={isMd ? 4 : 2}
-        flexDirection={{ xs: 'column-reverse', md: 'row' }}
+        flexDirection={{ xs: 'column', md: 'row' }}
       >
         <Grid item xs={12} md={8}>
           <Grid container spacing={isMd ? 4 : 2}>
