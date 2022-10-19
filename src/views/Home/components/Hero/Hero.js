@@ -1,11 +1,13 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { alpha, useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+
+import PhoneWithData from '../../../../assets/PhoneWithData.svg';
+import Image from 'next/image';
 
 const Hero = () => {
   const theme = useTheme();
@@ -24,8 +26,7 @@ const Hero = () => {
               color="text.primary"
               sx={{ fontWeight: 700 }}
             >
-              Design agency that
-              <br />
+              Natural{'  '}
               <Typography
                 color={'primary'}
                 component={'span'}
@@ -37,16 +38,15 @@ const Hero = () => {
                   )} 0%)`,
                 }}
               >
-                inspires
+                Frameworks
               </Typography>
             </Typography>
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              World developers use our theFront theme to build their web
-              applications.
-              <br />
-              Save yourself time and money.
+              The customer interaction software with the tools & production to
+              invigorate your customers relationships and automate lead
+              generation
             </Typography>
           </Box>
           <Box
@@ -100,27 +100,12 @@ const Hero = () => {
         md={6}
         sx={{
           '& .lazy-load-image-background.lazy-load-image-loaded': {
-            width: '100%',
-            height: '100%',
+            width: '150%',
+            height: '150%',
           },
         }}
       >
-        <Box
-          component={LazyLoadImage}
-          height={1}
-          width={1}
-          src={'https://assets.maccarianagency.com/backgrounds/img8.jpg'}
-          alt="..."
-          effect="blur"
-          borderRadius={2}
-          maxWidth={600}
-          maxHeight={500}
-          sx={{
-            objectFit: 'cover',
-            boxShadow: '19px 20px 0px 0 rgb(140 152 164 / 13%)',
-            filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
-          }}
-        />
+        <Image src={PhoneWithData}></Image>
       </Grid>
     </Grid>
   );

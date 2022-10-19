@@ -10,7 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-const CaseStudy1 = () => {
+const OnlineReviews = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -59,20 +59,20 @@ const CaseStudy1 = () => {
             </Grid>
             <Grid item xs={6}>
               <Typography variant={'h6'} fontWeight={700} gutterBottom>
-                Lifetime guarantee
+                Single Inbox
               </Typography>
               <Typography component={'p'}>
-                If your Goby’s performance is anything less than perfect, we’ll
-                replace it free of charge.
+                Automate your online reviews with a few simple clicks & respond
+                to reviews in 1 place
               </Typography>
             </Grid>
             <Grid item xs={6}>
               <Typography variant={'h6'} fontWeight={700} gutterBottom>
-                Moder design
+                Connect Many Platforms
               </Typography>
               <Typography component={'p'}>
-                Righty, lefty, dainty or robust—the soft-touch Goby handle is
-                made for every hand.
+                We integrate with the popular review services such as Facebook &
+                Google
               </Typography>
             </Grid>
           </Grid>
@@ -85,8 +85,8 @@ const CaseStudy1 = () => {
             height={1}
           >
             <Box>
-              <Typography variant={'h4'} fontWeight={700} gutterBottom>
-                Goby
+              <Typography variant={'h5'} fontWeight={700} gutterBottom>
+                Automate Your Online Reviews
               </Typography>
               <Typography
                 color={
@@ -95,45 +95,30 @@ const CaseStudy1 = () => {
                     : 'text.primary'
                 }
               >
-                The affordable electric toothbrush designed to elevate your
-                daily routine. Take the Goby for a spin. Free shipping.
+                Improve your ratings, build your reputation, and get found
+                online by sending review requests via text to recent customers,
+                responding to and interacting with reviewers, and managing it
+                all from a single inbox.
               </Typography>
             </Box>
             <Box
               component={Card}
-              marginTop={{ xs: 2, md: 0 }}
+              marginTop={{ xs: 2, md: 2 }}
               boxShadow={0}
               borderRadius={2}
+              marginBottom={{ md: 5 }}
             >
               <CardContent sx={{ padding: { xs: 2, sm: 4 } }}>
-                <Box
-                  component="img"
-                  height={1}
-                  width={1}
-                  src={
-                    'https://assets.maccarianagency.com/svg/logos/paypal-original.svg'
-                  }
-                  alt="..."
-                  maxWidth={80}
-                  marginBottom={2}
-                  sx={{
-                    filter:
-                      theme.palette.mode === 'dark'
-                        ? 'brightness(0) invert(0.7)'
-                        : 'none',
-                  }}
-                />
-                <Typography component={'p'}>
-                  First class templates. These guys know what they're doing:
-                  great code quality, clear naming conventions and clear code
-                  structure. Plain awesome and a pleasure to work with.
+                <Typography variant={'h6'} fontWeight={700} gutterBottom>
+                  Negative Review Filter
                 </Typography>
-                <Box marginTop={{ xs: 2, sm: 4 }}>
-                  <Typography variant={'subtitle1'} sx={{ fontWeight: 700 }}>
-                    Jhon Anderson
-                  </Typography>
-                  <Typography color="text.secondary">MUI lover</Typography>
-                </Box>
+                <Typography component={'p'}>
+                  Filter out customers who would leave a negative review before
+                  they become public. If a review is expected to be negative,
+                  the comments are sent via email to you & your team. This gives
+                  you the opportunity to work with the customer to resolve any
+                  issues.
+                </Typography>
               </CardContent>
             </Box>
           </Box>
@@ -143,4 +128,4 @@ const CaseStudy1 = () => {
   );
 };
 
-export default CaseStudy1;
+export default OnlineReviews;

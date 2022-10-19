@@ -6,7 +6,7 @@ import { Fluid } from 'layouts';
 import Container from 'components/Container';
 import {
   Partners,
-  CaseStudy1,
+  OnlineReviews,
   CaseStudy2,
   CaseStudy3,
   Hero,
@@ -25,7 +25,7 @@ const Home = () => {
         <Partners />
       </Container>
       <Container>
-        <CaseStudy1 />
+        <OnlineReviews />
       </Container>
       <Container paddingY={'0 !important'}>
         <CaseStudy2 />
