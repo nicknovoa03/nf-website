@@ -2,13 +2,11 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
-import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 
 const validationSchema = yup.object({
@@ -33,7 +31,6 @@ const validationSchema = yup.object({
 });
 
 const Form = () => {
-  const theme = useTheme();
 
   const initialValues = {
     firstName: '',
