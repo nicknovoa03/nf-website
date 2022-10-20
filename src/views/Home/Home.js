@@ -23,7 +23,8 @@ const Home = () => {
         data-style="--chat-widget-primary-color: #188bf6; --chat-widget-active-color:#188bf6 ;--chat-widget-bubble-color: #188bf6"
         data-location-id="d9EJPvHmPoXnwbaq1mCE"
         data-prompt-avatar="https://widgets.leadconnectorhq.com/chat-widget/assets/defaultAvatar.png"
-        data-agency-name="Hexona Systems"
+        data-use-email-field="true"
+        data-agency-name="Natural Frameworks"
         data-agency-website="www.hexonasystems.com"
       ></div>
       <script
