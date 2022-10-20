@@ -25,7 +25,7 @@ const Home = () => {
         data-prompt-avatar="https://widgets.leadconnectorhq.com/chat-widget/assets/defaultAvatar.png"
         data-use-email-field="true"
         data-agency-name="Natural Frameworks"
-        data-agency-website="www.hexonasystems.com"
+        data-agency-website="www.naturalframeworks.com"
       ></div>
       <script
         src="https://widgets.leadconnectorhq.com/loader.js"
