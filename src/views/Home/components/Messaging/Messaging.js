@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTheme } from '@mui/material/styles';
 import { colors } from '@mui/material';
 import Box from '@mui/material/Box';
@@ -9,6 +8,9 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
+
+import Message from '../../../../assets/unDraw/Messaging.svg';
+import Image from 'next/image';
 
 const Messaging = () => {
   const theme = useTheme();
@@ -85,20 +87,7 @@ const Messaging = () => {
                 },
               }}
             >
-              <Box
-                component={LazyLoadImage}
-                height={1}
-                width={1}
-                src={'https://assets.maccarianagency.com/backgrounds/img45.jpg'}
-                alt="..."
-                effect="blur"
-                borderRadius={2}
-                maxWidth={1}
-                maxHeight={400}
-                sx={{
-                  objectFit: 'cover',
-                }}
-              />
+              <Image src={Message} />
             </Grid>
             <Grid item xs={12}>
               <Typography variant={'h6'} fontWeight={700} gutterBottom>
