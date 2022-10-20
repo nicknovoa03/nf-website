@@ -31,7 +31,6 @@ const validationSchema = yup.object({
 });
 
 const Form = () => {
-
   const initialValues = {
     firstName: '',
     lastName: '',
