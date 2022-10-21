@@ -4,6 +4,10 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
+import logoLight from '../../../../assets/logos/Logo Light.png';
+import logoDark from '../../../../assets/logos/Logo Dark.png';
+import Image from 'next/image';
+
 const Footer = () => {
   const theme = useTheme();
   const { mode } = theme.palette;
@@ -22,20 +26,9 @@ const Footer = () => {
             display={'flex'}
             component="a"
             href="/"
-            title="theFront"
+            title="Natural Frameworks"
             width={80}
-          >
-            <Box
-              component={'img'}
-              src={
-                mode === 'light'
-                  ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                  : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-              }
-              height={1}
-              width={1}
-            />
-          </Box>
+          ></Box>
         </Box>
       </Grid>
       <Grid item xs={12}>

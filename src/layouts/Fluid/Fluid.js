@@ -15,6 +15,8 @@ import TopNav from 'components/TopNav';
 
 import { Footer } from './components';
 
+
+
 const Fluid = ({
   children,
   colorInvert = false,
@@ -60,19 +62,9 @@ const Fluid = ({
               display={'flex'}
               component="a"
               href="/"
-              title="theFront"
+              title="Natural Frameworks"
               width={{ xs: 100, md: 120 }}
             >
-              <Box
-                component={'img'}
-                src={
-                  mode === 'light' && !colorInvert
-                    ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                    : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-                }
-                height={1}
-                width={1}
-              />
             </Box>
             <TopNav colorInvert={colorInvert} />
           </Box>
