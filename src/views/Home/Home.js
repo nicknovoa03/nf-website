@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 import { Fluid } from 'layouts';
 import Container from 'components/Container';
 import {
-  Partners,
   OnlineReviews,
   Messaging,
   Payment,
@@ -37,9 +36,7 @@ const Home = () => {
         <Container>
           <Hero />
         </Container>
-        <Container>
-          <Partners />
-        </Container>
+        <Container></Container>
         <Container>
           <a id="OnlineReviews" />
           <OnlineReviews />

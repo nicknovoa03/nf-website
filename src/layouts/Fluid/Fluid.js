@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import AppBar from '@mui/material/AppBar';
@@ -15,15 +14,11 @@ import TopNav from 'components/TopNav';
 
 import { Footer } from './components';
 
-
-
 const Fluid = ({
   children,
   colorInvert = false,
   bgcolor = 'alternate.main',
 }) => {
-  const theme = useTheme();
-  const { mode } = theme.palette;
 
   const trigger = useScrollTrigger({
     disableHysteresis: true,
@@ -64,8 +59,7 @@ const Fluid = ({
               href="/"
               title="Natural Frameworks"
               width={{ xs: 100, md: 120 }}
-            >
-            </Box>
+            ></Box>
             <TopNav colorInvert={colorInvert} />
           </Box>
         </Container>

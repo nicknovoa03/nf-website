@@ -2,15 +2,12 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { useTheme } from '@mui/material/styles';
-
+/*
 import logoLight from '../../../../assets/logos/Logo Light.png';
 import logoDark from '../../../../assets/logos/Logo Dark.png';
 import Image from 'next/image';
-
+*/
 const Footer = () => {
-  const theme = useTheme();
-  const { mode } = theme.palette;
 
   return (
     <Grid container spacing={2}>

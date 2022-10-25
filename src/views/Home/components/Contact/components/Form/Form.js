@@ -39,7 +39,7 @@ const Form = () => {
   };
 
   const onSubmit = (values) => {
-    return values;
+    console.log(values);
   };
 
   const formik = useFormik({
