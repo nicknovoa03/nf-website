@@ -8,7 +8,6 @@ import logoDark from '../../../../assets/logos/Logo Dark.png';
 import Image from 'next/image';
 */
 const Footer = () => {
-
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>

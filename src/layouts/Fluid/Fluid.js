@@ -19,7 +19,6 @@ const Fluid = ({
   colorInvert = false,
   bgcolor = 'alternate.main',
 }) => {
-
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 100,
