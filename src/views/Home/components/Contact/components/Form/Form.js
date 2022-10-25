@@ -27,6 +27,7 @@ const validationSchema = yup.object({
     .trim()
     .email('Please enter a valid email address')
     .required('Email is required.'),
+  phone: yup.string().trim(),
   message: yup.string().trim().required('Please specify your message'),
 });
 
@@ -35,6 +36,7 @@ const Form = () => {
     firstName: '',
     lastName: '',
     email: '',
+    phone: '',
     message: '',
   };
 
@@ -107,6 +109,22 @@ const Form = () => {
                 onChange={formik.handleChange}
                 error={formik.touched.email && Boolean(formik.errors.email)}
                 helperText={formik.touched.email && formik.errors.email}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                sx={{ height: 54 }}
+                label="Phone"
+                type="phone"
+                variant="outlined"
+                color="primary"
+                size="medium"
+                name="phone"
+                fullWidth
+                value={formik.values.phone}
+                onChange={formik.handleChange}
+                error={formik.touched.phone && Boolean(formik.errors.phone)}
+                helperText={formik.touched.phone && formik.errors.phone}
               />
             </Grid>
             <Grid item xs={12}>

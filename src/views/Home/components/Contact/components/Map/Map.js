@@ -55,7 +55,7 @@ const Map = () => {
           >
             Call us:
           </Typography>
-          <Typography variant={'subtitle1'}>+210 365 5579</Typography>
+          <Typography variant={'subtitle1'}>+210 791 8336</Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography
