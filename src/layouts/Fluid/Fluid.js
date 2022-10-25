@@ -36,7 +36,7 @@ const Fluid = ({
   };
 
   return (
-    <Box id="js--fluid-top">
+    <Box id="js--fluid-top" marginBottom={5}>
       <AppBar
         position={'relative'}
         sx={{
