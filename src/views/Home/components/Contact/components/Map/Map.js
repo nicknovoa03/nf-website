@@ -77,7 +77,11 @@ const Map = () => {
           >
             Address:
           </Typography>
-          <Typography variant={'subtitle1'}>17503 La Cantera Pkwy</Typography>
+          <Typography variant={'subtitle1'}>
+            17503 La Cantera Pkwy Ste 104 PMB 223.
+            <br />
+            San Antonio, TX 78257
+          </Typography>
         </Grid>
       </Grid>
     </Box>
