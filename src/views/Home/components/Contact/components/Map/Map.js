@@ -39,10 +39,6 @@ const Map = () => {
           style={{
             minHeight: 300,
             borderRadius: 8,
-            filter:
-              theme.palette.mode === 'dark'
-                ? 'grayscale(0.5) opacity(0.7)'
-                : 'none',
           }}
         />
       </Box>
