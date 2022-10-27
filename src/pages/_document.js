@@ -15,24 +15,15 @@ export default class MyDocument extends Document {
             href="https://assets.maccarianagency.com/favicons/thefront/favicon.ico"
           />
           <meta name="theme-color" content="#ffffff" />
-          <meta
-            name="description"
-            content="Software"
-          />
+          <meta name="description" content="Software" />
           <meta
             name="robots"
             content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
           />
           <meta property="og:locale" content="en_US" />
           <meta property="og:type" content="website" />
-          <meta
-            property="og:title"
-            content="Natural Frameworks"
-          />
-          <meta
-            property="og:description"
-            content="Software that matters"
-          />
+          <meta property="og:title" content="Natural Frameworks" />
+          <meta property="og:description" content="Software that matters" />
           <meta
             property="og:url"
             content="https://www.naturalframeworks.com/"

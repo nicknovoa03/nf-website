@@ -52,7 +52,6 @@ const Form = () => {
 
   return (
     <Box>
-
       <Box
         padding={{ xs: 3, sm: 6 }}
         width={1}

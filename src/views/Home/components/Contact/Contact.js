@@ -3,7 +3,7 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import { Map, Form } from './components';
+import { Map } from './components';
 
 const Contact = () => {
   const theme = useTheme();
@@ -20,7 +20,7 @@ const Contact = () => {
         <Grid item container xs={12} md={6} alignItems={'center'}>
           <iframe
             src="https://api.leadconnectorhq.com/widget/form/wihukON3WCRDzUaj5U6F"
-            style={{ border: "none", width: '100%'}}
+            style={{ border: 'none', width: '100%' }}
           ></iframe>
           <script src="https://api.leadconnectorhq.com/js/form_embed.js"></script>
         </Grid>
