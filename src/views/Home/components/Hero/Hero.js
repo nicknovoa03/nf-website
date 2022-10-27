@@ -109,7 +109,7 @@ const Hero = () => {
           },
         }}
       >
-        <Image src={PhoneWithData}></Image>
+        <Image alt="Natural Frameworks" src={PhoneWithData}></Image>
       </Grid>
     </Grid>
   );

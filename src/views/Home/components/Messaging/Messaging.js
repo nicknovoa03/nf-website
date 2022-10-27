@@ -87,7 +87,7 @@ const Messaging = () => {
                 },
               }}
             >
-              <Image src={Message} />
+              <Image alt="Natural Frameworks" src={Message} />
             </Grid>
             <Grid item xs={12}>
               <Typography variant={'h6'} fontWeight={700} gutterBottom>

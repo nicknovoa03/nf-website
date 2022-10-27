@@ -45,7 +45,7 @@ const OnlineReviews = () => {
                 },
               }}
             >
-              <Image src={OnlineReview} />
+              <Image alt="Natural Frameworks" src={OnlineReview} />
             </Grid>
             <Grid item xs={6}>
               <Typography variant={'h6'} fontWeight={700} gutterBottom>

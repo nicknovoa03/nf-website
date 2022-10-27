@@ -32,7 +32,7 @@ const Partners = () => {
                   : 'brightness(0)',
             }}
           >
-            <Image src={item} layout="fill"></Image>
+            <Image alt="Natural Frameworks" src={item} layout="fill"></Image>
           </Box>
         </Box>
       ))}

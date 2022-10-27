@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import { Fluid } from 'layouts';
 import Container from 'components/Container';
 import { OnlineReviews, Messaging, Payment, Hero, Contact } from './components';
+import Script from 'next/script';
 
 const Home = () => {
   const theme = useTheme();
@@ -20,12 +21,11 @@ const Home = () => {
         data-agency-name="Natural Frameworks"
         data-agency-website="www.naturalframeworks.com"
       ></div>
-      <script
+      <Script
+        id="Chat Widget"
         src="https://widgets.leadconnectorhq.com/loader.js"
         data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-      >
-        {' '}
-      </script>
+      ></Script>
       <Fluid>
         <Container>
           <Hero />

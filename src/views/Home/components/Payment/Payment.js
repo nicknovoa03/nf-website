@@ -42,7 +42,7 @@ const Payment = () => {
                 },
               }}
             >
-              <Image src={Payments} />
+              <Image alt="Natural Frameworks" src={Payments} />
             </Grid>
             <Grid item xs={6}>
               <Typography variant={'h6'} fontWeight={700} gutterBottom>

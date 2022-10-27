@@ -4,6 +4,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Map } from './components';
+import Script from 'next/script';
 
 const Contact = () => {
   const theme = useTheme();
@@ -22,7 +23,10 @@ const Contact = () => {
             src="https://api.leadconnectorhq.com/widget/form/wihukON3WCRDzUaj5U6F"
             style={{ border: 'none', width: '100%' }}
           ></iframe>
-          <script src="https://api.leadconnectorhq.com/js/form_embed.js"></script>
+          <Script
+            id="Contact Form"
+            src="https://api.leadconnectorhq.com/js/form_embed.js"
+          ></Script>
         </Grid>
       </Grid>
     </Box>
