@@ -18,7 +18,11 @@ const Contact = () => {
           <Map />
         </Grid>
         <Grid item container xs={12} md={6} alignItems={'center'}>
-          <Form />
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/wihukON3WCRDzUaj5U6F"
+            style={{ border: "none", width: '100%'}}
+          ></iframe>
+          <script src="https://api.leadconnectorhq.com/js/form_embed.js"></script>
         </Grid>
       </Grid>
     </Box>
