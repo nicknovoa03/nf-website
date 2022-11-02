@@ -2,11 +2,10 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-/*
-import logoLight from '../../../../assets/logos/Logo Light.png';
-import logoDark from '../../../../assets/logos/Logo Dark.png';
 import Image from 'next/image';
-*/
+
+import logo from '../../../../assets/logos/NF-logo.png';
+
 const Footer = () => {
   return (
     <Grid container spacing={2}>
@@ -23,8 +22,10 @@ const Footer = () => {
             component="a"
             href="/"
             title="Natural Frameworks"
-            width={80}
-          ></Box>
+            width={50}
+          >
+            <Image alt="Natural Frameoworks Logo" src={logo}></Image>
+          </Box>
         </Box>
       </Grid>
       <Grid item xs={12}>
