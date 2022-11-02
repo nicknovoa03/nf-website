@@ -7,6 +7,8 @@ import Container from 'components/Container';
 import { OnlineReviews, Messaging, Payment, Hero, Contact } from './components';
 import Script from 'next/script';
 
+import FeatureCardsWithColorfullIconsAndLearnMoreLink from 'blocks/FeatureCardsWithColorfullIconsAndLearnMoreLink';
+
 const Home = () => {
   const theme = useTheme();
 
@@ -30,7 +32,9 @@ const Home = () => {
         <Container>
           <Hero />
         </Container>
-        <Container></Container>
+        <Container>
+          <FeatureCardsWithColorfullIconsAndLearnMoreLink />
+        </Container>
         <Container>
           <a id="OnlineReviews" />
           <OnlineReviews />
