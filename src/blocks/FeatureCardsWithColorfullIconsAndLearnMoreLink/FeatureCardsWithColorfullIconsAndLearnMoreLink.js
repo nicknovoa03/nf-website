@@ -126,7 +126,7 @@ const mock = [
 const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
   const theme = useTheme();
   return (
-    <Box marginTop={10}>
+    <Box>
       <Box marginBottom={5}>
         <Typography
           variant="h3"
