@@ -16,6 +16,7 @@ import { Footer } from './components';
 import Image from 'next/image';
 
 import logo from '../../assets/logos/NF-logo.png';
+import Script from 'next/script';
 
 const Fluid = ({
   children,
@@ -75,19 +76,20 @@ const Fluid = ({
       <Container paddingY={4}>
         <Footer />
       </Container>
-      <NoSsr>
-        <Zoom in={trigger}>
-          <Box
-            onClick={() => scrollTo('js--fluid-top')}
-            role="presentation"
-            sx={{ position: 'fixed', bottom: 24, right: 32 }}
-          >
-            <Fab color="primary" size="small" aria-label="scroll back to top">
-              <KeyboardArrowUpIcon />
-            </Fab>
-          </Box>
-        </Zoom>
-      </NoSsr>
+      <div
+        data-chat-widget
+        data-style="--chat-widget-primary-color: #188bf6; --chat-widget-active-color:#188bf6 ;--chat-widget-bubble-color: #188bf6"
+        data-location-id="d9EJPvHmPoXnwbaq1mCE"
+        data-prompt-avatar="https://widgets.leadconnectorhq.com/chat-widget/assets/defaultAvatar.png"
+        data-use-email-field="true"
+        data-agency-name="Natural Frameworks"
+        data-agency-website="www.naturalframeworks.com"
+      ></div>
+      <Script
+        id="Chat Widget"
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+      ></Script>
     </Box>
   );
 };
