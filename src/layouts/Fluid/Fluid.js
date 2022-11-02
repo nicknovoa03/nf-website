@@ -13,6 +13,9 @@ import Container from 'components/Container';
 import TopNav from 'components/TopNav';
 
 import { Footer } from './components';
+import Image from 'next/image';
+
+import logo from '../../assets/logos/NF-logo.png';
 
 const Fluid = ({
   children,
@@ -57,8 +60,10 @@ const Fluid = ({
               component="a"
               href="/"
               title="Natural Frameworks"
-              width={{ xs: 100, md: 120 }}
-            ></Box>
+              width={{ xs: 50, md: 50 }}
+            >
+              <Image alt="Natural Frameoworks Logo" src={logo}></Image>
+            </Box>
             <TopNav colorInvert={colorInvert} />
           </Box>
         </Container>
