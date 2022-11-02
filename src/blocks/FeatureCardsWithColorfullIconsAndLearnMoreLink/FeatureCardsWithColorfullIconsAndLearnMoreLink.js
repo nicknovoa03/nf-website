@@ -4,25 +4,14 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
 import { alpha } from '@mui/material/styles';
 import { colors, Divider, useTheme } from '@mui/material';
 
-import Container from 'components/Container';
-
-import DesignServicesOutlinedIcon from '@mui/icons-material/DesignServicesOutlined';
-import DesignServicesSharpIcon from '@mui/icons-material/DesignServicesSharp';
-
-import AnalyticsIcon from '@mui/icons-material/Analytics';
 import AnalyticsOutlinedIcon from '@mui/icons-material/AnalyticsOutlined';
-
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-
 import MarkUnreadChatAltOutlinedIcon from '@mui/icons-material/MarkUnreadChatAltOutlined';
-
 import PhoneMissedIcon from '@mui/icons-material/PhoneMissed';
-
 import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
 
 const mock = [
@@ -80,7 +69,7 @@ const mock = [
     color: colors.red[500],
     title: 'Missed Call Text Back',
     subtitle:
-      "When you're away, have Natural Frameworks Systems follow up via text so you never lose another customer",
+      'When you\'re away, have Natural Frameworks Systems follow up via text so you never lose another customer',
     icon: (
       <svg
         height={30}
