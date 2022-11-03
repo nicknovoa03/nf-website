@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 import { Fluid } from 'layouts';
 import Container from 'components/Container';
 import { OnlineReviews, Messaging, Payment, Hero, Contact } from './components';
-import Script from 'next/script';
 
 import FeatureCardsWithColorfullIconsAndLearnMoreLink from 'blocks/FeatureCardsWithColorfullIconsAndLearnMoreLink';
 

@@ -3,11 +3,6 @@ import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import AppBar from '@mui/material/AppBar';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Fab from '@mui/material/Fab';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Zoom from '@mui/material/Zoom';
-import NoSsr from '@mui/material/NoSsr';
 
 import Container from 'components/Container';
 import TopNav from 'components/TopNav';
@@ -23,22 +18,6 @@ const Fluid = ({
   colorInvert = false,
   bgcolor = 'alternate.main',
 }) => {
-  const trigger = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: 100,
-  });
-
-  const scrollTo = (id) => {
-    setTimeout(() => {
-      const element = document.querySelector(`#${id}`);
-      if (!element) {
-        return;
-      }
-
-      window.scrollTo({ left: 0, top: element.offsetTop, behavior: 'smooth' });
-    });
-  };
-
   return (
     <Box id="js--fluid-top" marginBottom={5}>
       <AppBar

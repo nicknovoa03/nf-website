@@ -6,7 +6,6 @@ import Grid from '@mui/material/Grid';
 import { Map } from './components';
 import Script from 'next/script';
 import { Divider, Typography } from '@mui/material';
-import Card from '@mui/material';
 
 const Contact = () => {
   const theme = useTheme();
