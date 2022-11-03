@@ -7,17 +7,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 import { NavItem } from './components';
 
+import logo from '../../../../assets/logos/NF-logo.png';
+import Image from 'next/image';
+import { Link, Typography } from '@mui/material';
+
 const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
   const theme = useTheme();
-  const { mode } = theme.palette;
-  const {
-    landings: landingPages,
-    secondary: secondaryPages,
-    company: companyPages,
-    account: accountPages,
-    portfolio: portfolioPages,
-    blog: blogPages,
-  } = pages;
+  const { services: servicePages, company: companyPages } = pages;
 
   return (
     <Box
@@ -30,26 +26,17 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         display={'flex'}
         component="a"
         href="/"
-        title="theFront"
-        width={{ xs: 100, md: 120 }}
+        title="Natural Frameworks"
+        width={{ xs: 50, md: 50 }}
       >
-        <Box
-          component={'img'}
-          src={
-            mode === 'light' && !colorInvert
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-          }
-          height={1}
-          width={1}
-        />
+        <Image alt="Natural Frameoworks Logo" src={logo}></Image>
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
           <NavItem
-            title={'Landings'}
-            id={'landing-pages'}
-            items={landingPages}
+            title={'Services'}
+            id={'service-pages'}
+            items={servicePages}
             colorInvert={colorInvert}
           />
         </Box>
@@ -61,48 +48,14 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             colorInvert={colorInvert}
           />
         </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Account'}
-            id={'account-pages'}
-            items={accountPages}
-            colorInvert={colorInvert}
-          />
+        <Box marginLeft={3}>
+          <Link color={'inherit'} underline="hover">
+            <Typography sx={{ fontWeight: 500 }}>Pricing</Typography>
+          </Link>
         </Box>
         <Box marginLeft={4}>
-          <NavItem
-            title={'Pages'}
-            id={'secondary-pages'}
-            items={secondaryPages}
-            colorInvert={colorInvert}
-          />
-        </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Blog'}
-            id={'blog-pages'}
-            items={blogPages}
-            colorInvert={colorInvert}
-          />
-        </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Portfolio'}
-            id={'portfolio-pages'}
-            items={portfolioPages}
-            colorInvert={colorInvert}
-          />
-        </Box>
-        <Box marginLeft={4}>
-          <Button
-            variant="contained"
-            color="primary"
-            component="a"
-            target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
-            size="large"
-          >
-            Buy now
+          <Button variant="contained" colorInvert={colorInvert}>
+            Contact Us
           </Button>
         </Box>
       </Box>

@@ -151,7 +151,7 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
           </Typography>
           needs to succeed
         </Typography>
-        <Divider variant='middle' />
+        <Divider variant="middle" />
       </Box>
       <Grid container spacing={4}>
         {mock.map((item, i) => (
