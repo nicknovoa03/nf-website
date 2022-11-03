@@ -11,7 +11,7 @@ import logo from '../../../../assets/logos/NF-logo.png';
 import Image from 'next/image';
 import { Link, Typography } from '@mui/material';
 
-const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
+const Topbar = ({ onSidebarOpen, pages, colorinvert = false }) => {
   const theme = useTheme();
   const { services: servicePages, company: companyPages } = pages;
 
@@ -37,7 +37,6 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             title={'Services'}
             id={'service-pages'}
             items={servicePages}
-            colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
@@ -45,16 +44,10 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             title={'Company'}
             id={'company-pages'}
             items={companyPages}
-            colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={3}>
-          <Link color={'inherit'} underline="hover">
-            <Typography sx={{ fontWeight: 500 }}>Pricing</Typography>
-          </Link>
-        </Box>
-        <Box marginLeft={4}>
-          <Button variant="contained" colorInvert={colorInvert}>
+          <Button variant="contained" colorinvert={colorinvert.toString()}>
             Contact Us
           </Button>
         </Box>
@@ -81,7 +74,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
 Topbar.propTypes = {
   onSidebarOpen: PropTypes.func,
   pages: PropTypes.object,
-  colorInvert: PropTypes.bool,
+  colorinvert: PropTypes.bool,
 };
 
 export default Topbar;

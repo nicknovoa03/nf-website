@@ -44,12 +44,7 @@ const SidebarNav = ({ pages }) => {
             items={companyPages}
           />
         </Box>
-        <Box sx={{ mt: 1, mb: 3 }}>
-          <Link color={'inherit'} underline="hover">
-            <Typography sx={{ fontWeight: 500 }}>Pricing</Typography>
-          </Link>
-        </Box>
-        <Box>
+        <Box marginTop={2}>
           <Button variant="contained">Contact Us</Button>
         </Box>
       </Box>
