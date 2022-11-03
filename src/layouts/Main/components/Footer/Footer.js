@@ -1,17 +1,12 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import { useTheme } from '@mui/material/styles';
 import Image from 'next/image';
 
 import logo from '../../../../assets/logos/NF-logo.png';
 
 const Footer = () => {
-  const theme = useTheme();
-  const { mode } = theme.palette;
 
   return (
     <Grid container spacing={2}>

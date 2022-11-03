@@ -2,18 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { useTheme } from '@mui/material/styles';
 
 import NavItem from './components/NavItem';
-import { Link, Typography } from '@mui/material';
 
 import logo from '../../../../../../assets/logos/NF-logo.png';
 import Image from 'next/image';
 
 const SidebarNav = ({ pages }) => {
-  const theme = useTheme();
-  const { mode } = theme.palette;
-
   const { services: servicePages, company: companyPages } = pages;
 
   return (
