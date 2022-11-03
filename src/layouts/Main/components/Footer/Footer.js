@@ -7,7 +7,6 @@ import Image from 'next/image';
 import logo from '../../../../assets/logos/NF-logo.png';
 
 const Footer = () => {
-
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>
