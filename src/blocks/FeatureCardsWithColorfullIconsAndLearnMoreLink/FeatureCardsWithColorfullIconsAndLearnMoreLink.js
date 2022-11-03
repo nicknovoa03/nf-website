@@ -132,10 +132,10 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
           variant="h3"
           align="center"
           color="text.primary"
-          sx={{ fontWeight: 700 }}
+          sx={{ fontWeight: 500 }}
           marginBottom={5}
         >
-          All the things{' '}
+          All the automations{' '}
           <Typography
             color={theme.palette.primary.light}
             component={'span'}
@@ -147,11 +147,11 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
               )} 0%)`,
             }}
           >
-            your business{'  '}
+            your business{' '}
           </Typography>
           needs to succeed
         </Typography>
-        <Divider />
+        <Divider variant='middle' />
       </Box>
       <Grid container spacing={4}>
         {mock.map((item, i) => (
