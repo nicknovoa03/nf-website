@@ -22,7 +22,7 @@ const SimpleHeroWithImageAndCtaButtons = () => {
               color="text.primary"
               sx={{ fontWeight: 700 }}
             >
-              Design agency that
+              Convert Better With
               <br />
               <Typography
                 color={'primary'}
@@ -35,16 +35,14 @@ const SimpleHeroWithImageAndCtaButtons = () => {
                   )} 0%)`,
                 }}
               >
-                inspires
+                Webchat
               </Typography>
             </Typography>
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              World developers use our theFront theme to build their web
-              applications.
-              <br />
-              Save yourself time and money.
+              Put webchat on your website in a breeze and get fresh leads
+              straight to your inbox.
             </Typography>
           </Box>
           <Box
@@ -58,34 +56,8 @@ const SimpleHeroWithImageAndCtaButtons = () => {
               size="large"
               fullWidth={isMd ? false : true}
             >
-              Case studies
+              Get Started
             </Button>
-            <Box
-              component={Button}
-              color="primary"
-              size="large"
-              marginTop={{ xs: 2, sm: 0 }}
-              marginLeft={{ sm: 2 }}
-              fullWidth={isMd ? false : true}
-              endIcon={
-                <Box
-                  component={'svg'}
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  width={24}
-                  height={24}
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clipRule="evenodd"
-                  />
-                </Box>
-              }
-            >
-              Learn more
-            </Box>
           </Box>
         </Box>
       </Grid>

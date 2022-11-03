@@ -27,14 +27,13 @@ const CtaWithIllustration = () => {
                   fontWeight: 700,
                 }}
               >
-                The pro account for entrepreneurs.
+                Engage leads instantly on your site
               </Typography>
             </Box>
             <Box marginBottom={3}>
               <Typography variant="h6" component="p" color="text.secondary">
-                Much more than a bank, it is the ideal, fastest and most
-                convenient financial and administrative co-driver to work with
-                peace of mind.
+                Engage your website visitors right when they come in. Livechat
+                makes the conversation real-time.
               </Typography>
             </Box>
             <Box
@@ -49,18 +48,7 @@ const CtaWithIllustration = () => {
                 size="large"
                 fullWidth={!isMd}
               >
-                Contact sales
-              </Box>
-              <Box
-                component={Button}
-                variant="contained"
-                color="primary"
-                size="large"
-                fullWidth={!isMd}
-                marginTop={{ xs: 1, sm: 0 }}
-                marginLeft={{ sm: 2 }}
-              >
-                Subscribe
+                Get Started
               </Box>
             </Box>
           </Box>

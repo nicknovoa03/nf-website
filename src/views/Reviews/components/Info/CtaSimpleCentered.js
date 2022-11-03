@@ -1,18 +1,11 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
 
 import Container from 'components/Container';
+import { Divider } from '@mui/material';
 
 const CtaSimpleCentered = () => {
-  const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true,
-  });
-
   return (
     <Container>
       <Box>
@@ -25,8 +18,11 @@ const CtaSimpleCentered = () => {
             fontWeight: 700,
           }}
         >
-          Get started with theFront today
+          Convert website visitors into leads with Webchat
         </Typography>
+        <Box marginY={2}>
+          <Divider />
+        </Box>
         <Typography
           variant="h6"
           component="p"
@@ -34,43 +30,10 @@ const CtaSimpleCentered = () => {
           sx={{ fontWeight: 400 }}
           align={'center'}
         >
-          Build a beautiful, modern website with flexible, fully customizable,
-          atomic MUI components.
+          Every conversation starts with a name and a real phone number, so you
+          can immediately focus on closing the deal instead of fishing for
+          contact details.
         </Typography>
-        <Box
-          display="flex"
-          flexDirection={{ xs: 'column', sm: 'row' }}
-          alignItems={{ xs: 'stretched', sm: 'flex-start' }}
-          justifyContent={'center'}
-          marginTop={4}
-        >
-          <Button
-            component={'a'}
-            variant="contained"
-            color="primary"
-            size="large"
-            fullWidth={isMd ? false : true}
-            href={'/home'}
-          >
-            View pages
-          </Button>
-          <Box
-            marginTop={{ xs: 2, sm: 0 }}
-            marginLeft={{ sm: 2 }}
-            width={{ xs: '100%', md: 'auto' }}
-          >
-            <Button
-              component={'a'}
-              href={'/docs/introduction'}
-              variant="outlined"
-              color="primary"
-              size="large"
-              fullWidth={isMd ? false : true}
-            >
-              Documentation
-            </Button>
-          </Box>
-        </Box>
       </Box>
     </Container>
   );

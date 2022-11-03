@@ -5,10 +5,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
-import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
-import { alpha } from '@mui/material/styles';
 
 import Container from 'components/Container';
 
@@ -24,43 +22,20 @@ const SupportCenterCta = () => {
         <Grid item xs={12} md={6}>
           <Box marginBottom={4}>
             <Typography sx={{ fontWeight: 700 }} variant={'h4'} gutterBottom>
-              Ask the expert
+              Make the Webchat widget yours
             </Typography>
             <Typography variant={'h6'} component={'p'} color={'text.secondary'}>
-              Lorem ipsum dolor sit amet,
-              <br />
-              consectetur adipiscing elit. Id ultricies sed ultricies fringilla
-              commodo.
+              Add a personal touch to your chat window by customizing chat
+              icons, colors, and the greeting. Let visitors know who
+              they&apos;ll be chatting with. Add names, photos, or even a pic of
+              your business mascot.
             </Typography>
           </Box>
           <Box>
-            <Box
-              component={Avatar}
-              variant={'rounded'}
-              color={theme.palette.primary.dark}
-              bgcolor={alpha(theme.palette.primary.light, 0.2)}
-            >
-              <svg
-                width={24}
-                height={24}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
-                />
-              </svg>
-            </Box>
             <Box marginY={1}>
               <Typography variant={'h6'}>Create a request</Typography>
               <Typography color={'text.secondary'}>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
+                Never miss a beat again with your new webchat essentials.
               </Typography>
             </Box>
             <Button variant={'contained'} size={'large'}>
