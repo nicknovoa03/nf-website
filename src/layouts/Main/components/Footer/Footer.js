@@ -5,10 +5,25 @@ import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 
 import logo from '../../../../assets/logos/NF-logo.png';
+import { Button, Link } from '@mui/material';
+import { useTheme } from '@mui/system';
 
 const Footer = () => {
+  const theme = useTheme();
   return (
     <Grid container spacing={2}>
+      <Grid item xs={12}>
+        <Box alignItems={'center'}>
+          <Typography
+            align={'center'}
+            variant={'h6'}
+            color={theme.palette.mode}
+            sx={{ fontWeight: 800 }}
+          >
+            Meet your max potential with Natural Frameworks today!
+          </Typography>
+        </Box>
+      </Grid>
       <Grid item xs={12}>
         <Box
           display={'flex'}
@@ -25,6 +40,42 @@ const Footer = () => {
             width={50}
           >
             <Image alt="Natural Frameoworks Logo" src={logo}></Image>
+          </Box>
+          <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
+            <Box marginTop={1} marginRight={2}>
+              <Link
+                underline="none"
+                component="a"
+                href="/"
+                color="text.primary"
+                variant={'subtitle2'}
+              >
+                Home
+              </Link>
+            </Box>
+            <Box marginTop={1} marginRight={2}>
+              <Link
+                underline="none"
+                component="a"
+                href="/docs/introduction"
+                color="text.primary"
+                variant={'subtitle2'}
+              >
+                Schedule Call
+              </Link>
+            </Box>
+            <Box marginTop={1}>
+              <Button
+                variant="outlined"
+                color="primary"
+                component="a"
+                target="blank"
+                href="https://mui.com/store/items/the-front-landing-page/"
+                size="small"
+              >
+                Get Started
+              </Button>
+            </Box>
           </Box>
         </Box>
       </Grid>
