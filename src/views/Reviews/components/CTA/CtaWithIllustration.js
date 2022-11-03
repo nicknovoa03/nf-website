@@ -16,7 +16,7 @@ const CtaWithIllustration = () => {
   });
 
   return (
-    <Container>
+    <Container data-aos={isMd ? 'fade-left' : 'fade-up'}>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Box>

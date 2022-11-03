@@ -17,7 +17,7 @@ const SupportCenterCta = () => {
   });
 
   return (
-    <Container>
+    <Container data-aos={isMd ? 'fade-right' : 'fade-up'}>
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
         <Grid item xs={12} md={6}>
           <Box marginBottom={4}>

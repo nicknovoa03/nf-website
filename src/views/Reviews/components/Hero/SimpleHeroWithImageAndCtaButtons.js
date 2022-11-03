@@ -14,7 +14,14 @@ const SimpleHeroWithImageAndCtaButtons = () => {
 
   return (
     <Grid container spacing={4}>
-      <Grid item container xs={12} md={6} alignItems={'center'}>
+      <Grid
+        item
+        container
+        xs={12}
+        md={6}
+        alignItems={'center'}
+        data-aos={isMd ? 'fade-right' : 'fade-up'}
+      >
         <Box>
           <Box marginBottom={2}>
             <Typography
