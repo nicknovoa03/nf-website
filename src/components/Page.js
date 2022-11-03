@@ -47,9 +47,10 @@ export default function Page({ children }) {
     }
 
     AOS.init({
-      once: true,
-      delay: 0,
-      duration: 800,
+      once: false,
+      mirror:true,
+      delay: 50,
+      duration: 1000,
       offset: 0,
       easing: 'ease-in-out',
     });
