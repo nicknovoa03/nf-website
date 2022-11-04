@@ -22,6 +22,16 @@ const CtaWithIllustration = () => {
           <Box>
             <Box marginBottom={2}>
               <Typography
+                sx={{
+                  textTransform: 'uppercase',
+                  fontWeight: 'medium',
+                }}
+                gutterBottom
+                color={'secondary'}
+              >
+                Live Chat
+              </Typography>
+              <Typography
                 variant="h4"
                 sx={{
                   fontWeight: 700,

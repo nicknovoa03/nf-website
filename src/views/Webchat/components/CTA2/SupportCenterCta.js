@@ -21,6 +21,16 @@ const SupportCenterCta = () => {
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
         <Grid item xs={12} md={6}>
           <Box marginBottom={4}>
+            <Typography
+              sx={{
+                textTransform: 'uppercase',
+                fontWeight: 'medium',
+              }}
+              gutterBottom
+              color={'secondary'}
+            >
+              Customization
+            </Typography>
             <Typography sx={{ fontWeight: 700 }} variant={'h4'} gutterBottom>
               Make the Webchat widget yours
             </Typography>

@@ -25,6 +25,16 @@ const SimpleHeroWithImageAndCtaButtons = () => {
         <Box>
           <Box marginBottom={2}>
             <Typography
+              sx={{
+                textTransform: 'uppercase',
+                fontWeight: 'medium',
+              }}
+              gutterBottom
+              color={'secondary'}
+            >
+              Get More Website Leads
+            </Typography>
+            <Typography
               variant="h2"
               color="text.primary"
               sx={{ fontWeight: 700 }}

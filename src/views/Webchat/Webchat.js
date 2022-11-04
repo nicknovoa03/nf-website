@@ -8,7 +8,7 @@ import Hero from './components/Hero';
 import Info from './components/Info';
 import LogoGrid from './components/LogoGrid';
 
-const Reviews = () => {
+const Webchat = () => {
   const theme = useTheme();
 
   return (
@@ -62,4 +62,4 @@ const Reviews = () => {
     </Main>
   );
 };
-export default Reviews;
+export default Webchat;
