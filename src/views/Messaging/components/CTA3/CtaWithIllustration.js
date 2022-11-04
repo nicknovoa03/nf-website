@@ -16,24 +16,35 @@ const CtaWithIllustration = () => {
   });
 
   return (
-    <Container data-aos={isMd ? 'fade-left' : 'fade-up'}>
+    <Container data-aos={isMd ? 'fade-right' : 'fade-up'}>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Box>
             <Box marginBottom={2}>
+              <Typography
+                sx={{
+                  textTransform: 'uppercase',
+                  fontWeight: 'medium',
+                }}
+                gutterBottom
+                color={'secondary'}
+              >
+                Now a thing of the past
+              </Typography>
               <Typography
                 variant="h4"
                 sx={{
                   fontWeight: 700,
                 }}
               >
-                Interact With Your Leads On The Go
+                Never miss a customer call
               </Typography>
             </Box>
             <Box marginBottom={3}>
               <Typography variant="h6" component="p" color="text.secondary">
-                With mobile and desktop apps, you can communicate with your
-                leads, customers, and teams from anywhere.
+                Engage callers immediately with auto-missed call text back to
+                keep the conversation alive so you never lose business because
+                you were unavailable.
               </Typography>
             </Box>
             <Box
@@ -48,7 +59,18 @@ const CtaWithIllustration = () => {
                 size="large"
                 fullWidth={!isMd}
               >
-                Get Started
+                Contact sales
+              </Box>
+              <Box
+                component={Button}
+                variant="contained"
+                color="primary"
+                size="large"
+                fullWidth={!isMd}
+                marginTop={{ xs: 1, sm: 0 }}
+                marginLeft={{ sm: 2 }}
+              >
+                Subscribe
               </Box>
             </Box>
           </Box>

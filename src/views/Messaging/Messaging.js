@@ -7,6 +7,9 @@ import CTA2 from './components/CTA2';
 import Features from './components/Features';
 import Hero from './components/Hero';
 import LogoGrid from './components/LogoGrid';
+import Info2 from './components/Info2';
+import CTA3 from './components/CTA3';
+import Stats from './components/Stats';
 
 const Messaging = () => {
   const theme = useTheme();
@@ -53,12 +56,35 @@ const Messaging = () => {
         }}
       >
         <Container>
-          <LogoGrid />
+          <CTA2 />
         </Container>
       </Box>
       <Container>
-        <CTA2 />
+        <Info2 />
       </Container>
+      <Box
+        position={'relative'}
+        sx={{
+          backgroundColor: theme.palette.alternate.main,
+        }}
+      >
+        <Container>
+          <CTA3 />
+        </Container>
+      </Box>
+      <Container>
+        <Stats />
+      </Container>
+      <Box
+        position={'relative'}
+        sx={{
+          backgroundColor: theme.palette.alternate.main,
+        }}
+      >
+        <Container>
+          <LogoGrid />
+        </Container>
+      </Box>
     </Main>
   );
 };

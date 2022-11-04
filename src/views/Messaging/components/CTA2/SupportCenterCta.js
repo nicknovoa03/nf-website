@@ -21,21 +21,30 @@ const SupportCenterCta = () => {
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
         <Grid item xs={12} md={6}>
           <Box marginBottom={4}>
+            <Typography
+              sx={{
+                textTransform: 'uppercase',
+                fontWeight: 'medium',
+              }}
+              gutterBottom
+              color={'secondary'}
+            >
+              Every Message In One Place
+            </Typography>
             <Typography sx={{ fontWeight: 700 }} variant={'h4'} gutterBottom>
-              Make the Webchat widget yours
+              All customer interactions in one Unified Inbox
             </Typography>
             <Typography variant={'h6'} component={'p'} color={'text.secondary'}>
-              Add a personal touch to your chat window by customizing chat
-              icons, colors, and the greeting. Let visitors know who
-              they&apos;ll be chatting with. Add names, photos, or even a pic of
-              your business mascot.
+              Never miss another chat, review, survey or referral. Now every
+              customer interaction lives in a single place, right in your inbox
+              — ready for you to respond to.
             </Typography>
           </Box>
           <Box>
             <Box marginY={1}>
-              <Typography variant={'h6'}>Create a request</Typography>
+              <Typography variant={'h6'}>Find Out How</Typography>
               <Typography color={'text.secondary'}>
-                Never miss a beat again with your new webchat essentials.
+                Stay connected to all customers across all platforms
               </Typography>
             </Box>
             <Button variant={'contained'} size={'large'}>

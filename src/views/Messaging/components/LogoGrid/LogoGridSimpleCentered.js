@@ -29,11 +29,7 @@ const LogoGridSimpleCentered = () => {
             variant={'h4'}
             fontWeight={700}
           >
-            Trusted by over 5,000 tech companies
-          </Typography>
-          <Typography color={'text.secondary'} align={'center'} variant={'h6'}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Easily Integrates With Leading Apps
           </Typography>
         </Box>
         <Box display="flex" flexWrap="wrap" justifyContent={'center'}>
