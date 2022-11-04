@@ -20,7 +20,7 @@ const SimpleHeroWithImageAndCtaButtons = () => {
         xs={12}
         md={6}
         alignItems={'center'}
-        data-aos={isMd ? 'fade-right' : 'fade-up'}
+        data-aos={isMd ? 'fade-right' : 'flip-up'}
       >
         <Box>
           <Box marginBottom={2}>
@@ -29,7 +29,7 @@ const SimpleHeroWithImageAndCtaButtons = () => {
               color="text.primary"
               sx={{ fontWeight: 700 }}
             >
-              Convert Better With
+              One Place For
               <br />
               <Typography
                 color={'primary'}
@@ -42,14 +42,14 @@ const SimpleHeroWithImageAndCtaButtons = () => {
                   )} 0%)`,
                 }}
               >
-                Webchat
+                Every Message
               </Typography>
             </Typography>
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              Put webchat on your website in a breeze and get fresh leads
-              straight to your inbox.
+              Connect with leads and customers through texting, live chat, bulk
+              messaging, Google My Business and Facebook messages.
             </Typography>
           </Box>
           <Box

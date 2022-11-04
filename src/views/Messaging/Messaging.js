@@ -4,11 +4,11 @@ import { Main } from 'layouts';
 import React from 'react';
 import CTA from './components/CTA';
 import CTA2 from './components/CTA2';
+import Features from './components/Features';
 import Hero from './components/Hero';
-import Info from './components/Info';
 import LogoGrid from './components/LogoGrid';
 
-const Reviews = () => {
+const Messaging = () => {
   const theme = useTheme();
 
   return (
@@ -40,7 +40,7 @@ const Reviews = () => {
           ></path>
         </Box>
         <Container>
-          <Info />
+          <Features />
         </Container>
       </Box>
       <Container>
@@ -62,4 +62,4 @@ const Reviews = () => {
     </Main>
   );
 };
-export default Reviews;
+export default Messaging;
