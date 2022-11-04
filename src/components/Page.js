@@ -48,7 +48,7 @@ export default function Page({ children }) {
 
     AOS.init({
       once: false,
-      mirror:true,
+      mirror: true,
       delay: 50,
       duration: 1000,
       offset: 0,
