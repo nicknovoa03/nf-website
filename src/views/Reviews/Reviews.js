@@ -7,6 +7,7 @@ import CTA2 from './components/CTA2';
 import Hero from './components/Hero';
 import Info from './components/Info';
 import LogoGrid from './components/LogoGrid';
+import LogoGrid2 from './components/LogoGrid2';
 
 const Reviews = () => {
   const theme = useTheme();
@@ -53,12 +54,22 @@ const Reviews = () => {
         }}
       >
         <Container>
-          <LogoGrid />
+          <LogoGrid2 />
         </Container>
       </Box>
       <Container>
         <CTA2 />
       </Container>
+      <Box
+        position={'relative'}
+        sx={{
+          backgroundColor: theme.palette.alternate.main,
+        }}
+      >
+        <Container>
+          <LogoGrid />
+        </Container>
+      </Box>
     </Main>
   );
 };

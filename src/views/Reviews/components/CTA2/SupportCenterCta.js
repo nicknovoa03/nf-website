@@ -21,21 +21,29 @@ const SupportCenterCta = () => {
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
         <Grid item xs={12} md={6}>
           <Box marginBottom={4}>
+            <Typography
+              sx={{
+                textTransform: 'uppercase',
+                fontWeight: 'medium',
+              }}
+              gutterBottom
+              color={'secondary'}
+            >
+              REVIEW MONITORING
+            </Typography>
             <Typography sx={{ fontWeight: 700 }} variant={'h4'} gutterBottom>
-              Make the Webchat widget yours
+              Monitor all your reviews in one place
             </Typography>
             <Typography variant={'h6'} component={'p'} color={'text.secondary'}>
-              Add a personal touch to your chat window by customizing chat
-              icons, colors, and the greeting. Let visitors know who
-              they&apos;ll be chatting with. Add names, photos, or even a pic of
-              your business mascot.
+              Access all your customer reviews, for every location, from every
+              source, in one dashboard.
             </Typography>
           </Box>
           <Box>
             <Box marginY={1}>
-              <Typography variant={'h6'}>Create a request</Typography>
+              <Typography variant={'h6'}>Learn More Now</Typography>
               <Typography color={'text.secondary'}>
-                Never miss a beat again with your new webchat essentials.
+                Stay connected with all your customers all the time.
               </Typography>
             </Box>
             <Button variant={'contained'} size={'large'}>

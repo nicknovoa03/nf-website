@@ -69,7 +69,7 @@ const mock = [
     color: colors.red[500],
     title: 'Missed Call Text Back',
     subtitle:
-      'When you\'re away, have Natural Frameworks Systems follow up via text so you never lose another customer',
+      "When you're away, have Natural Frameworks Systems follow up via text so you never lose another customer",
     icon: (
       <svg
         height={30}

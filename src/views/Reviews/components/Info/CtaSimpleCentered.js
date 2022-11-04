@@ -22,7 +22,7 @@ const CtaSimpleCentered = () => {
             fontWeight: 700,
           }}
         >
-          Convert website visitors into leads with Webchat
+          Turn customer reviews into your competitive edge
         </Typography>
         <Box marginY={2}>
           <Divider />
@@ -34,9 +34,8 @@ const CtaSimpleCentered = () => {
           sx={{ fontWeight: 400 }}
           align={'center'}
         >
-          Every conversation starts with a name and a real phone number, so you
-          can immediately focus on closing the deal instead of fishing for
-          contact details.
+          Get new reviews, manage them and promote them across the web. All from
+          one dashboard.
         </Typography>
       </Box>
     </Container>

@@ -22,18 +22,28 @@ const CtaWithIllustration = () => {
           <Box>
             <Box marginBottom={2}>
               <Typography
+                sx={{
+                  textTransform: 'uppercase',
+                  fontWeight: 'medium',
+                }}
+                gutterBottom
+                color={'secondary'}
+              >
+                Google Direct Review
+              </Typography>
+              <Typography
                 variant="h4"
                 sx={{
                   fontWeight: 700,
                 }}
               >
-                Engage leads instantly on your site
+                The power of Google behind every review
               </Typography>
             </Box>
             <Box marginBottom={3}>
               <Typography variant="h6" component="p" color="text.secondary">
-                Engage your website visitors right when they come in. Livechat
-                makes the conversation real-time.
+                Get more customer reviews on Google by leveraging Renown&apos;s
+                direct integration with Google&apos;s private API.
               </Typography>
             </Box>
             <Box

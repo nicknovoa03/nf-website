@@ -25,11 +25,21 @@ const SimpleHeroWithImageAndCtaButtons = () => {
         <Box>
           <Box marginBottom={2}>
             <Typography
+              sx={{
+                textTransform: 'uppercase',
+                fontWeight: 'medium',
+              }}
+              gutterBottom
+              color={'secondary'}
+            >
+              Win More Business{' '}
+            </Typography>
+            <Typography
               variant="h2"
               color="text.primary"
               sx={{ fontWeight: 700 }}
             >
-              Convert Better With
+              Get found with
               <br />
               <Typography
                 color={'primary'}
@@ -42,14 +52,15 @@ const SimpleHeroWithImageAndCtaButtons = () => {
                   )} 0%)`,
                 }}
               >
-                Webchat
+                Reviews
               </Typography>
             </Typography>
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              Put webchat on your website in a breeze and get fresh leads
-              straight to your inbox.
+              Be the obvious choice for people who find you online. Stand out on
+              the sites that matter by easily collecting hundreds of customer
+              reviews.
             </Typography>
           </Box>
           <Box
