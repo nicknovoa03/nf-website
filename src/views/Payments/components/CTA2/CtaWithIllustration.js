@@ -27,13 +27,14 @@ const CtaWithIllustration = () => {
                   fontWeight: 700,
                 }}
               >
-                Industry-standard rates.
+                Customizable Invoices.
               </Typography>
             </Box>
             <Box marginBottom={3}>
               <Typography variant="h6" component="p" color="text.secondary">
-                No monthly cost—just pay a standard processing fee per
-                transaction, with one flat rate for every payment type.
+                Brand your invoices with your company name and logo. Specify
+                payment methods for certain types of customers or purchases
+                (only allow e-check, disallow credit card, etc.).
               </Typography>
             </Box>
             <Box

@@ -27,13 +27,14 @@ const CtaWithIllustration = () => {
                   fontWeight: 700,
                 }}
               >
-                Industry-standard rates.
+                Data At A Glance
               </Typography>
             </Box>
             <Box marginBottom={3}>
               <Typography variant="h6" component="p" color="text.secondary">
-                No monthly cost—just pay a standard processing fee per
-                transaction, with one flat rate for every payment type.
+                Easily see who has completed payment, and who needs follow up.
+                Quickly export to your accounting software with
+                integration-friendly data formats.
               </Typography>
             </Box>
             <Box

@@ -29,7 +29,7 @@ const SimpleHeroWithImageAndCtaButtons = () => {
               color="text.primary"
               sx={{ fontWeight: 700 }}
             >
-              Convert Better With
+              Streamline Client Invoicing &
               <br />
               <Typography
                 color={'primary'}
@@ -42,14 +42,15 @@ const SimpleHeroWithImageAndCtaButtons = () => {
                   )} 0%)`,
                 }}
               >
-                Webchat
+                Collect Payments
               </Typography>
             </Typography>
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              Put webchat on your website in a breeze and get fresh leads
-              straight to your inbox.
+              Get paid fast and keep the conversation alive. Whether you&apos;re
+              at home, in-store, or in the field. Hexona Systems text-to pay has
+              you covered.
             </Typography>
           </Box>
           <Box
