@@ -26,6 +26,10 @@ const pages = {
       title: 'About Us',
       href: '/aboutus',
     },
+    {
+      title: 'Contact',
+      href: '/contact',
+    },
   ],
 };
 
