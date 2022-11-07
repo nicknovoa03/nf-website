@@ -29,7 +29,7 @@ const SimpleHeroWithImageAndCtaButtons = () => {
               color="text.primary"
               sx={{ fontWeight: 700 }}
             >
-              Streamline Client Invoicing &
+              Streamline Invoicing &
               <br />
               <Typography
                 color={'primary'}
