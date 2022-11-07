@@ -6,7 +6,7 @@ import { Main } from 'layouts';
 import Container from 'components/Container';
 import { OnlineReviews, Messaging, Payment, Hero, Contact } from './components';
 
-import FeatureCardsWithColorfullIconsAndLearnMoreLink from 'blocks/FeatureCardsWithColorfullIconsAndLearnMoreLink';
+import Feature from './components/Feature';
 
 const Home = () => {
   const theme = useTheme();
@@ -40,7 +40,7 @@ const Home = () => {
           ></path>
         </Box>
         <Container>
-          <FeatureCardsWithColorfullIconsAndLearnMoreLink />
+          <Feature />
         </Container>
       </Box>
       <Container>
