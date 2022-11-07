@@ -65,8 +65,7 @@ const Webchat = () => {
         sx={{
           backgroundColor: theme.palette.alternate.main,
         }}
-      >
-      </Box>
+      ></Box>
     </Main>
   );
 };
