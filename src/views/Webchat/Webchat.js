@@ -7,7 +7,6 @@ import CTA2 from './components/CTA2';
 import CTA3 from './components/CTA3';
 import Hero from './components/Hero';
 import Info from './components/Info';
-import LogoGrid from './components/LogoGrid';
 
 const Webchat = () => {
   const theme = useTheme();
@@ -67,9 +66,6 @@ const Webchat = () => {
           backgroundColor: theme.palette.alternate.main,
         }}
       >
-        <Container>
-          <LogoGrid />
-        </Container>
       </Box>
     </Main>
   );
