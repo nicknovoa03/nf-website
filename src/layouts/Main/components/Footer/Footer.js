@@ -12,15 +12,17 @@ const Footer = () => {
   const theme = useTheme();
   return (
     <Grid container spacing={2}>
-      <Grid item xs={12}>
-        <Box alignItems={'center'}>
-          <Typography
-            align={'center'}
-            variant={'h6'}
-            color={theme.palette.mode}
-            sx={{ fontWeight: 800 }}
-          >
-            Meet your max potential with Natural Frameworks today!
+      <Grid item xs={12} md={6}>
+        <Box>
+          <Typography align={'center'} color={theme.palette.mode}>
+            Email Address: contact@naturalframeworks.com
+          </Typography>
+        </Box>
+      </Grid>
+      <Grid item xs={12} md={6}>
+        <Box>
+          <Typography align={'center'} color={theme.palette.mode}>
+            Phone: (210) 791-8336
           </Typography>
         </Box>
       </Grid>
