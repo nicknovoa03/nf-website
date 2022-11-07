@@ -4,6 +4,7 @@ import { Main } from 'layouts';
 import React from 'react';
 import CTA from './components/CTA';
 import CTA2 from './components/CTA2';
+import CTA3 from './components/CTA3';
 import Hero from './components/Hero';
 import Info from './components/Info';
 import LogoGrid from './components/LogoGrid';
@@ -53,12 +54,23 @@ const Webchat = () => {
         }}
       >
         <Container>
-          <LogoGrid />
+          <CTA3 />
         </Container>
       </Box>
+
       <Container>
         <CTA2 />
       </Container>
+      <Box
+        position={'relative'}
+        sx={{
+          backgroundColor: theme.palette.alternate.main,
+        }}
+      >
+        <Container>
+          <LogoGrid />
+        </Container>
+      </Box>
     </Main>
   );
 };
