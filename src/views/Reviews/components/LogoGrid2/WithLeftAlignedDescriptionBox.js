@@ -49,6 +49,10 @@ const WithLeftAlignedDescriptionBox = () => {
                           ? 'brightness(0) invert(0.7)'
                           : 'none',
                     }}
+                    data-aos={'flip-up'}
+                    data-aos-delay={i * 150}
+                    data-aos-offset={100}
+                    data-aos-duration={600}
                   />
                 </Box>
               ))}

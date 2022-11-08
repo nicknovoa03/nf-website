@@ -80,11 +80,16 @@ const mock = [
 
 const FeaturesWithSimpleIcons = () => {
   const theme = useTheme();
-
   return (
     <Container>
       <Box>
-        <Box marginBottom={4}>
+        <Box
+          marginBottom={4}
+          data-aos={'fade-up'}
+          data-aos-delay={100}
+          data-aos-offset={100}
+          data-aos-duration={600}
+        >
           <Typography
             sx={{
               textTransform: 'uppercase',
@@ -122,6 +127,10 @@ const FeaturesWithSimpleIcons = () => {
                   alignItems: 'center',
                   padding: 0,
                 }}
+                data-aos={'fade-down'}
+                data-aos-delay={i * 100}
+                data-aos-offset={100}
+                data-aos-duration={600}
               >
                 <Box
                   component={ListItemAvatar}

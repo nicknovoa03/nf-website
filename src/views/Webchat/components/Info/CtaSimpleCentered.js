@@ -1,18 +1,18 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import useMediaQuery from '@mui/material/useMediaQuery';
 import Container from 'components/Container';
-import { Divider, useTheme } from '@mui/material';
+import { Divider } from '@mui/material';
 
 const CtaSimpleCentered = () => {
-  const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true,
-  });
   return (
     <Container>
-      <Box data-aos={isMd ? 'fade-up' : 'fade-up'}>
+      <Box
+        data-aos={'flip-down'}
+        data-aos-delay={100}
+        data-aos-offset={100}
+        data-aos-duration={600}
+      >
         <Typography
           variant="h4"
           color="text.primary"
@@ -21,11 +21,15 @@ const CtaSimpleCentered = () => {
           sx={{
             fontWeight: 700,
           }}
+          data-aos={'fade-left'}
+          data-aos-delay={100}
+          data-aos-offset={100}
+          data-aos-duration={600}
         >
           Convert website visitors into leads with Webchat
         </Typography>
         <Box marginY={2}>
-          <Divider />
+          <Divider sx={{ marginLeft: '20%', marginRight: '20%' }} />
         </Box>
         <Typography
           variant="h6"
@@ -33,6 +37,10 @@ const CtaSimpleCentered = () => {
           color="text.secondary"
           sx={{ fontWeight: 400 }}
           align={'center'}
+          data-aos={'fade-right'}
+          data-aos-delay={100}
+          data-aos-offset={100}
+          data-aos-duration={600}
         >
           Every conversation starts with a name and a real phone number, so you
           can immediately focus on closing the deal instead of fishing for

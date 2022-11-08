@@ -130,7 +130,7 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
     defaultMatches: true,
   });
   return (
-    <Box data-aos={isMd ? 'fade-up' : 'fade-up'}>
+    <Box>
       <Box marginBottom={5}>
         <Typography
           variant="h3"
@@ -152,7 +152,7 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
               height={1}
               sx={{
                 textDecoration: 'none',
-                transition: 'all .1s',
+                transition: 'all .1s ease-in-out',
                 '&:hover': {
                   transform: 'translateY(-20px)',
                 },
@@ -161,7 +161,16 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
                 },
               }}
             >
-              <Box component={Card} padding={4} width={1} height={1}>
+              <Box
+                component={Card}
+                padding={4}
+                width={1}
+                height={1}
+                data-aos={isMd ? 'fade-up' : 'fade-up'}
+                data-aos-delay={i * 100}
+                data-aos-offset={100}
+                data-aos-duration={600}
+              >
                 <Box display={'flex'} flexDirection={'column'}>
                   <Box
                     component={Avatar}

@@ -151,7 +151,16 @@ const FeaturesWithCardRepresentation = () => {
         <Grid container spacing={4}>
           {mock.map((item, i) => (
             <Grid item xs={12} sm={6} md={4} key={i}>
-              <Box component={Card} padding={4} width={1} height={1}>
+              <Box
+                component={Card}
+                padding={4}
+                width={1}
+                height={1}
+                data-aos={'flip-up'}
+                data-aos-delay={i * 100}
+                data-aos-offset={100}
+                data-aos-duration={600}
+              >
                 <Box display={'flex'} flexDirection={'column'}>
                   <Box
                     component={Avatar}

@@ -75,7 +75,13 @@ const SimpleCentered = () => {
     <Container>
       <Box data-aos={isMd ? 'fade-left' : 'fade-up'}>
         <Box marginBottom={4}>
-          <Box marginBottom={2}>
+          <Box
+            marginBottom={2}
+            data-aos={'flip-down'}
+            data-aos-delay={100}
+            data-aos-offset={100}
+            data-aos-duration={600}
+          >
             <Typography
               variant="h4"
               color="text.primary"
@@ -106,6 +112,10 @@ const SimpleCentered = () => {
                   display={'flex'}
                   flexDirection={'column'}
                   alignItems={'center'}
+                  data-aos={'flip-up'}
+                  data-aos-delay={i * 100}
+                  data-aos-offset={100}
+                  data-aos-duration={600}
                 >
                   <Box
                     component={Avatar}
