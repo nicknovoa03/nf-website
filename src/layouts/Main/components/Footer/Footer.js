@@ -15,7 +15,7 @@ const Footer = () => {
       <Grid item xs={12} md={6}>
         <Box>
           <Typography align={'center'} color={theme.palette.mode}>
-            Email Address: contact@naturalframeworks.com
+            Email: contact@naturalframeworks.com
           </Typography>
         </Box>
       </Grid>
