@@ -46,7 +46,11 @@ const Topbar = ({ onSidebarOpen, pages, colorinvert = false }) => {
           />
         </Box>
         <Box marginLeft={3}>
-          <Button variant="contained" colorinvert={colorinvert.toString()}>
+          <Button
+            href="/contact"
+            variant="contained"
+            colorinvert={colorinvert.toString()}
+          >
             Contact Us
           </Button>
         </Box>

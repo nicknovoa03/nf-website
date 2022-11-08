@@ -40,7 +40,9 @@ const SidebarNav = ({ pages }) => {
           />
         </Box>
         <Box marginTop={2}>
-          <Button variant="contained">Contact Us</Button>
+          <Button href="/contact" variant="contained">
+            Contact Us
+          </Button>
         </Box>
       </Box>
     </Box>
