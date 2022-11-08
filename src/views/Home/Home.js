@@ -6,7 +6,7 @@ import { Main } from 'layouts';
 import Container from 'components/Container';
 import { OnlineReviews, Messaging, Payment, Hero, Contact } from './components';
 
-import Feature from '../AboutUs/components/Feature';
+import Feature from '../AboutUs/components/Features';
 
 const Home = () => {
   const theme = useTheme();

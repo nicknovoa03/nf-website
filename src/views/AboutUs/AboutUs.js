@@ -6,7 +6,7 @@ import Container from 'components/Container';
 import { Hero } from 'views/Home/components';
 import Info from './components/Info';
 import { Box } from '@mui/system';
-import Feature from './components/Feature';
+import Features from './components/Features';
 
 const AboutUs = () => {
   const theme = useTheme();
@@ -26,9 +26,8 @@ const AboutUs = () => {
           <Info />
         </Container>
       </Box>
-
       <Container>
-        <Feature />
+        <Features />
       </Container>
     </Main>
   );
