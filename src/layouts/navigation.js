@@ -24,7 +24,7 @@ const pages = {
   company: [
     {
       title: 'About Us',
-      href: '/aboutus',
+      href: '/about-us',
     },
     {
       title: 'Contact',

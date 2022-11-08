@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import Avatar from '@mui/material/Avatar';
 import { alpha } from '@mui/material/styles';
-import { colors, Divider, useTheme } from '@mui/material';
+import { colors, Divider, useMediaQuery, useTheme } from '@mui/material';
 
 import AnalyticsOutlinedIcon from '@mui/icons-material/AnalyticsOutlined';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
@@ -17,8 +17,9 @@ import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
 const mock = [
   {
     color: colors.deepOrange[500],
-    title: 'Business Analytics',
-    subtitle: 'Track your data to make smarter, data-driven decisions.',
+    title: 'Being Relevant',
+    subtitle:
+      'We want to help you be relevant so you can serve your customers at a higher level.',
     icon: (
       <svg
         height={30}
@@ -33,9 +34,9 @@ const mock = [
   },
   {
     color: colors.yellow[500],
-    title: 'Online Reviews',
+    title: 'Maximum Growth',
     subtitle:
-      'Automate your online reviews with a few simple clicks & respond to reviews in 1 place',
+      'Our goal is to help give you the tools & resources to maximize your growth.',
     icon: (
       <svg
         height={30}
@@ -50,9 +51,9 @@ const mock = [
   },
   {
     color: colors.cyan[500],
-    title: 'Webchat',
+    title: 'Positive Impact',
     subtitle:
-      'Convert more website visitors into leads & sales conversations with Webchat.',
+      'We want to help you amplify the positive impact you have in your community.',
     icon: (
       <svg
         height={30}
@@ -67,9 +68,9 @@ const mock = [
   },
   {
     color: colors.red[500],
-    title: 'Missed Call Text Back',
+    title: 'Cross-functional',
     subtitle:
-      'When you\'re away, have Natural Frameworks Systems follow up via text so you never lose another customer',
+      'CHATT\'s tools give you the ability to perform at your best on all platforms.',
     icon: (
       <svg
         height={30}
@@ -84,9 +85,9 @@ const mock = [
   },
   {
     color: colors.green[500],
-    title: 'Payments',
+    title: 'Multidisciplinary Team',
     subtitle:
-      'Easy text 2 pay client invoicing. Simplify your client invoicing & get paid faster.',
+      'We employ a highly diverse team in skills & culture to serve you better.',
     icon: (
       <svg
         height={30}
@@ -101,8 +102,8 @@ const mock = [
   },
   {
     color: colors.lightBlue[500],
-    title: 'CRM',
-    subtitle: 'Grow your audience & know where new leads are coming from',
+    title: 'Cutting-Edge Technology',
+    subtitle: 'We strive to bring you the best tools the market has to offer.',
     icon: (
       <svg
         height={24}
@@ -125,8 +126,11 @@ const mock = [
 
 const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
   const theme = useTheme();
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
   return (
-    <Box>
+    <Box data-aos={isMd ? 'fade-up' : 'fade-up'}>
       <Box marginBottom={5}>
         <Typography
           variant="h3"
@@ -135,21 +139,7 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
           sx={{ fontWeight: 500 }}
           marginBottom={5}
         >
-          All the automations{' '}
-          <Typography
-            color={theme.palette.primary.light}
-            component={'span'}
-            variant={'inherit'}
-            sx={{
-              background: `linear-gradient(180deg, transparent 82%, ${alpha(
-                theme.palette.primary.main,
-                0.3,
-              )} 0%)`,
-            }}
-          >
-            your business{' '}
-          </Typography>
-          needs to succeed
+          Our Standards
         </Typography>
         <Divider variant="middle" />
       </Box>
