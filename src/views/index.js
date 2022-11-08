@@ -5,3 +5,4 @@ export { default as Webchat } from './Webchat';
 export { default as Payments } from './Payments';
 export { default as HireUs } from './HireUs';
 export { default as AboutUs } from './AboutUs';
+export { default as Pricing } from './Pricing';

@@ -26,7 +26,7 @@ const Hero = () => {
               color="text.primary"
               sx={{ fontWeight: 700 }}
             >
-              We Specialize in Reviews & Messaging For{' '}
+              Natural{' '}
               <Typography
                 color={'primary'}
                 component={'span'}
@@ -38,15 +38,15 @@ const Hero = () => {
                   )} 0%)`,
                 }}
               >
-                Local Business
+                Frameworks
               </Typography>
             </Typography>
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              Natural Frameworks&apos; goal is to help small businesses engage
-              with their customer&apos;s quicker & easier to improve overall
-              customer experience to help everyone grow.
+              Our goal is to help small businesses engage with their
+              customer&apos;s quicker & easier to improve overall customer
+              experience to help everyone grow.
             </Typography>
           </Box>
           <Box
