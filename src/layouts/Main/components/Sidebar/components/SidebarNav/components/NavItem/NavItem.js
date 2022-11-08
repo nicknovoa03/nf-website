@@ -26,12 +26,7 @@ const NavItem = ({ title, items }) => {
         elevation={0}
         sx={{ backgroundColor: 'transparent' }}
       >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-          sx={{ padding: 0 }}
-        >
+        <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ padding: 0 }}>
           <Typography
             fontWeight={hasActiveLink() ? 600 : 400}
             color={hasActiveLink() ? 'primary' : 'text.primary'}

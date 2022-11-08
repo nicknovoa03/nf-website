@@ -7,6 +7,7 @@ import NavItem from './components/NavItem';
 
 import logo from '../../../../../../assets/logos/NF-logo.png';
 import Image from 'next/image';
+import { Typography } from '@mui/material';
 
 const SidebarNav = ({ pages }) => {
   const { services: servicePages, company: companyPages } = pages;
@@ -38,6 +39,13 @@ const SidebarNav = ({ pages }) => {
             id={'company-pages'}
             items={companyPages}
           />
+        </Box>
+        <Box>
+          <Button href="/pricing" variant="text">
+            <Typography fontWeight={400} marginLeft={-1} color={'text.primary'}>
+              Pricing
+            </Typography>
+          </Button>
         </Box>
         <Box marginTop={2}>
           <Button href="/contact" variant="contained">

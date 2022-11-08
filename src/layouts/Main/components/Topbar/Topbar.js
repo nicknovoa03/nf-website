@@ -9,6 +9,7 @@ import { NavItem } from './components';
 
 import logo from '../../../../assets/logos/NF-logo.png';
 import Image from 'next/image';
+import { Typography } from '@mui/material';
 
 const Topbar = ({ onSidebarOpen, pages, colorinvert = false }) => {
   const theme = useTheme();
@@ -44,6 +45,13 @@ const Topbar = ({ onSidebarOpen, pages, colorinvert = false }) => {
             id={'company-pages'}
             items={companyPages}
           />
+        </Box>
+        <Box marginLeft={3}>
+          <Button href="/pricing" variant="text">
+            <Typography fontWeight={400} color="text.primary">
+              Pricing
+            </Typography>
+          </Button>
         </Box>
         <Box marginLeft={3}>
           <Button
