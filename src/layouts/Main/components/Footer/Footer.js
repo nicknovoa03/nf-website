@@ -11,9 +11,11 @@ const Footer = () => {
     <Grid container spacing={2}>
       <Grid item xs={12} md={6}>
         <Box>
-          <Typography align={'center'}>
-            Email: contact@naturalframeworks.com
-          </Typography>
+          <Link href="mailto:contact@naturalframeworks.com" color='inherit' underline='hover'>
+            <Typography align={'center'}>
+              Email: contact@naturalframeworks.com
+            </Typography>
+          </Link>
         </Box>
       </Grid>
       <Grid item xs={12} md={6}>
