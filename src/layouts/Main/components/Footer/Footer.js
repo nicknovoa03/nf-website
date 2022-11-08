@@ -3,27 +3,22 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
-
-import logo from '../../../../assets/logos/NF-logo.png';
 import { Button, Link } from '@mui/material';
-import { useTheme } from '@mui/system';
+import logo from '../../../../assets/logos/NF-logo.png';
 
 const Footer = () => {
-  const theme = useTheme();
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} md={6}>
         <Box>
-          <Typography align={'center'} color={theme.palette.mode}>
-            Email Address: contact@naturalframeworks.com
+          <Typography align={'center'}>
+            Email: contact@naturalframeworks.com
           </Typography>
         </Box>
       </Grid>
       <Grid item xs={12} md={6}>
         <Box>
-          <Typography align={'center'} color={theme.palette.mode}>
-            Phone: (210) 791-8336
-          </Typography>
+          <Typography align={'center'}>Phone: (210) 791-8336</Typography>
         </Box>
       </Grid>
       <Grid item xs={12}>

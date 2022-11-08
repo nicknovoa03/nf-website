@@ -2,7 +2,6 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import useMediaQuery from '@mui/material/useMediaQuery';
 import Container from 'components/Container';
 
 const mock = [
@@ -16,12 +15,10 @@ const mock = [
 
 const LogoGridSimpleCentered = () => {
   const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true,
-  });
+
   return (
     <Container>
-      <Box data-aos={isMd ? 'fade-down' : 'fade-up'}>
+      <Box data-aos={'fade-left'}>
         <Box marginBottom={4}>
           <Typography
             gutterBottom
@@ -47,6 +44,10 @@ const LogoGridSimpleCentered = () => {
                       ? 'brightness(0) invert(0.7)'
                       : 'none',
                 }}
+                data-aos={'flip-up'}
+                data-aos-delay={i * 150}
+                data-aos-offset={100}
+                data-aos-duration={600}
               />
             </Box>
           ))}

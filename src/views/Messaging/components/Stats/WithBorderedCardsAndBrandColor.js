@@ -72,6 +72,10 @@ const WithBorderedCardsAndBrandColor = () => {
                   width={1}
                   height={1}
                   variant={'outlined'}
+                  data-aos={'flip-down'}
+                  data-aos-delay={i * 100}
+                  data-aos-offset={100}
+                  data-aos-duration={600}
                 >
                   <Box
                     display={'flex'}
