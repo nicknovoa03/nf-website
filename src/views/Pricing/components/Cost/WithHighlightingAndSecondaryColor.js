@@ -16,16 +16,18 @@ import Container from 'components/Container';
 
 const mock = [
   {
-    title: 'Startup',
+    title: 'Basic',
     price: '$147',
     features: ['1 Business Automation'],
     isHighlighted: true,
+    paymentLink: 'https://pay.naturalframeworks.com/basic',
   },
   {
-    title: 'Essentials',
+    title: 'Essential',
     price: '$297',
     features: ['Reviews', 'Messaging', 'Webchat', 'Textable Business Number'],
     isHighlighted: true,
+    paymentLink: 'https://pay.naturalframeworks.com/essential',
   },
   {
     title: 'Professional',
@@ -39,6 +41,7 @@ const mock = [
       'Full Customer Support Access',
     ],
     isHighlighted: true,
+    paymentLink: 'https://pay.naturalframeworks.com/professional',
   },
 ];
 
@@ -148,7 +151,7 @@ const WithHighlightingAndSecondaryColor = () => {
                 <Button
                   size={'large'}
                   variant={'contained'}
-                  href="https://pay.naturalframeworks.com/essential"
+                  href={item.paymentLink}
                 >
                   Learn More
                 </Button>

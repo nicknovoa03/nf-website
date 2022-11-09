@@ -51,14 +51,15 @@ const features = [
 
 const pricing = [
   {
-    title: 'Startup',
+    title: 'Basic',
     price: {
       monthly: 147,
       annual: 147,
     },
     features: [8],
     isHighlighted: false,
-    btnText: 'Get Startup',
+    btnText: 'Get Basic',
+    paymentLink: 'https://pay.naturalframeworks.com/basic',
   },
   {
     title: 'Essentials',
@@ -69,6 +70,7 @@ const pricing = [
     features: [1, 2, 3, 8],
     isHighlighted: true,
     btnText: 'Get Essentials',
+    paymentLink: 'https://pay.naturalframeworks.com/essential',
   },
   {
     title: 'Professional',
@@ -79,6 +81,7 @@ const pricing = [
     features: [1, 2, 3, 4, 5, 6, 7, 8],
     isHighlighted: false,
     btnText: 'Get Professional',
+    paymentLink: 'https://pay.naturalframeworks.com/professional',
   },
 ];
 
@@ -236,6 +239,7 @@ const CompareTable = () => {
                   <Button
                     size={'large'}
                     variant={item.isHighlighted ? 'contained' : 'outlined'}
+                    href={item.paymentLink}
                   >
                     {item.btnText}
                   </Button>
