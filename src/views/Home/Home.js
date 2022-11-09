@@ -7,6 +7,7 @@ import Container from 'components/Container';
 import { OnlineReviews, Messaging, Payment, Hero, Contact } from './components';
 
 import Feature from '../AboutUs/components/Features';
+import Info from './components/Info';
 
 const Home = () => {
   const theme = useTheme();
@@ -43,8 +44,9 @@ const Home = () => {
           <Feature />
         </Container>
       </Box>
+      <a id="features" />
       <Container>
-        <a id="OnlineReviews" />
+        <Info />
         <OnlineReviews />
       </Container>
       <Container paddingY={'0 !important'}>

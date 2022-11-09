@@ -138,6 +138,10 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
           color="text.primary"
           sx={{ fontWeight: 500 }}
           marginBottom={5}
+          data-aos={'zoom-in-up'}
+          data-aos-delay={100}
+          data-aos-offset={100}
+          data-aos-duration={600}
         >
           Our Standards
         </Typography>
