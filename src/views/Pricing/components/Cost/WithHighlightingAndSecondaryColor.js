@@ -145,7 +145,11 @@ const WithHighlightingAndSecondaryColor = () => {
               </CardContent>
               <Box flexGrow={1} />
               <CardActions sx={{ justifyContent: 'flex-end', padding: 4 }}>
-                <Button size={'large'} variant={'contained'}>
+                <Button
+                  size={'large'}
+                  variant={'contained'}
+                  href="https://pay.naturalframeworks.com/essential"
+                >
                   Learn More
                 </Button>
               </CardActions>
