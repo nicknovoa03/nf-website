@@ -47,6 +47,7 @@ const CtaWithIllustration = () => {
                 color="primary"
                 size="large"
                 fullWidth={!isMd}
+                href="pricing"
               >
                 Get Started
               </Box>

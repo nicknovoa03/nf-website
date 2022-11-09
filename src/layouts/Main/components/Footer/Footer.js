@@ -60,7 +60,7 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/docs/introduction"
+                href="/contact"
                 color="text.primary"
                 variant={'subtitle2'}
               >
@@ -72,8 +72,7 @@ const Footer = () => {
                 variant="outlined"
                 color="primary"
                 component="a"
-                target="blank"
-                href="https://mui.com/store/items/the-front-landing-page/"
+                href="pricing"
                 size="small"
               >
                 Get Started

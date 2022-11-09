@@ -47,7 +47,7 @@ const SupportCenterCta = () => {
                 Stay connected to all customers across all platforms
               </Typography>
             </Box>
-            <Button variant={'contained'} size={'large'}>
+            <Button variant={'contained'} size={'large'} href="pricing">
               Get started
             </Button>
           </Box>

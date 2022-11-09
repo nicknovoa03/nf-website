@@ -58,8 +58,9 @@ const CtaWithIllustration = () => {
                 color="primary"
                 size="large"
                 fullWidth={!isMd}
+                href="contact"
               >
-                Contact sales
+                Contact 
               </Box>
               <Box
                 component={Button}
@@ -69,8 +70,9 @@ const CtaWithIllustration = () => {
                 fullWidth={!isMd}
                 marginTop={{ xs: 1, sm: 0 }}
                 marginLeft={{ sm: 2 }}
+                href="pricing"
               >
-                Subscribe
+                Learn More
               </Box>
             </Box>
           </Box>

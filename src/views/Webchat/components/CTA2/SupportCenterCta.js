@@ -48,7 +48,7 @@ const SupportCenterCta = () => {
                 Never miss a beat again with your new webchat essentials.
               </Typography>
             </Box>
-            <Button variant={'contained'} size={'large'}>
+            <Button variant={'contained'} size={'large'} href="pricing">
               Get started
             </Button>
           </Box>

@@ -72,6 +72,7 @@ const SimpleHeroWithImageAndCtaButtons = () => {
               color="primary"
               size="large"
               fullWidth={isMd ? false : true}
+              href="pricing"
             >
               Get Started
             </Button>

@@ -16,10 +16,6 @@ const pages = {
       title: 'Payments',
       href: '/payments',
     },
-    {
-      title: 'Pricing',
-      href: '/Pricing',
-    },
   ],
   company: [
     {
