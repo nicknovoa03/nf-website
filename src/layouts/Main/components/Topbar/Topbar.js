@@ -11,7 +11,7 @@ import logo from '../../../../assets/logos/NF-logo.png';
 import Image from 'next/image';
 import { Typography } from '@mui/material';
 
-const Topbar = ({ onSidebarOpen, pages, colorinvert = false }) => {
+const Topbar = ({ onSidebarOpen, pages }) => {
   const theme = useTheme();
   const { services: servicePages, company: companyPages } = pages;
 
@@ -54,10 +54,7 @@ const Topbar = ({ onSidebarOpen, pages, colorinvert = false }) => {
           </Button>
         </Box>
         <Box marginLeft={3}>
-          <Button
-            href="/contact"
-            variant="contained"
-          >
+          <Button href="/contact" variant="contained">
             Contact Us
           </Button>
         </Box>

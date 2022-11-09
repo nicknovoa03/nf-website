@@ -60,7 +60,7 @@ const CtaWithIllustration = () => {
                 fullWidth={!isMd}
                 href="contact"
               >
-                Contact 
+                Contact
               </Box>
               <Box
                 component={Button}
