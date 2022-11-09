@@ -57,7 +57,6 @@ const Topbar = ({ onSidebarOpen, pages, colorinvert = false }) => {
           <Button
             href="/contact"
             variant="contained"
-            colorinvert={colorinvert.toString()}
           >
             Contact Us
           </Button>
