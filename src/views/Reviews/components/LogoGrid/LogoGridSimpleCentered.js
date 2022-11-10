@@ -22,7 +22,12 @@ const LogoGridSimpleCentered = () => {
   });
   return (
     <Container>
-      <Box data-aos={isMd ? 'fade-down' : 'fade-up'}>
+      <Box
+        data-aos={isMd ? 'fade-down' : 'fade-up'}
+        data-aos-delay={100}
+        data-aos-offset={100}
+        data-aos-duration={1000}
+      >
         <Box marginBottom={4}>
           <Typography
             gutterBottom

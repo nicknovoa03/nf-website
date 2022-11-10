@@ -1,18 +1,13 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import useMediaQuery from '@mui/material/useMediaQuery';
 import Container from 'components/Container';
-import { Divider, useTheme } from '@mui/material';
+import { Divider } from '@mui/material';
 
 const CtaSimpleCentered = () => {
-  const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true,
-  });
   return (
     <Container>
-      <Box data-aos={isMd ? 'fade-up' : 'fade-up'}>
+      <Box>
         <Typography
           variant="h4"
           color="text.primary"

@@ -8,16 +8,21 @@ import Container from 'components/Container';
 
 import GoogleYelpFacebook from '../../../../assets/logos/GoogleYelpFacebook.png';
 import Image from 'next/image';
+import { useMediaQuery, useTheme } from '@mui/material';
 
 const mock = [GoogleYelpFacebook];
 
 const WithLeftAlignedDescriptionBox = () => {
+  const theme = useTheme();
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
   return (
     <Container maxWidth={1300}>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Box
-            data-aos={'fade-down-right'}
+            data-aos={isMd ? 'fade-down-right' : 'fade-up'}
             data-aos-delay={100}
             data-aos-offset={100}
             data-aos-duration={1000}
@@ -33,7 +38,7 @@ const WithLeftAlignedDescriptionBox = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Box
-            data-aos={'fade-up-left'}
+            data-aos={isMd ? 'fade-up-left' : 'fade-up'}
             data-aos-delay={100}
             data-aos-offset={100}
             data-aos-duration={1000}

@@ -22,7 +22,7 @@ const CtaWithIllustration = () => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Box
-            data-aos={'fade-up-right'}
+            data-aos={isMd ? 'fade-up-right' : 'fade-up'}
             data-aos-delay={100}
             data-aos-offset={100}
             data-aos-duration={1000}
@@ -77,7 +77,7 @@ const CtaWithIllustration = () => {
             width={1}
             display={'flex'}
             justifyContent={'center'}
-            data-aos={'fade-down-left'}
+            data-aos={isMd ? 'fade-down-left' : 'fade-up'}
             data-aos-delay={100}
             data-aos-offset={100}
             data-aos-duration={1000}
@@ -86,7 +86,7 @@ const CtaWithIllustration = () => {
               height={1}
               width={1}
               maxWidth={450}
-              data-aos={'flip-up'}
+              data-aos={isMd ? 'flip-up' : 'fade-up'}
               data-aos-delay={100}
               data-aos-offset={100}
               data-aos-duration={600}
