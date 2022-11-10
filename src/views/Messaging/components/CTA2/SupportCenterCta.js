@@ -36,7 +36,7 @@ const SupportCenterCta = () => {
             maxWidth={600}
             height={1}
             width={1}
-            data-aos={'fade-down-right'}
+            data-aos={isMd ? 'fade-down-right' : 'fade-up'}
             data-aos-delay={100}
             data-aos-offset={100}
             data-aos-duration={600}
@@ -48,7 +48,7 @@ const SupportCenterCta = () => {
           item
           xs={12}
           md={6}
-          data-aos={'fade-down-left'}
+          data-aos={isMd ? 'fade-down-left' : 'fade-up'}
           data-aos-delay={100}
           data-aos-offset={100}
           data-aos-duration={600}

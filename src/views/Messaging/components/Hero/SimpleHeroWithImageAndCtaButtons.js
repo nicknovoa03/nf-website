@@ -29,7 +29,7 @@ const SimpleHeroWithImageAndCtaButtons = () => {
           height={1}
           width={1}
           marginLeft={{ md: 10 }}
-          data-aos={'fade-right'}
+          data-aos={isMd ? 'fade-right' : 'fade-up'}
           data-aos-delay={100}
           data-aos-offset={100}
           data-aos-duration={600}
@@ -43,7 +43,7 @@ const SimpleHeroWithImageAndCtaButtons = () => {
         xs={12}
         md={6}
         alignItems={'center'}
-        data-aos={'fade-left'}
+        data-aos={isMd ? 'fade-left' : 'fade-up'}
         data-aos-delay={100}
         data-aos-offset={100}
         data-aos-duration={600}

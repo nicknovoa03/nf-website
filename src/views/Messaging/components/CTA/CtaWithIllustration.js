@@ -23,7 +23,7 @@ const CtaWithIllustration = () => {
         <Grid item xs={12} md={6}>
           <Box
             marginTop={{ md: 30 }}
-            data-aos={'fade-up-right'}
+            data-aos={isMd ? 'fade-up-right' : 'fade-up'}
             data-aos-delay={100}
             data-aos-offset={100}
             data-aos-duration={600}
@@ -78,7 +78,7 @@ const CtaWithIllustration = () => {
             width={1}
             maxWidth={550}
             align="center"
-            data-aos={'fade-up-left'}
+            data-aos={isMd ? 'fade-up-left' : 'fade-up'}
             data-aos-delay={100}
             data-aos-offset={100}
             data-aos-duration={600}

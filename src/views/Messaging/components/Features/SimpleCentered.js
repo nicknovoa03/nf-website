@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { alpha, useTheme } from '@mui/material/styles';
+import { alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
@@ -9,6 +9,7 @@ import Container from 'components/Container';
 
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import FastForwardIcon from '@mui/icons-material/FastForward';
+import { useMediaQuery, useTheme } from '@mui/material';
 const mock = [
   {
     title: 'Be channel-agnostic.',
@@ -67,14 +68,16 @@ const mock = [
 
 const SimpleCentered = () => {
   const theme = useTheme();
-
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
   return (
     <Container>
       <Box>
         <Box marginBottom={4}>
           <Box
             marginBottom={2}
-            data-aos={'flip-down'}
+            data-aos={isMd ? 'flip-down' : 'fade-up'}
             data-aos-delay={100}
             data-aos-offset={100}
             data-aos-duration={600}
@@ -109,7 +112,7 @@ const SimpleCentered = () => {
                   display={'flex'}
                   flexDirection={'column'}
                   alignItems={'center'}
-                  data-aos={'flip-up'}
+                  data-aos={isMd ? 'flip-up' : 'fade-up'}
                   data-aos-delay={i * 100}
                   data-aos-offset={100}
                   data-aos-duration={600}

@@ -1,4 +1,4 @@
-import { Box, useTheme } from '@mui/material';
+import { Box, useMediaQuery, useTheme } from '@mui/material';
 import Container from 'components/Container';
 import { Main } from 'layouts';
 import React from 'react';
@@ -13,7 +13,9 @@ import Stats from './components/Stats';
 
 const Messaging = () => {
   const theme = useTheme();
-
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
   return (
     <Main>
       <Container>
@@ -24,7 +26,10 @@ const Messaging = () => {
         sx={{
           backgroundColor: theme.palette.alternate.main,
         }}
-        data-aos={'flip-down'}
+        data-aos={isMd ? 'flip-down' : 'fade-up'}
+        data-aos-delay={100}
+        data-aos-offset={100}
+        data-aos-duration={1000}
       >
         <Box
           component={'svg'}

@@ -14,7 +14,7 @@ const CtaSimpleCentered = () => {
 
   return (
     <Container>
-      <Box data-aos={isMd ? 'flip-down' : 'flip-down'}>
+      <Box data-aos={isMd ? 'flip-down' : 'fade-up'}>
         <Typography
           variant="h3"
           color="text.primary"
