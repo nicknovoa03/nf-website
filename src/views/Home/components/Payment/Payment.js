@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
-import { colors } from '@mui/material';
+import { Button, colors } from '@mui/material';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -9,7 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-import Payments from '../../../../assets/unDraw/Payment.svg';
+import Payments from '../../../../assets/template/Payment.png';
 import Image from 'next/image';
 
 const Payment = () => {
@@ -42,7 +42,9 @@ const Payment = () => {
                 },
               }}
             >
-              <Image alt="Natural Frameworks" src={Payments} />
+              <Box align="center">
+                <Image alt="Natural Frameworks" src={Payments} />
+              </Box>
             </Grid>
             <Grid item xs={6}>
               <Typography variant={'h6'} fontWeight={700} gutterBottom>
@@ -70,6 +72,8 @@ const Payment = () => {
             flexDirection={'column'}
             justifyContent={{ xs: 'flex-start', md: 'space-between' }}
             height={1}
+            maxHeight={550}
+            marginTop={isMd ? 8 : 0}
           >
             <Box>
               <Typography variant={'h4'} fontWeight={700} gutterBottom>
@@ -87,9 +91,21 @@ const Payment = () => {
                 secure payment link delivered right to their phone.
               </Typography>
             </Box>
+            <Box boxShadow={4} marginY={{ xs: 4 }}>
+              <Button
+                variant="contained"
+                size="large"
+                fullWidth={true}
+                href="/payments"
+                sx={{
+                  backgroundColor: theme.palette.primary.light,
+                }}
+              >
+                Get Started
+              </Button>
+            </Box>
             <Box
               component={Card}
-              marginTop={{ xs: 2, md: 0 }}
               marginBottom={{ md: 8 }}
               boxShadow={0}
               borderRadius={2}

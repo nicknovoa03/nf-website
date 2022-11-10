@@ -8,7 +8,6 @@ import Grid from '@mui/material/Grid';
 
 import PhoneWithData from '../../../../assets/PhoneWithData.svg';
 import Image from 'next/image';
-import { Link } from '@mui/material';
 
 const Hero = () => {
   const theme = useTheme();
@@ -55,16 +54,15 @@ const Hero = () => {
             flexDirection={{ xs: 'column', sm: 'row' }}
             alignItems={{ xs: 'stretched', sm: 'flex-start' }}
           >
-            <Link href="#features">
-              <Button
-                variant="contained"
-                color="primary"
-                size="large"
-                fullWidth={isMd ? false : true}
-              >
-                Get Started
-              </Button>
-            </Link>
+            <Button
+              variant="contained"
+              color="primary"
+              size="large"
+              fullWidth={isMd ? false : true}
+              href="#features"
+            >
+              Get Started
+            </Button>
           </Box>
         </Box>
       </Grid>

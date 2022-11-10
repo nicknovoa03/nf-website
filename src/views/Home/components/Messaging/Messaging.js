@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
-import { colors } from '@mui/material';
+import { Button, colors } from '@mui/material';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -9,7 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-import Message from '../../../../assets/unDraw/Messaging.svg';
+import Message from '../../../../assets/template/Messaging.png';
 import Image from 'next/image';
 
 const Messaging = () => {
@@ -38,6 +38,8 @@ const Messaging = () => {
             flexDirection={'column'}
             justifyContent={{ xs: 'flex-start', md: 'space-between' }}
             height={1}
+            maxHeight={500}
+            marginTop={isMd ? 8 : 0}
           >
             <Box>
               <Typography variant={'h4'} fontWeight={700} gutterBottom>
@@ -56,10 +58,10 @@ const Messaging = () => {
                 customers and leads all from one application.
               </Typography>
             </Box>
+
             <Box
               component={Card}
               marginTop={{ xs: 2, md: 0 }}
-              marginBottom={{ md: 9 }}
               boxShadow={0}
               borderRadius={2}
             >
@@ -73,21 +75,27 @@ const Messaging = () => {
                 </Typography>
               </CardContent>
             </Box>
+            <Box boxShadow={4} marginY={{ xs: 4 }}>
+              <Button
+                variant="contained"
+                sx={{
+                  backgroundColor: theme.palette.primary.light,
+                }}
+                size="large"
+                fullWidth={true}
+                href="/messaging"
+              >
+                Get Started
+              </Button>
+            </Box>
           </Box>
         </Grid>
         <Grid item xs={12} md={8}>
           <Grid container spacing={isMd ? 4 : 2}>
-            <Grid
-              item
-              xs={12}
-              sx={{
-                '& .lazy-load-image-background.lazy-load-image-loaded': {
-                  width: '100%',
-                  height: '100%',
-                },
-              }}
-            >
-              <Image alt="Natural Frameworks" src={Message} />
+            <Grid item xs={12} align="center">
+              <Box maxWidth={750}>
+                <Image alt="Natural Frameworks" src={Message} />
+              </Box>
             </Grid>
             <Grid item xs={12}>
               <Typography variant={'h6'} fontWeight={700} gutterBottom>
