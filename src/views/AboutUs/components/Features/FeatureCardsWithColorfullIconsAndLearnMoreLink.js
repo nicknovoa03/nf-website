@@ -6,13 +6,14 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import Avatar from '@mui/material/Avatar';
 import { alpha } from '@mui/material/styles';
-import { colors, Divider } from '@mui/material';
+import { colors, Divider, useMediaQuery } from '@mui/material';
 
 import AnalyticsOutlinedIcon from '@mui/icons-material/AnalyticsOutlined';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import MarkUnreadChatAltOutlinedIcon from '@mui/icons-material/MarkUnreadChatAltOutlined';
 import PhoneMissedIcon from '@mui/icons-material/PhoneMissed';
 import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
+import { useTheme } from '@emotion/react';
 
 const mock = [
   {
@@ -125,6 +126,10 @@ const mock = [
 ];
 
 const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
+  const theme = useTheme();
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
   return (
     <Box>
       <Box marginBottom={5}>
@@ -134,7 +139,7 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
           color="text.primary"
           sx={{ fontWeight: 500 }}
           marginBottom={5}
-          data-aos={'zoom-in-up'}
+          data-aos={isMd ? 'zoom-in-up' : 'fade-up'}
           data-aos-delay={100}
           data-aos-offset={100}
           data-aos-duration={600}
@@ -156,9 +161,6 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
                 '&:hover': {
                   transform: 'translateY(-20px)',
                 },
-                '&:active': {
-                  transform: 'translateX(20px)',
-                },
               }}
             >
               <Box
@@ -166,7 +168,7 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
                 padding={4}
                 width={1}
                 height={1}
-                data-aos={'fade-up'}
+                data-aos={isMd ? 'fade-up' : 'fade-up'}
                 data-aos-delay={i * 100}
                 data-aos-offset={100}
                 data-aos-duration={1000}

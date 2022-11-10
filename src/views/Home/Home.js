@@ -8,10 +8,13 @@ import { OnlineReviews, Messaging, Payment, Hero, Contact } from './components';
 
 import Feature from '../AboutUs/components/Features';
 import Info from './components/Info';
+import { useMediaQuery } from '@mui/material';
 
 const Home = () => {
   const theme = useTheme();
-
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
   return (
     <Main>
       <Container>
@@ -22,7 +25,7 @@ const Home = () => {
         sx={{
           backgroundColor: theme.palette.alternate.main,
         }}
-        data-aos={'flip-down'}
+        data-aos={isMd ? 'flip-down' : 'fade-up'}
       >
         <Box
           component={'svg'}

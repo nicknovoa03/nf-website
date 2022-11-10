@@ -21,7 +21,7 @@ const CtaSimpleCentered = () => {
           sx={{
             fontWeight: 700,
           }}
-          data-aos={'fade-up'}
+          data-aos={isMd ? 'fade-up' : 'fade-up'}
           data-aos-delay={100}
           data-aos-offset={100}
           data-aos-duration={600}
@@ -37,7 +37,7 @@ const CtaSimpleCentered = () => {
           color="text.secondary"
           sx={{ fontWeight: 400 }}
           align={'center'}
-          data-aos={'fade-up'}
+          data-aos={isMd ? 'fade-up' : 'fade-up'}
           data-aos-delay={100}
           data-aos-offset={100}
           data-aos-duration={600}

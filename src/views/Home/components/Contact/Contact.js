@@ -20,7 +20,7 @@ const Contact = () => {
           item
           xs={12}
           md={6}
-          data-aos={'zoom-out-right'}
+          data-aos={isMd ? 'zoom-out-right' : 'fade-up'}
           data-aos-delay={100}
           data-aos-offset={100}
           data-aos-duration={1000}
@@ -34,7 +34,7 @@ const Contact = () => {
               borderRadius: '16px',
             }}
             paddingY={3}
-            data-aos={'zoom-out-left'}
+            data-aos={isMd ? 'zoom-out-left' : 'fade-up'}
             data-aos-delay={100}
             data-aos-offset={100}
             data-aos-duration={1000}

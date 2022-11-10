@@ -23,7 +23,7 @@ const Payment = () => {
       padding={{ xs: 2, sm: 4 }}
       borderRadius={2}
       bgcolor={theme.palette.mode === 'light' ? colors.amber[50] : '#DEB22F'}
-      data-aos={'fade-right'}
+      data-aos={isMd ? 'fade-right' : 'fade-up'}
       data-aos-delay={100}
       data-aos-offset={100}
       data-aos-duration={600}

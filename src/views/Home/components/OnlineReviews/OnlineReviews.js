@@ -26,7 +26,7 @@ const OnlineReviews = () => {
       bgcolor={
         theme.palette.mode === 'light' ? colors.blue[50] : colors.blue[900]
       }
-      data-aos={'fade-right'}
+      data-aos={isMd ? 'fade-right' : 'fade-up'}
       data-aos-delay={100}
       data-aos-offset={100}
       data-aos-duration={600}
