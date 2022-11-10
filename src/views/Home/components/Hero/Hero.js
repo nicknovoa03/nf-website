@@ -80,9 +80,7 @@ const Hero = () => {
           },
         }}
         data-aos={isMd ? 'fade-left' : 'fade-up'}
-        data-aos-delay={100}
-        data-aos-offset={100}
-        data-aos-duration={600}
+
       >
         <Image alt="Natural Frameworks" src={PhoneWithData}></Image>
       </Grid>
