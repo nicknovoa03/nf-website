@@ -27,7 +27,7 @@ const Contact = () => {
             }}
             paddingY={3}
           >
-            <Box marginBottom={2} alignItems={'center'}>
+            <Box marginBottom={2} align="center">
               <Typography
                 marginBottom={1}
                 align="center"
@@ -39,11 +39,10 @@ const Contact = () => {
               </Typography>
               <Divider
                 color={'black'}
-                variant={'inset'}
-                sx={{ color: 'white' }}
+                sx={{ marginLeft: '20%', marginRight: '20%' }}
               />
             </Box>
-            <Box alignContent={'center'}>
+            <Box align="center">
               <iframe
                 src="https://api.leadconnectorhq.com/widget/booking/2oKTgJquhvSYH3eQR0Ea"
                 style={{ border: 'none', width: '100%', overflow: 'hidden' }}
