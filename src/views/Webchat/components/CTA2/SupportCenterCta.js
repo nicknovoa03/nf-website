@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
+
 import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
@@ -9,6 +8,9 @@ import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 
 import Container from 'components/Container';
+import Image from 'next/image';
+
+import illustration from '../../../../assets/template/webchatIllustration2.png';
 
 const SupportCenterCta = () => {
   const theme = useTheme();
@@ -17,10 +19,40 @@ const SupportCenterCta = () => {
   });
 
   return (
-    <Container data-aos={isMd ? 'fade-right' : 'fade-up'}>
+    <Container maxWidth={{ md: 1450 }} marginY={{ md: -10 }}>
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
-        <Grid item xs={12} md={6}>
-          <Box marginBottom={4}>
+        <Grid
+          item
+          container
+          justifyContent="center"
+          alignItems="center"
+          xs={12}
+          md={6}
+          sx={{
+            display: { xs: 'none', md: 'flex' },
+          }}
+        >
+          <Box
+            height={1}
+            width={1}
+            data-aos={isMd ? 'fade-up-right' : 'fade-up'}
+            data-aos-delay={100}
+            data-aos-offset={100}
+            data-aos-duration={600}
+          >
+            <Image alt="Natural Frameworks Messaging" src={illustration} />
+          </Box>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          data-aos={isMd ? 'fade-up-left' : 'fade-up'}
+          data-aos-delay={100}
+          data-aos-offset={100}
+          data-aos-duration={600}
+        >
+          <Box marginTop={{ md: 40 }}>
             <Typography
               sx={{
                 textTransform: 'uppercase',
@@ -51,27 +83,6 @@ const SupportCenterCta = () => {
             <Button variant={'contained'} size={'large'} href="pricing">
               Get started
             </Button>
-          </Box>
-        </Grid>
-        <Grid
-          item
-          container
-          justifyContent="center"
-          alignItems="center"
-          xs={12}
-          md={6}
-          sx={{
-            display: { xs: 'none', md: 'flex' },
-          }}
-        >
-          <Box component={Card} boxShadow={4} height={1} width={1}>
-            <Box
-              component={CardMedia}
-              height={1}
-              width={1}
-              minHeight={300}
-              image="https://assets.maccarianagency.com/backgrounds/img4.jpg"
-            />
           </Box>
         </Grid>
       </Grid>

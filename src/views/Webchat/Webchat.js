@@ -45,6 +45,7 @@ const Webchat = () => {
       </Box>
       <Container>
         <CTA />
+        <CTA2 />
       </Container>
       <Box
         position={'relative'}
@@ -56,16 +57,6 @@ const Webchat = () => {
           <CTA3 />
         </Container>
       </Box>
-
-      <Container>
-        <CTA2 />
-      </Container>
-      <Box
-        position={'relative'}
-        sx={{
-          backgroundColor: theme.palette.alternate.main,
-        }}
-      ></Box>
     </Main>
   );
 };
