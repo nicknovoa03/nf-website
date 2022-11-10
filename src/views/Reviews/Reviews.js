@@ -14,7 +14,7 @@ const Reviews = () => {
 
   return (
     <Main>
-      <Container>
+      <Container maxWidth={1500}>
         <Hero />
       </Container>
       <Box

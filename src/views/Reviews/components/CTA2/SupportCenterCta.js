@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
@@ -9,6 +8,9 @@ import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 
 import Container from 'components/Container';
+import Image from 'next/image';
+
+import ReviewCTA2 from '../../../../assets/DrawKit/ReviewCTA2.svg';
 
 const SupportCenterCta = () => {
   const theme = useTheme();
@@ -17,10 +19,10 @@ const SupportCenterCta = () => {
   });
 
   return (
-    <Container data-aos={isMd ? 'fade-right' : 'fade-up'}>
+    <Container maxWidth={1300} data-aos={isMd ? 'fade-right' : 'fade-up'}>
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
         <Grid item xs={12} md={6}>
-          <Box marginBottom={4}>
+          <Box marginBottom={4} marginTop={isMd ? 7 : 0}>
             <Typography
               sx={{
                 textTransform: 'uppercase',
@@ -62,14 +64,8 @@ const SupportCenterCta = () => {
             display: { xs: 'none', md: 'flex' },
           }}
         >
-          <Box component={Card} boxShadow={4} height={1} width={1}>
-            <Box
-              component={CardMedia}
-              height={1}
-              width={1}
-              minHeight={300}
-              image="https://assets.maccarianagency.com/backgrounds/img4.jpg"
-            />
+          <Box component={Card} boxShadow={3} height={1} width={1}>
+            <Image alt="Natural Frameworks Reviews" src={ReviewCTA2} />
           </Box>
         </Grid>
       </Grid>

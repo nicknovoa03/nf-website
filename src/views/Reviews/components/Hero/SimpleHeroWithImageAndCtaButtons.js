@@ -5,6 +5,9 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import Image from 'next/image';
+
+import ReviewHero from '../../../../assets/template/OnlineReviews.png';
 
 const SimpleHeroWithImageAndCtaButtons = () => {
   const theme = useTheme();
@@ -88,21 +91,9 @@ const SimpleHeroWithImageAndCtaButtons = () => {
         xs={12}
         md={6}
       >
-        <Box
-          component={'img'}
-          height={1}
-          width={1}
-          src={'https://assets.maccarianagency.com/backgrounds/img8.jpg'}
-          alt="..."
-          borderRadius={2}
-          maxWidth={600}
-          maxHeight={500}
-          sx={{
-            objectFit: 'cover',
-            boxShadow: '19px 20px 0px 0 rgb(140 152 164 / 13%)',
-            filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
-          }}
-        />
+        <Box height={1} width={1} boxShadow={2} marginLeft={{ md: 10 }}>
+          <Image alt="Natural Frameworks" src={ReviewHero} />
+        </Box>
       </Grid>
     </Grid>
   );
