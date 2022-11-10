@@ -80,7 +80,6 @@ const Hero = () => {
           },
         }}
         data-aos={isMd ? 'fade-left' : 'fade-up'}
-
       >
         <Image alt="Natural Frameworks" src={PhoneWithData}></Image>
       </Grid>

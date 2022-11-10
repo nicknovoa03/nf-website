@@ -5,6 +5,9 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import Image from 'next/image';
+
+import illustration from '../../../../assets/template/Messaging.png';
 
 const SimpleHeroWithImageAndCtaButtons = () => {
   const theme = useTheme();
@@ -86,22 +89,15 @@ const SimpleHeroWithImageAndCtaButtons = () => {
         justifyContent={'center'}
         xs={12}
         md={6}
+        sx={{
+          '& .lazy-load-image-background.lazy-load-image-loaded': {
+            width: '150%',
+            height: '150%',
+          },
+        }}
+        data-aos={isMd ? 'fade-left' : 'fade-up'}
       >
-        <Box
-          component={'img'}
-          height={1}
-          width={1}
-          src={'https://assets.maccarianagency.com/backgrounds/img8.jpg'}
-          alt="..."
-          borderRadius={2}
-          maxWidth={600}
-          maxHeight={500}
-          sx={{
-            objectFit: 'cover',
-            boxShadow: '19px 20px 0px 0 rgb(140 152 164 / 13%)',
-            filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
-          }}
-        />
+        <Image alt="Natural Frameworks" src={illustration}></Image>
       </Grid>
     </Grid>
   );

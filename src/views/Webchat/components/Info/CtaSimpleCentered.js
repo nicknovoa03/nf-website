@@ -2,17 +2,17 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from 'components/Container';
-import { Divider } from '@mui/material';
+import { Divider, useMediaQuery, useTheme } from '@mui/material';
 
 const CtaSimpleCentered = () => {
+  const theme = useTheme();
+
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
   return (
     <Container>
-      <Box
-        data-aos={'flip-down'}
-        data-aos-delay={100}
-        data-aos-offset={100}
-        data-aos-duration={600}
-      >
+      <Box>
         <Typography
           variant="h4"
           color="text.primary"
@@ -21,8 +21,7 @@ const CtaSimpleCentered = () => {
           sx={{
             fontWeight: 700,
           }}
-          data-aos={'fade-left'}
-          data-aos-delay={100}
+          data-aos={isMd ? 'fade-left' : 'fade-up'}
           data-aos-offset={100}
           data-aos-duration={600}
         >
