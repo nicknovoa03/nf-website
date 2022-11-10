@@ -17,10 +17,10 @@ const WithLeftAlignedDescriptionBox = () => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Box
-            data-aos={'flip-up'}
+            data-aos={'fade-down-right'}
             data-aos-delay={100}
             data-aos-offset={100}
-            data-aos-duration={600}
+            data-aos-duration={1000}
           >
             <Box display="flex" flexWrap="wrap" justifyContent={'flex-start'}>
               {mock.map((item, i) => (
@@ -33,10 +33,10 @@ const WithLeftAlignedDescriptionBox = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Box
-            data-aos={'fade-left'}
+            data-aos={'fade-up-left'}
             data-aos-delay={100}
             data-aos-offset={100}
-            data-aos-duration={600}
+            data-aos-duration={1000}
           >
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
               Get Customer Reviews Automatically

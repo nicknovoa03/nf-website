@@ -4,9 +4,6 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
-
 import Container from 'components/Container';
 
 const mock = [
@@ -31,15 +28,16 @@ const mock = [
 ];
 
 const WithBorderedCardsAndBrandColor = () => {
-  const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true,
-  });
-
   return (
     <Container>
-      <Box data-aos={isMd ? 'fade-left' : 'fade-up'}>
-        <Box marginBottom={4}>
+      <Box>
+        <Box
+          marginBottom={4}
+          data-aos={'zoom-in-up'}
+          data-aos-delay={100}
+          data-aos-offset={100}
+          data-aos-duration={1000}
+        >
           <Typography
             sx={{
               textTransform: 'uppercase',
@@ -75,7 +73,7 @@ const WithBorderedCardsAndBrandColor = () => {
                   data-aos={'flip-down'}
                   data-aos-delay={i * 100}
                   data-aos-offset={100}
-                  data-aos-duration={600}
+                  data-aos-duration={1000}
                 >
                   <Box
                     display={'flex'}

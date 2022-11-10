@@ -24,6 +24,7 @@ const Messaging = () => {
         sx={{
           backgroundColor: theme.palette.alternate.main,
         }}
+        data-aos={'flip-down'}
       >
         <Box
           component={'svg'}
@@ -46,9 +47,7 @@ const Messaging = () => {
           <Features />
         </Container>
       </Box>
-      <Container>
-        <CTA />
-      </Container>
+      <CTA />
       <Box
         position={'relative'}
         sx={{
@@ -57,6 +56,7 @@ const Messaging = () => {
       >
         <Container>
           <CTA2 />
+          <CTA3 />
         </Container>
       </Box>
       <Container>
@@ -69,22 +69,13 @@ const Messaging = () => {
         }}
       >
         <Container>
-          <CTA3 />
+          <Stats />
         </Container>
       </Box>
+
       <Container>
-        <Stats />
+        <LogoGrid />
       </Container>
-      <Box
-        position={'relative'}
-        sx={{
-          backgroundColor: theme.palette.alternate.main,
-        }}
-      >
-        <Container>
-          <LogoGrid />
-        </Container>
-      </Box>
     </Main>
   );
 };

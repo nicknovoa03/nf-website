@@ -23,7 +23,7 @@ const SimpleHeroWithImageAndCtaButtons = () => {
         xs={12}
         md={6}
         alignItems={'center'}
-        data-aos={isMd ? 'fade-right' : 'fade-up'}
+        data-aos={'fade-right'}
       >
         <Box>
           <Box marginBottom={2}>
@@ -91,7 +91,13 @@ const SimpleHeroWithImageAndCtaButtons = () => {
         xs={12}
         md={6}
       >
-        <Box height={1} width={1} boxShadow={2} marginLeft={{ md: 10 }}>
+        <Box
+          height={1}
+          width={1}
+          boxShadow={2}
+          marginLeft={{ md: 10 }}
+          data-aos={'fade-left'}
+        >
           <Image alt="Natural Frameworks" src={ReviewHero} />
         </Box>
       </Grid>

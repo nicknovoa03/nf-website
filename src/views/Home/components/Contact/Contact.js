@@ -16,7 +16,15 @@ const Contact = () => {
   return (
     <Box>
       <Grid container spacing={isMd ? 8 : 4}>
-        <Grid item xs={12} md={6}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          data-aos={'zoom-out-right'}
+          data-aos-delay={100}
+          data-aos-offset={100}
+          data-aos-duration={1000}
+        >
           <Map />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -26,6 +34,10 @@ const Contact = () => {
               borderRadius: '16px',
             }}
             paddingY={3}
+            data-aos={'zoom-out-left'}
+            data-aos-delay={100}
+            data-aos-offset={100}
+            data-aos-duration={1000}
           >
             <Box marginBottom={2} align="center">
               <Typography

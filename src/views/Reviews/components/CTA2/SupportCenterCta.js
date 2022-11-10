@@ -19,7 +19,7 @@ const SupportCenterCta = () => {
   });
 
   return (
-    <Container maxWidth={1300} data-aos={isMd ? 'fade-right' : 'fade-up'}>
+    <Container maxWidth={1300} data-aos={'zoom-in-up'}>
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
         <Grid item xs={12} md={6}>
           <Box marginBottom={4} marginTop={isMd ? 7 : 0}>

@@ -23,7 +23,10 @@ const Payment = () => {
       padding={{ xs: 2, sm: 4 }}
       borderRadius={2}
       bgcolor={theme.palette.mode === 'light' ? colors.amber[50] : '#DEB22F'}
-      data-aos={'fade-up'}
+      data-aos={'fade-right'}
+      data-aos-delay={100}
+      data-aos-offset={100}
+      data-aos-duration={600}
     >
       <Grid
         container

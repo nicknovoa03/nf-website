@@ -79,6 +79,10 @@ const Hero = () => {
             height: '150%',
           },
         }}
+        data-aos={'fade-left'}
+        data-aos-delay={100}
+        data-aos-offset={100}
+        data-aos-duration={600}
       >
         <Image alt="Natural Frameworks" src={PhoneWithData}></Image>
       </Grid>

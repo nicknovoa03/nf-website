@@ -6,6 +6,9 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 
+import illustration from '../../../../assets/template/messagingHero.png';
+import Image from 'next/image';
+
 const SimpleHeroWithImageAndCtaButtons = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
@@ -13,17 +16,50 @@ const SimpleHeroWithImageAndCtaButtons = () => {
   });
 
   return (
-    <Grid container spacing={4}>
+    <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
+      <Grid
+        item
+        container
+        alignItems={'center'}
+        justifyContent={'center'}
+        xs={12}
+        md={6}
+      >
+        <Box
+          height={1}
+          width={1}
+          marginLeft={{ md: 10 }}
+          data-aos={'fade-right'}
+          data-aos-delay={100}
+          data-aos-offset={100}
+          data-aos-duration={600}
+        >
+          <Image alt="Natural Frameworks" src={illustration} />
+        </Box>
+      </Grid>
       <Grid
         item
         container
         xs={12}
         md={6}
         alignItems={'center'}
-        data-aos={isMd ? 'fade-right' : 'flip-up'}
+        data-aos={'fade-left'}
+        data-aos-delay={100}
+        data-aos-offset={100}
+        data-aos-duration={600}
       >
         <Box>
           <Box marginBottom={2}>
+            <Typography
+              sx={{
+                textTransform: 'uppercase',
+                fontWeight: 'medium',
+              }}
+              gutterBottom
+              color={'secondary'}
+            >
+              Win More Business{' '}
+            </Typography>
             <Typography
               variant="h2"
               color="text.primary"
@@ -68,30 +104,6 @@ const SimpleHeroWithImageAndCtaButtons = () => {
             </Button>
           </Box>
         </Box>
-      </Grid>
-      <Grid
-        item
-        container
-        alignItems={'center'}
-        justifyContent={'center'}
-        xs={12}
-        md={6}
-      >
-        <Box
-          component={'img'}
-          height={1}
-          width={1}
-          src={'https://assets.maccarianagency.com/backgrounds/img8.jpg'}
-          alt="..."
-          borderRadius={2}
-          maxWidth={600}
-          maxHeight={500}
-          sx={{
-            objectFit: 'cover',
-            boxShadow: '19px 20px 0px 0 rgb(140 152 164 / 13%)',
-            filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
-          }}
-        />
       </Grid>
     </Grid>
   );

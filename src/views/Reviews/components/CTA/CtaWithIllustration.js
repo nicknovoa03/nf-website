@@ -18,10 +18,15 @@ const CtaWithIllustration = () => {
   });
 
   return (
-    <Container data-aos={'fade-right'}>
+    <Container>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
-          <Box>
+          <Box
+            data-aos={'fade-up-right'}
+            data-aos-delay={100}
+            data-aos-offset={100}
+            data-aos-duration={1000}
+          >
             <Box marginBottom={2}>
               <Typography
                 sx={{
@@ -67,7 +72,16 @@ const CtaWithIllustration = () => {
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Box height={1} width={1} display={'flex'} justifyContent={'center'}>
+          <Box
+            height={1}
+            width={1}
+            display={'flex'}
+            justifyContent={'center'}
+            data-aos={'fade-down-left'}
+            data-aos-delay={100}
+            data-aos-offset={100}
+            data-aos-duration={1000}
+          >
             <Box
               height={1}
               width={1}

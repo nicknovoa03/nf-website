@@ -22,6 +22,7 @@ const Reviews = () => {
         sx={{
           backgroundColor: theme.palette.alternate.main,
         }}
+        data-aos={'flip-down'}
       >
         <Box
           component={'svg'}

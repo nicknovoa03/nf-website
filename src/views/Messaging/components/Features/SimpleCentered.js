@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 import Container from 'components/Container';
-import { useMediaQuery } from '@mui/material';
 
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import FastForwardIcon from '@mui/icons-material/FastForward';
@@ -68,12 +67,10 @@ const mock = [
 
 const SimpleCentered = () => {
   const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true,
-  });
+
   return (
     <Container>
-      <Box data-aos={isMd ? 'fade-left' : 'fade-up'}>
+      <Box>
         <Box marginBottom={4}>
           <Box
             marginBottom={2}

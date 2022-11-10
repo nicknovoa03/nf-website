@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import Avatar from '@mui/material/Avatar';
 import { alpha } from '@mui/material/styles';
-import { colors, Divider, useMediaQuery, useTheme } from '@mui/material';
+import { colors, Divider } from '@mui/material';
 
 import AnalyticsOutlinedIcon from '@mui/icons-material/AnalyticsOutlined';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
@@ -125,10 +125,6 @@ const mock = [
 ];
 
 const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
-  const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true,
-  });
   return (
     <Box>
       <Box marginBottom={5}>
@@ -170,10 +166,10 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
                 padding={4}
                 width={1}
                 height={1}
-                data-aos={isMd ? 'fade-up' : 'fade-up'}
+                data-aos={'fade-up'}
                 data-aos-delay={i * 100}
                 data-aos-offset={100}
-                data-aos-duration={600}
+                data-aos-duration={1000}
               >
                 <Box display={'flex'} flexDirection={'column'}>
                   <Box

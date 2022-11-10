@@ -22,6 +22,7 @@ const Home = () => {
         sx={{
           backgroundColor: theme.palette.alternate.main,
         }}
+        data-aos={'flip-down'}
       >
         <Box
           component={'svg'}
