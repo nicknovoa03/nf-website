@@ -5,14 +5,15 @@ import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Container from 'components/Container';
 
-const mock = [
-  'https://assets.maccarianagency.com/svg/logos/airbnb-original.svg',
-  'https://assets.maccarianagency.com/svg/logos/amazon-original.svg',
-  'https://assets.maccarianagency.com/svg/logos/fitbit-original.svg',
-  'https://assets.maccarianagency.com/svg/logos/netflix-original.svg',
-  'https://assets.maccarianagency.com/svg/logos/google-original.svg',
-  'https://assets.maccarianagency.com/svg/logos/paypal-original.svg',
-];
+import google from '../../../../assets/logos/googleLogo.svg';
+import facebook from '../../../../assets/logos/facebookMessenger.svg';
+import zapier from '../../../../assets/logos/zapier.svg';
+import quickbooks from '../../../../assets/logos/quickbooks.svg';
+import twilio from '../../../../assets/logos/twilio.svg';
+
+import Image from 'next/image';
+
+const mock = [google, facebook, quickbooks, zapier, twilio];
 
 const LogoGridSimpleCentered = () => {
   const theme = useTheme();
@@ -21,7 +22,12 @@ const LogoGridSimpleCentered = () => {
   });
   return (
     <Container>
-      <Box data-aos={isMd ? 'fade-down' : 'fade-up'}>
+      <Box
+        data-aos={isMd ? 'fade-down' : 'fade-up'}
+        data-aos-delay={100}
+        data-aos-offset={100}
+        data-aos-duration={1000}
+      >
         <Box marginBottom={4}>
           <Typography
             gutterBottom
@@ -29,29 +35,26 @@ const LogoGridSimpleCentered = () => {
             variant={'h4'}
             fontWeight={700}
           >
-            Trusted by over 5,000 tech companies
-          </Typography>
-          <Typography color={'text.secondary'} align={'center'} variant={'h6'}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Easily Integrates With Leading Apps
           </Typography>
         </Box>
         <Box display="flex" flexWrap="wrap" justifyContent={'center'}>
           {mock.map((item, i) => (
-            <Box maxWidth={90} marginTop={2} marginRight={4} key={i}>
+            <Box marginRight={4} key={i}>
               <Box
-                component="img"
-                height={1}
-                width={1}
-                src={item}
-                alt="..."
                 sx={{
                   filter:
                     theme.palette.mode === 'dark'
                       ? 'brightness(0) invert(0.7)'
                       : 'none',
                 }}
-              />
+                maxWidth={215}
+              >
+                <Image
+                  alt="Natural Frameworks Integrated Apps"
+                  src={item}
+                ></Image>
+              </Box>
             </Box>
           ))}
         </Box>

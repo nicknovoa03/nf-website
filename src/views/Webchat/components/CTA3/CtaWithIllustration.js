@@ -4,9 +4,11 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import CreditCardsIllustration from 'svg/illustrations/CreditCards';
 
 import Container from 'components/Container';
+import illustration from '../../../../assets/template/webchatIllustration3.png';
+import Image from 'next/image';
+import { Button } from '@mui/material';
 
 const CtaWithIllustration = () => {
   const theme = useTheme();
@@ -15,11 +17,27 @@ const CtaWithIllustration = () => {
   });
 
   return (
-    <Container data-aos={isMd ? 'fade-right' : 'fade-up'}>
+    <Container maxWidth={{ md: 1450 }}>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
-          <Box>
+          <Box
+            marginTop={{ md: 2 }}
+            data-aos={isMd ? 'fade-up-right' : 'fade-up'}
+            data-aos-delay={100}
+            data-aos-offset={100}
+            data-aos-duration={600}
+          >
             <Box marginBottom={2}>
+              <Typography
+                sx={{
+                  textTransform: 'uppercase',
+                  fontWeight: 'medium',
+                }}
+                gutterBottom
+                color={'secondary'}
+              >
+                Never been easier
+              </Typography>
               <Typography
                 variant="h4"
                 sx={{
@@ -36,13 +54,23 @@ const CtaWithIllustration = () => {
                 mobile phone so you don&apos;t lose them.
               </Typography>
             </Box>
+            <Button variant={'contained'} size={'large'} href="pricing">
+              Get started
+            </Button>
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Box height={1} width={1} display={'flex'} justifyContent={'center'}>
-            <Box height={1} width={1} maxWidth={450}>
-              <CreditCardsIllustration width={'100%'} height={'100%'} />
-            </Box>
+          <Box
+            maxWidth={600}
+            height={1}
+            width={1}
+            align="center"
+            data-aos={isMd ? 'fade-up-left' : 'fade-up'}
+            data-aos-delay={100}
+            data-aos-offset={100}
+            data-aos-duration={600}
+          >
+            <Image alt="Natural Frameworks Messaging" src={illustration} />
           </Box>
         </Grid>
       </Grid>

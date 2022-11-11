@@ -5,9 +5,11 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import CreditCardsIllustration from 'svg/illustrations/CreditCards';
 
 import Container from 'components/Container';
+
+import illustration from '../../../../assets/template/paymentsillustration4.png';
+import Image from 'next/image';
 
 const CtaWithIllustration = () => {
   const theme = useTheme();
@@ -16,10 +18,20 @@ const CtaWithIllustration = () => {
   });
 
   return (
-    <Container data-aos={isMd ? 'fade-left' : 'fade-up'}>
+    <Container
+      marginY={{ md: -10 }}
+      marginTop={{ md: -25 }}
+      marginLeft={{ md: 15 }}
+    >
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
-          <Box>
+          <Box
+            marginTop={{ md: 25 }}
+            data-aos={isMd ? 'fade-up-right' : 'fade-up'}
+            data-aos-delay={100}
+            data-aos-offset={100}
+            data-aos-duration={600}
+          >
             <Box marginBottom={2}>
               <Typography
                 variant="h4"
@@ -56,10 +68,17 @@ const CtaWithIllustration = () => {
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Box height={1} width={1} display={'flex'} justifyContent={'center'}>
-            <Box height={1} width={1} maxWidth={450}>
-              <CreditCardsIllustration width={'100%'} height={'100%'} />
-            </Box>
+          <Box
+            maxWidth={700}
+            height={1}
+            width={1}
+            align="center"
+            data-aos={isMd ? 'fade-up-left' : 'fade-up'}
+            data-aos-delay={100}
+            data-aos-offset={100}
+            data-aos-duration={600}
+          >
+            <Image alt="Natural Frameworks Messaging" src={illustration} />
           </Box>
         </Grid>
       </Grid>

@@ -134,7 +134,7 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
     <Box>
       <Box marginBottom={5}>
         <Typography
-          variant="h3"
+          variant="h2"
           align="center"
           color="text.primary"
           sx={{ fontWeight: 500 }}
