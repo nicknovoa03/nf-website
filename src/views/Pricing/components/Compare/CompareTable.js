@@ -59,7 +59,7 @@ const pricing = [
     features: [8],
     isHighlighted: false,
     btnText: 'Get Startup',
-    paymentLink: 'https://pay.naturalframeworks.com/basic',
+    paymentLink: 'https://buy.stripe.com/28o2axgMY6Iw9wcaEG',
   },
   {
     title: 'Essentials',
@@ -70,7 +70,7 @@ const pricing = [
     features: [1, 2, 3, 8],
     isHighlighted: true,
     btnText: 'Get Essentials',
-    paymentLink: 'https://pay.naturalframeworks.com/essential',
+    paymentLink: 'https://buy.stripe.com/eVa2ax7coc2Q7o4289',
   },
   {
     title: 'Professional',
@@ -81,7 +81,7 @@ const pricing = [
     features: [1, 2, 3, 4, 5, 6, 7, 8],
     isHighlighted: false,
     btnText: 'Get Professional',
-    paymentLink: 'https://pay.naturalframeworks.com/professional',
+    paymentLink: 'https://buy.stripe.com/dR68yV40cgj6cIofZ1',
   },
 ];
 
