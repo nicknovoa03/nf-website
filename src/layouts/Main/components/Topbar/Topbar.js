@@ -33,27 +33,34 @@ const Topbar = ({ onSidebarOpen, pages }) => {
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
+          <Button href="/" variant="text">
+            <Typography fontWeight={400} color="text.primary">
+              Home
+            </Typography>
+          </Button>
+        </Box>
+        <Box marginLeft={2.5}>
           <NavItem
             title={'Services'}
             id={'service-pages'}
             items={servicePages}
           />
         </Box>
-        <Box marginLeft={4}>
+        <Box marginLeft={3}>
           <NavItem
             title={'Company'}
             id={'company-pages'}
             items={companyPages}
           />
         </Box>
-        <Box marginLeft={3}>
+        <Box marginLeft={2}>
           <Button href="/pricing" variant="text">
             <Typography fontWeight={400} color="text.primary">
               Pricing
             </Typography>
           </Button>
         </Box>
-        <Box marginLeft={3}>
+        <Box marginLeft={2}>
           <Button href="/contact" variant="contained">
             Contact Us
           </Button>
