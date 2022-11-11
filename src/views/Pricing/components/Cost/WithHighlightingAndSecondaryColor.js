@@ -16,18 +16,18 @@ import Container from 'components/Container';
 
 const mock = [
   {
-    title: 'Basic',
+    title: 'Startup',
     price: '$147',
     features: ['1 Business Automation'],
     isHighlighted: true,
-    paymentLink: 'https://pay.naturalframeworks.com/basic',
+    paymentLink: 'https://buy.stripe.com/28o2axgMY6Iw9wcaEG',
   },
   {
     title: 'Essential',
     price: '$297',
     features: ['Reviews', 'Messaging', 'Webchat', 'Textable Business Number'],
     isHighlighted: true,
-    paymentLink: 'https://pay.naturalframeworks.com/essential',
+    paymentLink: 'https://buy.stripe.com/eVa2ax7coc2Q7o4289',
   },
   {
     title: 'Professional',
@@ -41,7 +41,7 @@ const mock = [
       'Full Customer Support Access',
     ],
     isHighlighted: true,
-    paymentLink: 'https://pay.naturalframeworks.com/professional',
+    paymentLink: 'https://buy.stripe.com/dR68yV40cgj6cIofZ1',
   },
 ];
 
@@ -152,6 +152,7 @@ const WithHighlightingAndSecondaryColor = () => {
                   size={'large'}
                   variant={'contained'}
                   href={item.paymentLink}
+                  target="blank"
                 >
                   Learn More
                 </Button>

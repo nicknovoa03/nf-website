@@ -51,14 +51,14 @@ const features = [
 
 const pricing = [
   {
-    title: 'Basic',
+    title: 'Startup',
     price: {
       monthly: 147,
       annual: 147,
     },
     features: [8],
     isHighlighted: false,
-    btnText: 'Get Basic',
+    btnText: 'Get Startup',
     paymentLink: 'https://pay.naturalframeworks.com/basic',
   },
   {

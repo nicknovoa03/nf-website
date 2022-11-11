@@ -47,6 +47,7 @@ const Payments = () => {
       </Box>
       <Container>
         <CTA />
+        <Features2 />
       </Container>
       <Box
         position={'relative'}
@@ -56,23 +57,11 @@ const Payments = () => {
       >
         <Container>
           <CTA2 />
+          <CTA3 />
         </Container>
       </Box>
       <Container>
-        <CTA3 />
-      </Container>
-      <Box
-        position={'relative'}
-        sx={{
-          backgroundColor: theme.palette.alternate.main,
-        }}
-      >
-        <Container>
-          <LogoGrid />
-        </Container>
-      </Box>
-      <Container>
-        <Features2 />
+        <LogoGrid />
       </Container>
     </Main>
   );
