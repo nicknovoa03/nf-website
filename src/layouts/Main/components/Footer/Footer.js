@@ -1,17 +1,32 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import { useTheme } from '@mui/material/styles';
+import Image from 'next/image';
+import { Button, Link } from '@mui/material';
+import logo from '../../../../assets/logos/NF-logo.png';
 
 const Footer = () => {
-  const theme = useTheme();
-  const { mode } = theme.palette;
-
   return (
     <Grid container spacing={2}>
+      <Grid item xs={12} md={6}>
+        <Box>
+          <Link
+            href="mailto:contact@naturalframeworks.com"
+            color="inherit"
+            underline="hover"
+          >
+            <Typography align={'center'}>
+              Email: contact@naturalframeworks.com
+            </Typography>
+          </Link>
+        </Box>
+      </Grid>
+      <Grid item xs={12} md={6}>
+        <Box>
+          <Typography align={'center'}>Phone: (210) 791-8336</Typography>
+        </Box>
+      </Grid>
       <Grid item xs={12}>
         <Box
           display={'flex'}
@@ -24,19 +39,10 @@ const Footer = () => {
             display={'flex'}
             component="a"
             href="/"
-            title="theFront"
-            width={80}
+            title="Natural Frameworks"
+            width={50}
           >
-            <Box
-              component={'img'}
-              src={
-                mode === 'light'
-                  ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                  : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-              }
-              height={1}
-              width={1}
-            />
+            <Image alt="Natural Frameoworks Logo" src={logo}></Image>
           </Box>
           <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
             <Box marginTop={1} marginRight={2}>
@@ -54,11 +60,11 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/docs/introduction"
+                href="/contact"
                 color="text.primary"
                 variant={'subtitle2'}
               >
-                Documentation
+                Schedule Call
               </Link>
             </Box>
             <Box marginTop={1}>
@@ -66,11 +72,10 @@ const Footer = () => {
                 variant="outlined"
                 color="primary"
                 component="a"
-                target="blank"
-                href="https://mui.com/store/items/the-front-landing-page/"
+                href="pricing"
                 size="small"
               >
-                Purchase now
+                Get Started
               </Button>
             </Box>
           </Box>
@@ -83,7 +88,8 @@ const Footer = () => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; theFront. 2021, Maccarian. All rights reserved
+          &copy; Natural Frameworks. 2022, Natural Frameworks. All rights
+          reserved
         </Typography>
         <Typography
           align={'center'}

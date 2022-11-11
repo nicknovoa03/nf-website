@@ -8,7 +8,6 @@ import Grid from '@mui/material/Grid';
 
 import PhoneWithData from '../../../../assets/PhoneWithData.svg';
 import Image from 'next/image';
-import { Link } from '@mui/material';
 
 const Hero = () => {
   const theme = useTheme();
@@ -27,7 +26,7 @@ const Hero = () => {
               color="text.primary"
               sx={{ fontWeight: 700 }}
             >
-              Natural{'  '}
+              Natural{' '}
               <Typography
                 color={'primary'}
                 component={'span'}
@@ -45,9 +44,9 @@ const Hero = () => {
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              The customer interaction software with the tools & production to
-              invigorate your customers relationships and automate lead
-              generation
+              Our goal is to help small businesses engage with their
+              customer&apos;s quicker & easier to improve overall customer
+              experience to help everyone grow.
             </Typography>
           </Box>
           <Box
@@ -60,38 +59,10 @@ const Hero = () => {
               color="primary"
               size="large"
               fullWidth={isMd ? false : true}
-              href="#OnlineReviews"
+              href="#features"
             >
-              Features
+              Get Started
             </Button>
-            <Box
-              component={Button}
-              color="primary"
-              size="large"
-              marginTop={{ xs: 2, sm: 0 }}
-              marginLeft={{ sm: 2 }}
-              fullWidth={isMd ? false : true}
-              endIcon={
-                <Box
-                  component={'svg'}
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  width={24}
-                  height={24}
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clipRule="evenodd"
-                  />
-                </Box>
-              }
-            >
-              <Link variant="body1" href="#LearnMore">
-                Contact
-              </Link>
-            </Box>
           </Box>
         </Box>
       </Grid>
@@ -108,6 +79,7 @@ const Hero = () => {
             height: '150%',
           },
         }}
+        data-aos={isMd ? 'fade-left' : 'fade-up'}
       >
         <Image alt="Natural Frameworks" src={PhoneWithData}></Image>
       </Grid>

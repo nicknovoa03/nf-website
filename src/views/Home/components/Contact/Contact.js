@@ -16,7 +16,15 @@ const Contact = () => {
   return (
     <Box>
       <Grid container spacing={isMd ? 8 : 4}>
-        <Grid item xs={12} md={6}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          data-aos={isMd ? 'zoom-out-right' : 'fade-up'}
+          data-aos-delay={100}
+          data-aos-offset={100}
+          data-aos-duration={1000}
+        >
           <Map />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -26,8 +34,12 @@ const Contact = () => {
               borderRadius: '16px',
             }}
             paddingY={3}
+            data-aos={isMd ? 'zoom-out-left' : 'fade-up'}
+            data-aos-delay={100}
+            data-aos-offset={100}
+            data-aos-duration={1000}
           >
-            <Box marginBottom={2} alignItems={'center'}>
+            <Box marginBottom={2} align="center">
               <Typography
                 marginBottom={1}
                 align="center"
@@ -39,11 +51,10 @@ const Contact = () => {
               </Typography>
               <Divider
                 color={'black'}
-                variant={'inset'}
-                sx={{ color: 'white' }}
+                sx={{ marginLeft: '20%', marginRight: '20%' }}
               />
             </Box>
-            <Box alignContent={'center'}>
+            <Box align="center">
               <iframe
                 src="https://api.leadconnectorhq.com/widget/booking/2oKTgJquhvSYH3eQR0Ea"
                 style={{ border: 'none', width: '100%', overflow: 'hidden' }}

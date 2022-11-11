@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
-import { colors } from '@mui/material';
+import { Button, colors } from '@mui/material';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -9,7 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-import OnlineReview from '../../../../assets/unDraw/OnlineReviews.svg';
+import OnlineReview from '../../../../assets/template/OnlineReviews.png';
 
 import Image from 'next/image';
 
@@ -26,7 +26,10 @@ const OnlineReviews = () => {
       bgcolor={
         theme.palette.mode === 'light' ? colors.blue[50] : colors.blue[900]
       }
-      data-aos={'fade-up'}
+      data-aos={isMd ? 'fade-right' : 'fade-up'}
+      data-aos-delay={100}
+      data-aos-offset={100}
+      data-aos-duration={600}
     >
       <Grid
         container
@@ -44,6 +47,7 @@ const OnlineReviews = () => {
                   height: '100%',
                 },
               }}
+              align="center"
             >
               <Image alt="Natural Frameworks" src={OnlineReview} />
             </Grid>
@@ -73,6 +77,7 @@ const OnlineReviews = () => {
             flexDirection={'column'}
             justifyContent={{ xs: 'flex-start', md: 'space-between' }}
             height={1}
+            marginTop={isMd ? 2 : 0}
           >
             <Box>
               <Typography variant={'h4'} fontWeight={700} gutterBottom>
@@ -90,6 +95,19 @@ const OnlineReviews = () => {
                 responding to and interacting with reviewers, and managing it
                 all from a single inbox.
               </Typography>
+            </Box>
+            <Box boxShadow={4} marginY={{ xs: 4 }}>
+              <Button
+                variant="contained"
+                size="large"
+                fullWidth={true}
+                href="/reviews"
+                sx={{
+                  backgroundColor: theme.palette.primary.light,
+                }}
+              >
+                Get Started
+              </Button>
             </Box>
             <Box
               component={Card}

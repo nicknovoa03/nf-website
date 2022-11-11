@@ -2,22 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { useTheme } from '@mui/material/styles';
 
 import NavItem from './components/NavItem';
 
-const SidebarNav = ({ pages }) => {
-  const theme = useTheme();
-  const { mode } = theme.palette;
+import logo from '../../../../../../assets/logos/NF-logo.png';
+import Image from 'next/image';
+import { Typography } from '@mui/material';
 
-  const {
-    landings: landingPages,
-    secondary: secondaryPages,
-    company: companyPages,
-    account: accountPages,
-    portfolio: portfolioPages,
-    blog: blogPages,
-  } = pages;
+const SidebarNav = ({ pages }) => {
+  const { services: servicePages, company: companyPages } = pages;
 
   return (
     <Box>
@@ -26,62 +19,37 @@ const SidebarNav = ({ pages }) => {
           display={'flex'}
           component="a"
           href="/"
-          title="theFront"
-          width={{ xs: 100, md: 120 }}
+          title="Natural Frameworks"
+          width={{ xs: 50, md: 50 }}
         >
-          <Box
-            component={'img'}
-            src={
-              mode === 'light'
-                ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-            }
-            height={1}
-            width={1}
-          />
+          <Image alt="Natural Frameoworks Logo" src={logo}></Image>
         </Box>
       </Box>
       <Box paddingX={2} paddingY={2}>
         <Box>
-          <NavItem title={'Landings'} items={landingPages} />
+          <NavItem
+            title={'Services'}
+            id={'service-pages'}
+            items={servicePages}
+          />
         </Box>
         <Box>
-          <NavItem title={'Company'} items={companyPages} />
+          <NavItem
+            title={'Company'}
+            id={'company-pages'}
+            items={companyPages}
+          />
         </Box>
         <Box>
-          <NavItem title={'Pages'} items={secondaryPages} />
-        </Box>
-        <Box>
-          <NavItem title={'Account'} items={accountPages} />
-        </Box>
-        <Box>
-          <NavItem title={'Blog'} items={blogPages} />
-        </Box>
-        <Box>
-          <NavItem title={'Portfolio'} items={portfolioPages} />
-        </Box>
-        <Box marginTop={2}>
-          <Button
-            size={'large'}
-            variant="outlined"
-            fullWidth
-            component="a"
-            href="/docs/introduction"
-          >
-            Documentation
+          <Button href="/pricing" variant="text">
+            <Typography fontWeight={400} marginLeft={-1} color={'text.primary'}>
+              Pricing
+            </Typography>
           </Button>
         </Box>
-        <Box marginTop={1}>
-          <Button
-            size={'large'}
-            variant="contained"
-            color="primary"
-            fullWidth
-            component="a"
-            target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
-          >
-            Purchase now
+        <Box marginTop={2}>
+          <Button href="/contact" variant="contained">
+            Contact Us
           </Button>
         </Box>
       </Box>
