@@ -42,7 +42,7 @@ const SimpleHeroWithImageAndCtaButtons = () => {
               color="text.primary"
               sx={{ fontWeight: 700 }}
             >
-              Convert Better With
+              Grow Your Sales With
               <br />
               <Typography
                 color={'primary'}
@@ -61,8 +61,8 @@ const SimpleHeroWithImageAndCtaButtons = () => {
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              Put webchat on your website in a breeze and get fresh leads
-              straight to your inbox.
+              Put webchat on your website and get fresh leads with your morning
+              coffee.
             </Typography>
           </Box>
           <Box

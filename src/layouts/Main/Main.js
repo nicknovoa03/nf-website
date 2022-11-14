@@ -76,9 +76,12 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
       </Container>
       <div
         data-chat-widget
-        data-style="--chat-widget-primary-color: #188bf6; --chat-widget-active-color:#188bf6 ;--chat-widget-bubble-color: #188bf6"
+        data-style="--chat-widget-primary-color: #377dff; --chat-widget-active-color:#377dff ;--chat-widget-bubble-color: #377dff"
         data-location-id="d9EJPvHmPoXnwbaq1mCE"
         data-prompt-avatar="https://widgets.leadconnectorhq.com/chat-widget/assets/defaultAvatar.png"
+        heading="What can I help you with?"
+        sub-heading="Hi, I'm Sam! Please let me know what I can help you with and the best way to reach out. "
+        prompt-msg="Hi, I am available to answer and questions right now."
         data-use-email-field="true"
         data-agency-name="Natural Frameworks"
         data-agency-website="www.naturalframeworks.com"

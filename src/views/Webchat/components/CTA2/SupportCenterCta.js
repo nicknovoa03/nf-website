@@ -19,7 +19,7 @@ const SupportCenterCta = () => {
   });
 
   return (
-    <Container maxWidth={{ md: 1450 }} marginY={{ md: -10 }}>
+    <Container maxWidth={{ md: 1450 }} marginY={{ md: -5 }}>
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
         <Grid
           item

@@ -17,7 +17,7 @@ const CtaWithIllustration = () => {
   });
 
   return (
-    <Container maxWidth={{ md: 1450 }}>
+    <Container maxWidth={{ md: 1450 }} marginTop={10}>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Box

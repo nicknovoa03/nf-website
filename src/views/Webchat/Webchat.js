@@ -5,6 +5,7 @@ import React from 'react';
 import CTA from './components/CTA';
 import CTA2 from './components/CTA2';
 import CTA3 from './components/CTA3';
+import CTA4 from './components/CTA4';
 import Hero from './components/Hero';
 import Info from './components/Info';
 
@@ -39,24 +40,19 @@ const Webchat = () => {
             d="M0,0c0,0,934.4,93.4,1920,0z"
           ></path>
         </Box>
-        <Container>
-          <Info />
-        </Container>
+        <Info />
       </Box>
-      <Container>
-        <CTA />
-        <CTA2 />
-      </Container>
+      <CTA />
+      <CTA4 />
       <Box
         position={'relative'}
         sx={{
           backgroundColor: theme.palette.alternate.main,
         }}
       >
-        <Container>
-          <CTA3 />
-        </Container>
+        <CTA3 />
       </Box>
+      <CTA2 />
     </Main>
   );
 };
