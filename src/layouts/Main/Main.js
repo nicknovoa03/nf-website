@@ -10,7 +10,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Container from 'components/Container';
 import TopNav from 'components/TopNav';
 
-import { Topbar, Sidebar, Footer } from './components';
+import { Topbar, Sidebar, Footer, Contact, FooterCTA } from './components';
 
 import pages from '../navigation';
 import Script from 'next/script';
@@ -67,13 +67,49 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
         variant="temporary"
         pages={pages}
       />
-      <main>
-        {children}
-        <Divider />
-      </main>
-      <Container paddingY={4}>
+      <main>{children}</main>
+      <Box
+        position={'relative'}
+        sx={{
+          backgroundColor: theme.palette.alternate.dark,
+        }}
+      >
+        <FooterCTA />
+        <Box
+          position={'relative'}
+          sx={{
+            backgroundColor: theme.palette.alternate.dark,
+          }}
+        >
+          <Box
+            component={'svg'}
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            viewBox="0 0 1920 100.1"
+            sx={{
+              width: '100%',
+              marginBottom: theme.spacing(-1),
+            }}
+          >
+            <path
+              fill={theme.palette.background.paper}
+              d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"
+            ></path>
+          </Box>
+        </Box>
+      </Box>
+      <Contact />
+      <Divider />
+      <Box
+        position={'relative'}
+        sx={{
+          backgroundColor: theme.palette.alternate.dark,
+        }}
+      >
         <Footer />
-      </Container>
+      </Box>
       <div
         data-chat-widget
         data-style="--chat-widget-primary-color: #377dff; --chat-widget-active-color:#377dff ;--chat-widget-bubble-color: #377dff"
