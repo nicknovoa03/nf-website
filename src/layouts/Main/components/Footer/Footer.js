@@ -10,48 +10,108 @@ import Container from 'components/Container';
 const Footer = () => {
   return (
     <Container>
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={12}>
-          <Box>
-            <Typography align={'center'}>Get In Touch:</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Box>
-            <Link
-              href="mailto:contact@naturalframeworks.com"
-              color="inherit"
-              underline="hover"
-            >
-              <Typography align={'center'}>
-                Email: contact@naturalframeworks.com
-              </Typography>
-            </Link>
-          </Box>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Box>
-            <Typography align={'center'}>Phone: (210) 791-8336</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={12}>
+      <Grid container spacing={4}>
+        <Grid item xs={12} md={3} align="center">
           <Box
             display={'flex'}
-            justifyContent={'space-between'}
-            alignItems={'center'}
-            width={1}
-            flexDirection={{ xs: 'column', sm: 'row' }}
+            component="a"
+            href="/"
+            title="Natural Frameworks"
+            width={50}
           >
-            <Box
-              display={'flex'}
-              component="a"
-              href="/"
-              title="Natural Frameworks"
-              width={50}
-            >
-              <Image alt="Natural Frameoworks Logo" src={logo}></Image>
+            <Image alt="Natural Frameoworks Logo" src={logo}></Image>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={3}>
+          <Box>
+            <Box>
+              <Typography fontWeight={700} variant="h6">
+                Get In Touch
+              </Typography>
             </Box>
-            <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
+            <Box marginTop={1} marginRight={2}>
+              <Link
+                href="mailto:contact@naturalframeworks.com"
+                color="inherit"
+                underline="hover"
+              >
+                <Typography variant={'subtitle2'}>
+                  Email: contact@naturalframeworks.com
+                </Typography>
+              </Link>
+            </Box>
+            <Box marginTop={2} marginRight={2}>
+              <Typography variant={'subtitle2'}>
+                Phone: (210) 791-8336
+              </Typography>
+            </Box>
+            <Box marginTop={2} marginRight={2}>
+              <Typography variant={'subtitle2'}>
+                Locally based out of <br />
+                San Antonio, Texas.
+              </Typography>
+            </Box>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={3}>
+          <Box alignItems={'center'}>
+            <Typography fontWeight={700} variant="h6">
+              Our Services
+            </Typography>
+            <Box marginTop={1} marginRight={2}>
+              <Link
+                underline="none"
+                component="a"
+                href="/reviews"
+                color="text.primary"
+                variant={'subtitle2'}
+              >
+                Reviews
+              </Link>
+            </Box>
+            <Box marginTop={1} marginRight={2}>
+              <Link
+                underline="none"
+                component="a"
+                href="/messaging"
+                color="text.primary"
+                variant={'subtitle2'}
+              >
+                Messaging
+              </Link>
+            </Box>
+            <Box marginTop={1} marginRight={2}>
+              <Link
+                underline="none"
+                component="a"
+                href="/webchat"
+                color="text.primary"
+                variant={'subtitle2'}
+              >
+                Webchat
+              </Link>
+            </Box>
+            <Box marginTop={1} marginRight={2}>
+              <Link
+                underline="none"
+                component="a"
+                href="/payments"
+                color="text.primary"
+                variant={'subtitle2'}
+              >
+                Payments
+              </Link>
+            </Box>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={3} direction="column">
+          <Box>
+            <Box alignItems={'center'}>
+              <Box>
+                <Typography fontWeight={700} variant="h6">
+                  Navigate
+                </Typography>
+              </Box>
               <Box marginTop={1} marginRight={2}>
                 <Link
                   underline="none"
@@ -109,6 +169,26 @@ const Footer = () => {
             information to help provide you with a better, faster and safer
             experience and for marketing purposes.
           </Typography>
+        </Grid>
+        <Grid container item xs={12} align="center">
+          <Grid item md={6} xs={6}>
+            <Link
+              src="/privacy-policy"
+              variant={'caption'}
+              color="text.secondary"
+            >
+              Private Policy
+            </Link>
+          </Grid>
+          <Grid item md={6} xs={6}>
+            <Link
+              src="/privacy-policy"
+              variant={'caption'}
+              color="text.secondary"
+            >
+              Terms & Conditions
+            </Link>
+          </Grid>
         </Grid>
       </Grid>
     </Container>
