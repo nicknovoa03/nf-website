@@ -74,6 +74,37 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
           backgroundColor: theme.palette.alternate.dark,
         }}
       >
+        <Box
+          position={'relative'}
+          sx={{
+            backgroundColor: theme.palette.background.paper,
+          }}
+        >
+          <Box
+            component={'svg'}
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            viewBox="0 0 1920 100.1"
+            sx={{
+              width: '100%',
+              marginBottom: theme.spacing(-1),
+            }}
+          >
+            <path
+              fill={theme.palette.alternate.dark}
+              d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"
+            ></path>
+          </Box>
+        </Box>
+      </Box>
+      <Box
+        position={'relative'}
+        sx={{
+          backgroundColor: theme.palette.alternate.dark,
+        }}
+      >
         <FooterCTA />
         <Box
           position={'relative'}

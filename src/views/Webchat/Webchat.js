@@ -43,7 +43,7 @@ const Webchat = () => {
         <Info />
       </Box>
       <CTA />
-      <CTA4 />
+      <CTA2 />
       <Box
         position={'relative'}
         sx={{
@@ -52,7 +52,7 @@ const Webchat = () => {
       >
         <CTA3 />
       </Box>
-      <CTA2 />
+      <CTA4 />
     </Main>
   );
 };
