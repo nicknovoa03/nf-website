@@ -8,7 +8,7 @@ import Avatar from '@mui/material/Avatar';
 import { alpha } from '@mui/material/styles';
 import { colors, Divider, useMediaQuery } from '@mui/material';
 
-import AnalyticsOutlinedIcon from '@mui/icons-material/AnalyticsOutlined';
+import AllInboxIcon from '@mui/icons-material/AllInbox';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import MarkUnreadChatAltOutlinedIcon from '@mui/icons-material/MarkUnreadChatAltOutlined';
 import PhoneMissedIcon from '@mui/icons-material/PhoneMissed';
@@ -17,27 +17,10 @@ import { useTheme } from '@emotion/react';
 
 const mock = [
   {
-    color: colors.deepOrange[500],
-    title: 'Being Relevant',
+    color: colors.yellow[700],
+    title: 'Online Reviews',
     subtitle:
-      'We want to help you be relevant so you can serve your customers at a higher level.',
-    icon: (
-      <svg
-        height={30}
-        width={30}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-      >
-        <AnalyticsOutlinedIcon />
-      </svg>
-    ),
-  },
-  {
-    color: colors.yellow[500],
-    title: 'Maximum Growth',
-    subtitle:
-      'Our goal is to help give you the tools & resources to maximize your growth.',
+      'Automate your online reviews with a few simple clicks & respond to reviews in 1 place',
     icon: (
       <svg
         height={30}
@@ -51,10 +34,27 @@ const mock = [
     ),
   },
   {
-    color: colors.cyan[500],
-    title: 'Positive Impact',
+    color: colors.deepOrange[500],
+    title: 'Messaging',
     subtitle:
-      'We want to help you amplify the positive impact you have in your community.',
+      'Manage your messages with a single inbox for text, Facebook messages, Google messages, and more.',
+    icon: (
+      <svg
+        height={30}
+        width={30}
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <AllInboxIcon />
+      </svg>
+    ),
+  },
+  {
+    color: colors.cyan[500],
+    title: 'Webchat',
+    subtitle:
+      'Convert more website visitors into leads & sales conversations with Webchat.',
     icon: (
       <svg
         height={30}
@@ -68,27 +68,10 @@ const mock = [
     ),
   },
   {
-    color: colors.red[500],
-    title: 'Cross-functional',
-    subtitle:
-      'CHATT\'s tools give you the ability to perform at your best on all platforms.',
-    icon: (
-      <svg
-        height={30}
-        width={30}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-      >
-        <PhoneMissedIcon />
-      </svg>
-    ),
-  },
-  {
     color: colors.green[500],
-    title: 'Multidisciplinary Team',
+    title: 'Payments',
     subtitle:
-      'We employ a highly diverse team in skills & culture to serve you better.',
+      'Easy text 2 pay client invoicing. Simplify your client invoicing & get paid faster.',
     icon: (
       <svg
         height={30}
@@ -102,9 +85,26 @@ const mock = [
     ),
   },
   {
+    color: colors.red[500],
+    title: 'Missed Call Text Back',
+    subtitle:
+      'When you\'re away, have Natural Frameworks follow up via text so you never lose another customer',
+    icon: (
+      <svg
+        height={30}
+        width={30}
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <PhoneMissedIcon />
+      </svg>
+    ),
+  },
+  {
     color: colors.lightBlue[500],
-    title: 'Cutting-Edge Technology',
-    subtitle: 'We strive to bring you the best tools the market has to offer.',
+    title: 'CRM',
+    subtitle: 'Grow your audience & know where new leads are coming from',
     icon: (
       <svg
         height={24}
@@ -139,12 +139,8 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
           color="text.primary"
           sx={{ fontWeight: 500 }}
           marginBottom={5}
-          data-aos={isMd ? 'zoom-in-up' : 'fade-up'}
-          data-aos-delay={100}
-          data-aos-offset={100}
-          data-aos-duration={600}
         >
-          Our Standards
+          What We Do
         </Typography>
         <Divider variant="middle" />
       </Box>

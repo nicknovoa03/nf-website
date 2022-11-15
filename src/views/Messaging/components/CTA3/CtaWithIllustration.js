@@ -80,7 +80,7 @@ const CtaWithIllustration = () => {
                 marginLeft={{ sm: 2 }}
                 href="pricing"
               >
-                Learn More
+                Get Started
               </Box>
             </Box>
           </Box>

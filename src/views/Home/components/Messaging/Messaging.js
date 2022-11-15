@@ -41,8 +41,6 @@ const Messaging = () => {
             flexDirection={'column'}
             justifyContent={{ xs: 'flex-start', md: 'space-between' }}
             height={1}
-            maxHeight={500}
-            marginTop={isMd ? 8 : 0}
           >
             <Box>
               <Typography variant={'h4'} fontWeight={700} gutterBottom>
@@ -73,23 +71,36 @@ const Messaging = () => {
                   Messaging
                 </Typography>
                 <Typography component={'p'}>
-                  Manage your messages with a single inbox for text, Facebook
-                  messages, Google messages, and more.
+                  Business texting is the way of the future. Research shows only
+                  20% of emails are opened, compared to a 98% open rate for text
+                  messages.
                 </Typography>
               </CardContent>
             </Box>
-            <Box boxShadow={4} marginY={{ xs: 4 }}>
+            <Box marginY={{ xs: 2 }}>
               <Button
                 variant="contained"
-                sx={{
-                  backgroundColor: theme.palette.primary.light,
-                }}
                 size="large"
                 fullWidth={true}
                 href="/messaging"
+                sx={{
+                  backgroundColor: theme.palette.primary.light,
+                }}
               >
-                Get Started
+                Learn More
               </Button>
+            </Box>
+            <Box component={Card} boxShadow={0} borderRadius={2}>
+              <CardContent sx={{ padding: { xs: 2, sm: 4 } }}>
+                <Typography variant={'h6'} fontWeight={700} gutterBottom>
+                  Convert leads from Google, Facebook, and Instagram.
+                </Typography>
+                <Typography component={'p'}>
+                  No need to log into five different apps. Just log into
+                  Interactions and convert your leads coming in from Google,
+                  Facebook, and Instagram Messaging.
+                </Typography>
+              </CardContent>
             </Box>
           </Box>
         </Grid>

@@ -96,7 +96,7 @@ const OnlineReviews = () => {
                 all from a single inbox.
               </Typography>
             </Box>
-            <Box boxShadow={4} marginY={{ xs: 4 }}>
+            <Box marginY={{ xs: 4 }}>
               <Button
                 variant="contained"
                 size="large"
@@ -106,7 +106,7 @@ const OnlineReviews = () => {
                   backgroundColor: theme.palette.primary.light,
                 }}
               >
-                Get Started
+                Learn More
               </Button>
             </Box>
             <Box
@@ -118,14 +118,13 @@ const OnlineReviews = () => {
             >
               <CardContent sx={{ padding: { xs: 2, sm: 4 } }}>
                 <Typography variant={'h6'} fontWeight={700} gutterBottom>
-                  Negative Review Filter
+                  Automatically share your reviews.
                 </Typography>
                 <Typography component={'p'}>
-                  Filter out customers who would leave a negative review before
-                  they become public. If a review is expected to be negative,
-                  the comments are sent via email to you & your team. This gives
-                  you the opportunity to work with the customer to resolve any
-                  issues.
+                  Our review management system makes it easy to set custom rules
+                  and logic to share your reviews from 150+ sites to Facebook,
+                  Twitter and LinkedIn. Gather and share reviews without lifting
+                  a finger.
                 </Typography>
               </CardContent>
             </Box>

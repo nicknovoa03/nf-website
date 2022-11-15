@@ -77,7 +77,6 @@ const Messaging = () => {
           <Stats />
         </Container>
       </Box>
-
       <Container>
         <LogoGrid />
       </Container>

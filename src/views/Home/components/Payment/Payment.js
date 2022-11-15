@@ -94,7 +94,7 @@ const Payment = () => {
                 secure payment link delivered right to their phone.
               </Typography>
             </Box>
-            <Box boxShadow={4} marginY={{ xs: 4 }}>
+            <Box marginY={{ xs: 4 }}>
               <Button
                 variant="contained"
                 size="large"
@@ -104,7 +104,7 @@ const Payment = () => {
                   backgroundColor: theme.palette.primary.light,
                 }}
               >
-                Get Started
+                Learn More
               </Button>
             </Box>
             <Box

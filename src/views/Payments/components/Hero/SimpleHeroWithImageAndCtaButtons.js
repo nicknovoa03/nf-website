@@ -51,8 +51,8 @@ const SimpleHeroWithImageAndCtaButtons = () => {
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
               Get paid fast and keep the conversation alive. Whether you&apos;re
-              at home, in-store, or in the field. Hexona Systems text-to pay has
-              you covered.
+              at home, in-store, or in the field. Natural Frameworks text-to pay
+              has you covered.
             </Typography>
           </Box>
           <Box
