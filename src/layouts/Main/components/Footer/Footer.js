@@ -173,7 +173,7 @@ const Footer = () => {
         <Grid container item xs={12} align="center">
           <Grid item md={6} xs={6}>
             <Link
-              src="/privacy-policy"
+              href="/privacy-policy"
               variant={'caption'}
               color="text.secondary"
             >
@@ -182,7 +182,7 @@ const Footer = () => {
           </Grid>
           <Grid item md={6} xs={6}>
             <Link
-              src="/privacy-policy"
+              href="/terms-conditions"
               variant={'caption'}
               color="text.secondary"
             >
