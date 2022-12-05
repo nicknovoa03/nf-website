@@ -68,6 +68,7 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
         pages={pages}
       />
       <main>{children}</main>
+
       <Box
         position={'relative'}
         sx={{
