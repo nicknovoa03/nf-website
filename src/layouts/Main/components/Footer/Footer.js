@@ -177,7 +177,7 @@ const Footer = () => {
               variant={'caption'}
               color="text.secondary"
             >
-              Private Policy
+              Privacy Policy
             </Link>
           </Grid>
           <Grid item md={6} xs={6}>
