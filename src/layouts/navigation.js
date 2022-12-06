@@ -16,6 +16,11 @@ const pages = {
       title: 'Payments',
       href: '/payments',
     },
+    {
+      title: 'Digital Marketing',
+      href: '/digital-marketing',
+      isNew: true,
+    },
   ],
   company: [
     {
