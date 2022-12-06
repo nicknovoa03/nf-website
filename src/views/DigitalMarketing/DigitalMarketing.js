@@ -52,7 +52,6 @@ const DigitalMarketing = () => {
           <CTA2 />
         </Container>
       </Box>
-
       <Features />
     </Main>
   );
