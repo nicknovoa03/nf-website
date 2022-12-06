@@ -17,7 +17,7 @@ const Hero = () => {
   });
 
   return (
-    <Grid container spacing={4}>
+    <Grid container spacing={4} marginLeft={{ md: 4 }}>
       <Grid item container xs={12} md={6} alignItems={'center'}>
         <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
           <Box marginBottom={2}>
