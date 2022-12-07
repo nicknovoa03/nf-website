@@ -102,6 +102,31 @@ const Footer = () => {
                 Payments
               </Link>
             </Box>
+            <Box marginTop={1} marginRight={2}>
+              <Link
+                underline="none"
+                component="a"
+                href="/digital-marketing"
+                color="text.primary"
+                variant={'subtitle2'}
+              >
+                Digital Marketing
+              </Link>
+              <Box
+                padding={0.5}
+                display={'inline-flex'}
+                borderRadius={1}
+                bgcolor={'primary.main'}
+                marginLeft={1}
+              >
+                <Typography
+                  variant={'caption'}
+                  sx={{ color: 'common.white', lineHeight: 1 }}
+                >
+                  new
+                </Typography>
+              </Box>
+            </Box>
           </Box>
         </Grid>
         <Grid item xs={12} md={3}>
