@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import illustration from '../../../../assets/template/webchatIllustration.png';
+import illustration from '../../../../assets/template/digitalmarketing2.svg';
 import Image from 'next/image';
 
 const CtaWithIllustration = () => {
@@ -16,14 +16,16 @@ const CtaWithIllustration = () => {
 
   return (
     <Grid container spacing={4}>
-      <Grid item xs={12} md={6}>
-        <Box
-          marginTop={{ md: 14 }}
-          data-aos={isMd ? 'fade-up-right' : 'fade-up'}
-          data-aos-delay={100}
-          data-aos-offset={100}
-          data-aos-duration={600}
-        >
+      <Grid
+        item
+        xs={12}
+        md={6}
+        data-aos={isMd ? 'fade-down-right' : 'fade-up'}
+        data-aos-delay={100}
+        data-aos-offset={100}
+        data-aos-duration={600}
+      >
+        <Box marginTop={{ md: 20 }}>
           <Box marginBottom={2}>
             <Typography
               sx={{
@@ -70,19 +72,20 @@ const CtaWithIllustration = () => {
           </Box>
         </Box>
       </Grid>
-      <Grid item xs={12} md={6}>
-        <Box
-          maxWidth={600}
-          height={1}
-          width={1}
-          align="center"
-          marginLeft={{ md: 15 }}
-          data-aos={isMd ? 'fade-up-left' : 'fade-up'}
-          data-aos-delay={100}
-          data-aos-offset={100}
-          data-aos-duration={600}
-        >
-          <Image alt="Natural Frameworks Messaging" src={illustration} />
+      <Grid
+        item
+        xs={12}
+        md={6}
+        data-aos={isMd ? 'fade-down-left' : 'fade-up'}
+        data-aos-delay={100}
+        data-aos-offset={100}
+        data-aos-duration={600}
+      >
+        <Box height={1} width={1} align="center" minWidth={{ md: 800 }}>
+          <Image
+            alt="Natural Frameworks Digital Marketing"
+            src={illustration}
+          />
         </Box>
       </Grid>
     </Grid>

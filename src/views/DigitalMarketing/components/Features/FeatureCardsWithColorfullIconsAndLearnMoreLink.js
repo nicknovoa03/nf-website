@@ -196,7 +196,7 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
                 data-aos={isMd ? 'fade-up' : 'fade-up'}
                 data-aos-delay={i * 100}
                 data-aos-offset={100}
-                data-aos-duration={1000}
+                data-aos-duration={600}
               >
                 <Box display={'flex'} flexDirection={'column'}>
                   <Box

@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Image from 'next/image';
-import illustration from '../../../../assets/template/webchatIllustration2.png';
+import illustration from '../../../../assets/template/digitalmarketing3.svg';
 
 const SupportCenterCta = () => {
   const theme = useTheme();
@@ -26,15 +26,12 @@ const SupportCenterCta = () => {
         sx={{
           display: { xs: 'none', md: 'flex' },
         }}
+        data-aos={isMd ? 'fade-up-right' : 'fade-up'}
+        data-aos-delay={100}
+        data-aos-offset={400}
+        data-aos-duration={600}
       >
-        <Box
-          height={1}
-          width={1}
-          data-aos={isMd ? 'fade-up-right' : 'fade-up'}
-          data-aos-delay={100}
-          data-aos-offset={400}
-          data-aos-duration={600}
-        >
+        <Box height={1} width={1} minWidth={{ md: 800 }}>
           <Image alt="Natural Frameworks Messaging" src={illustration} />
         </Box>
       </Grid>
@@ -44,10 +41,10 @@ const SupportCenterCta = () => {
         md={6}
         data-aos={isMd ? 'fade-up-left' : 'fade-up'}
         data-aos-delay={100}
-        data-aos-offset={700}
+        data-aos-offset={400}
         data-aos-duration={600}
       >
-        <Box marginTop={{ md: 40 }} marginBottom={3}>
+        <Box marginTop={{ md: 17 }} marginBottom={3}>
           <Typography
             sx={{
               textTransform: 'uppercase',

@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Image from 'next/image';
 
-import illustration from '../../../../assets/template/dm1.png';
+import illustration from '../../../../assets/template/digitalmarketing1.svg';
 
 const SimpleHeroWithImageAndCtaButtons = () => {
   const theme = useTheme();
