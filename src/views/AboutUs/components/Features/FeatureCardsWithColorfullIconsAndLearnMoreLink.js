@@ -13,6 +13,9 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
 import MarkUnreadChatAltOutlinedIcon from '@mui/icons-material/MarkUnreadChatAltOutlined';
 import PhoneMissedIcon from '@mui/icons-material/PhoneMissed';
 import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
+import AutoGraphOutlinedIcon from '@mui/icons-material/AutoGraphOutlined';
+import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices';
+
 import { useTheme } from '@emotion/react';
 
 const mock = [
@@ -20,7 +23,7 @@ const mock = [
     color: colors.yellow[700],
     title: 'Online Reviews',
     subtitle:
-      'Automate your online reviews with a few simple clicks & respond to reviews in 1 place',
+      'Automate your online reviews with a few simple clicks & respond to reviews in 1 place.',
     icon: (
       <svg
         height={30}
@@ -34,10 +37,10 @@ const mock = [
     ),
   },
   {
-    color: colors.deepOrange[500],
-    title: 'Messaging',
+    color: colors.green[500],
+    title: 'SEO',
     subtitle:
-      'Manage your messages with a single inbox for text, Facebook messages, Google messages, and more.',
+      'Optimize your website for search engine best practices to increase visibility to your organization.',
     icon: (
       <svg
         height={30}
@@ -46,12 +49,12 @@ const mock = [
         fill="none"
         viewBox="0 0 24 24"
       >
-        <AllInboxIcon />
+        <AutoGraphOutlinedIcon />
       </svg>
     ),
   },
   {
-    color: colors.cyan[500],
+    color: colors.red[400],
     title: 'Webchat',
     subtitle:
       'Convert more website visitors into leads & sales conversations with Webchat.',
@@ -67,6 +70,41 @@ const mock = [
       </svg>
     ),
   },
+  {
+    color: colors.lightBlue[300],
+    title: 'Digital Marketing',
+    subtitle:
+      'We leverage digital channels to market products and services in order to reach consumers.',
+    icon: (
+      <svg
+        height={30}
+        width={30}
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <ImportantDevicesIcon />
+      </svg>
+    ),
+  },
+  {
+    color: colors.amber[500],
+    title: 'Messaging',
+    subtitle:
+      'Manage your messages with a single inbox for text, Facebook messages, Google messages, and more.',
+    icon: (
+      <svg
+        height={30}
+        width={30}
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <AllInboxIcon />
+      </svg>
+    ),
+  },
+
   {
     color: colors.green[500],
     title: 'Payments',
@@ -88,7 +126,7 @@ const mock = [
     color: colors.red[500],
     title: 'Missed Call Text Back',
     subtitle:
-      'When you\'re away, have Natural Frameworks follow up via text so you never lose another customer',
+      'When you\'re away, have Natural Frameworks follow up via text so you never lose another customer.',
     icon: (
       <svg
         height={30}
@@ -104,7 +142,8 @@ const mock = [
   {
     color: colors.lightBlue[500],
     title: 'CRM',
-    subtitle: 'Grow your audience & know where new leads are coming from',
+    subtitle:
+      'Keep track of all your leads and customers. Grow your audience & know where new leads are coming from.',
     icon: (
       <svg
         height={24}
@@ -146,7 +185,7 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
       </Box>
       <Grid container spacing={4}>
         {mock.map((item, i) => (
-          <Grid item xs={12} sm={6} md={4} key={i}>
+          <Grid item xs={12} sm={6} md={3} key={i}>
             <Box
               display={'block'}
               width={1}
@@ -167,7 +206,7 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
                 data-aos={isMd ? 'fade-up' : 'fade-up'}
                 data-aos-delay={i * 100}
                 data-aos-offset={100}
-                data-aos-duration={1000}
+                data-aos-duration={600}
               >
                 <Box display={'flex'} flexDirection={'column'}>
                   <Box
