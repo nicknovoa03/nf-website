@@ -17,21 +17,21 @@ import Container from 'components/Container';
 const mock = [
   {
     title: 'Startup',
-    price: '$147',
+    price: '$299',
     features: ['1 Business Automation'],
     isHighlighted: true,
-    paymentLink: 'https://buy.stripe.com/28o2axgMY6Iw9wcaEG',
+    paymentLink: 'https://buy.stripe.com/5kA16tdAM8QE5fWfZ6',
   },
   {
     title: 'Essential',
-    price: '$297',
+    price: '$699',
     features: ['Reviews', 'Messaging', 'Webchat', 'Textable Business Number'],
     isHighlighted: true,
-    paymentLink: 'https://buy.stripe.com/eVa2ax7coc2Q7o4289',
+    paymentLink: 'https://buy.stripe.com/14kdTf54g1oc0ZGeV1',
   },
   {
     title: 'Professional',
-    price: '$497',
+    price: '$999',
     features: [
       'All features',
       'CRM',
@@ -41,7 +41,7 @@ const mock = [
       'Full Customer Support Access',
     ],
     isHighlighted: true,
-    paymentLink: 'https://buy.stripe.com/dR68yV40cgj6cIofZ1',
+    paymentLink: 'https://buy.stripe.com/fZe02p9kw4Ao9wccMS',
   },
 ];
 
