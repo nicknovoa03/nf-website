@@ -44,9 +44,10 @@ const Hero = () => {
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              Our goal is to help small businesses engage with their
-              customer&apos;s quicker & easier to improve overall customer
-              experience to help everyone grow.
+              Our software company helps businesses automate their operations
+              and streamline their processes. We offer a range of tools and
+              solutions that enable business owners to save time and reduce the
+              amount of manual work required to run their businesses.
             </Typography>
           </Box>
           <Box
