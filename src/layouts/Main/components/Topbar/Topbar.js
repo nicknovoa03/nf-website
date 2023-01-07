@@ -61,8 +61,19 @@ const Topbar = ({ onSidebarOpen, pages }) => {
           </Button>
         </Box>
         <Box marginLeft={2}>
-          <Button href="/contact" variant="contained">
-            Contact Us
+          <Button href="/pricing" variant="text">
+            <Typography fontWeight={400} color="text.primary">
+              Contact Us
+            </Typography>
+          </Button>
+        </Box>
+        <Box marginLeft={2}>
+          <Button
+            href="https://app.hexonasystems.com/"
+            target={'_blank'}
+            variant="contained"
+          >
+            Login
           </Button>
         </Box>
       </Box>
