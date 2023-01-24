@@ -180,7 +180,7 @@ const Footer = () => {
             color="text.secondary"
             gutterBottom
           >
-            &copy; Natural Frameworks. 2022, Natural Frameworks. All rights
+            &copy; Natural Frameworks. 2023, Natural Frameworks. All rights
             reserved
           </Typography>
           <Typography
