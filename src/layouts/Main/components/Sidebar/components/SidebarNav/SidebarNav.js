@@ -47,9 +47,20 @@ const SidebarNav = ({ pages }) => {
             </Typography>
           </Button>
         </Box>
-        <Box marginTop={2}>
-          <Button href="/contact" variant="contained">
-            Contact Us
+        <Box>
+          <Button href="/contact" variant="text">
+            <Typography fontWeight={400} marginLeft={-1} color={'text.primary'}>
+              Contact Us
+            </Typography>
+          </Button>
+        </Box>
+        <Box marginTop={1}>
+          <Button
+            href="https://app.hexonasystems.com/"
+            target="_blank"
+            variant="contained"
+          >
+            Login
           </Button>
         </Box>
       </Box>
