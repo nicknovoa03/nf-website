@@ -148,7 +148,7 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
         data-location-id="d9EJPvHmPoXnwbaq1mCE"
         data-prompt-avatar="https://widgets.leadconnectorhq.com/chat-widget/assets/defaultAvatar.png"
         heading="What can I help you with?"
-        sub-heading="Hi, I'm Sam! Please let me know what I can help you with and the best way to reach out. "
+        sub-heading="Hi, I'm Anastacia! Please let me know what I can help you with and the best way to reach out. "
         prompt-msg="Hi, I am available to answer and questions right now."
         data-use-email-field="true"
         data-agency-name="Natural Frameworks"
