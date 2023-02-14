@@ -146,9 +146,9 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
         data-chat-widget
         data-style="--chat-widget-primary-color: #377dff; --chat-widget-active-color:#377dff ;--chat-widget-bubble-color: #377dff"
         data-location-id="d9EJPvHmPoXnwbaq1mCE"
-        data-prompt-avatar="https://widgets.leadconnectorhq.com/chat-widget/assets/defaultAvatar.png"
+        data-prompt-avatar="https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/locationPhotos%2Fd9EJPvHmPoXnwbaq1mCE%2Fchat-widget-person?alt=media&token=f81a5b79-8fb6-4772-9359-e1a52c12ae72"
         heading="What can I help you with?"
-        sub-heading="Hi, I'm Anastacia! Please let me know what I can help you with and the best way to reach out. "
+        sub-heading="Hi, I'm Nick! Please let me know what I can help you with and the best way to reach out. "
         prompt-msg="Hi, I am available to answer and questions right now."
         data-use-email-field="true"
         data-agency-name="Natural Frameworks"
