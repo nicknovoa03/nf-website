@@ -16,19 +16,12 @@ const SimpleHeroWithImageAndCtaButtons = () => {
   });
 
   return (
-    <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
-      <Grid
-        item
-        container
-        alignItems={'center'}
-        justifyContent={'center'}
-        xs={12}
-        md={6}
-      >
+    <Grid container spacing={25} direction={isMd ? 'row' : 'column-reverse'}>
+      <Grid item container xs={12} md={6}>
         <Box
           height={1}
           width={1}
-          marginLeft={{ md: 10 }}
+          paddingLeft={{ md: 35 }}
           data-aos={isMd ? 'fade-right' : 'fade-up'}
           data-aos-delay={100}
           data-aos-offset={100}

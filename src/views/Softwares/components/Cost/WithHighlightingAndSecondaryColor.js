@@ -33,8 +33,8 @@ const mock = [
     features: [
       'Comprehensive Building Information Modeling (BIM) Tool: Autodesk Revit is a powerful software for architects, engineers, and construction professionals to create, analyze, and manage building designs in a collaborative BIM environment.',
       'Integrated Design and Documentation: Revit enables seamless integration of design and documentation processes, allowing users to create intelligent 3D models that automatically generate accurate construction documentation.',
-      "Parametric Components and Families: With Revit's extensive library of parametric components and families, users can easily create and manipulate intelligent building elements, saving time and ensuring design consistency.",
-      "Collaborative Workflows: Facilitate effective collaboration among team members with Revit's cloud-based collaboration tools, enabling real-time collaboration, model coordination, and shared project data.",
+      'Parametric Components and Families: With Revit\'s extensive library of parametric components and families, users can easily create and manipulate intelligent building elements, saving time and ensuring design consistency.',
+      'Collaborative Workflows: Facilitate effective collaboration among team members with Revit\'s cloud-based collaboration tools, enabling real-time collaboration, model coordination, and shared project data.',
       'Accurate Analysis and Simulation: Perform accurate energy analysis, structural analysis, and other simulations directly within Revit, allowing users to optimize building performance and make informed design decisions.',
     ],
     isHighlighted: true,
@@ -44,10 +44,10 @@ const mock = [
     title: 'Core Impact Pro',
     price: '$14,400',
     features: [
-      "Comprehensive Penetration Testing Solution: Core Impact Pro is a leading penetration testing software that enables cybersecurity professionals to simulate real-world attacks and identify vulnerabilities in their organization's network, systems, and applications.",
+      'Comprehensive Penetration Testing Solution: Core Impact Pro is a leading penetration testing software that enables cybersecurity professionals to simulate real-world attacks and identify vulnerabilities in their organization\'s network, systems, and applications.',
       'Advanced Exploitation Techniques: Core Impact Pro provides a wide range of advanced exploitation techniques, including remote code execution, privilege escalation, and social engineering, allowing users to thoroughly test the security of their infrastructure.',
-      "Automated Vulnerability Assessment: Streamline the vulnerability assessment process with Core Impact Pro's automated scanning capabilities, which help identify and prioritize potential security weaknesses for further investigation.",
-      "Multi-Vector Attack Simulations: Conduct sophisticated multi-vector attack simulations using Core Impact Pro, replicating complex attack scenarios to assess the overall security posture of your organization's assets.",
+      'Automated Vulnerability Assessment: Streamline the vulnerability assessment process with Core Impact Pro\'s automated scanning capabilities, which help identify and prioritize potential security weaknesses for further investigation.',
+      'Multi-Vector Attack Simulations: Conduct sophisticated multi-vector attack simulations using Core Impact Pro, replicating complex attack scenarios to assess the overall security posture of your organization\'s assets.',
       'Detailed Reporting and Remediation Guidance: Generate comprehensive reports with detailed findings and recommended remediation steps using Core Impact Pro. This helps organizations prioritize and address security vulnerabilities effectively.',
     ],
     isHighlighted: true,
@@ -57,7 +57,7 @@ const mock = [
     title: 'ExWorks',
     price: '$60,000',
     features: [
-      "Efficient Shipping Solution: ExWorks is a comprehensive shipping service that offers efficient handling and transportation of goods from the seller's location to the buyer's designated destination.",
+      'Efficient Shipping Solution: ExWorks is a comprehensive shipping service that offers efficient handling and transportation of goods from the seller\'s location to the buyer\'s designated destination.',
       'Flexible Arrangements: ExWorks provides flexibility for buyers and sellers to negotiate and determine the specific responsibilities and costs involved in the shipping process, allowing for customized arrangements.',
       'Simplified Logistics: With ExWorks, the seller is responsible for preparing the goods for export, including packaging, documentation, and customs clearance, simplifying logistics for the buyer.',
       'Cost Control: ExWorks allows buyers to have greater control over shipping costs, as they can select their preferred shipping provider and manage transportation arrangements based on their budget and requirements.',
