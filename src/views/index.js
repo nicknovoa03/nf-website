@@ -6,6 +6,7 @@ export { default as Payments } from './Payments';
 export { default as HireUs } from './HireUs';
 export { default as AboutUs } from './AboutUs';
 export { default as Pricing } from './Pricing';
+export { default as Softwares } from './Softwares';
 export { default as PrivacyPolicy } from './PrivacyPolicy';
 export { default as TermsAndConditions } from './TermsAndConditions';
 export { default as DigitalMarketing } from './DigitalMarketing';

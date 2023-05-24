@@ -25,7 +25,27 @@ const SidebarNav = ({ pages }) => {
           <Image alt="Natural Frameoworks Logo" src={logo}></Image>
         </Box>
       </Box>
+
       <Box paddingX={2} paddingY={2}>
+        <Box>
+          <Button href="/" variant="text">
+            <Typography
+              fontWeight={400}
+              marginLeft={-2.4}
+              color={'text.primary'}
+              align="left"
+            >
+              Home
+            </Typography>
+          </Button>
+        </Box>
+        <Box>
+          <Button href="/softwares" variant="text">
+            <Typography fontWeight={400} marginLeft={-1} color={'text.primary'}>
+              Softwares
+            </Typography>
+          </Button>
+        </Box>
         <Box>
           <NavItem
             title={'Services'}
