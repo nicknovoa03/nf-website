@@ -39,13 +39,7 @@ const SidebarNav = ({ pages }) => {
             </Typography>
           </Button>
         </Box>
-        <Box>
-          <Button href="/softwares" variant="text">
-            <Typography fontWeight={400} marginLeft={-1} color={'text.primary'}>
-              Softwares
-            </Typography>
-          </Button>
-        </Box>
+
         <Box>
           <NavItem
             title={'Services'}

@@ -39,13 +39,7 @@ const Topbar = ({ onSidebarOpen, pages }) => {
             </Typography>
           </Button>
         </Box>
-        <Box marginLeft={2}>
-          <Button href="/softwares" variant="text">
-            <Typography fontWeight={400} color="text.primary">
-              Softwares
-            </Typography>
-          </Button>
-        </Box>
+
         <Box marginLeft={2.5}>
           <NavItem
             title={'Services'}
