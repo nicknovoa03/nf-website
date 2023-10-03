@@ -55,13 +55,6 @@ const SidebarNav = ({ pages }) => {
           />
         </Box>
         <Box>
-          <Button href="/pricing" variant="text">
-            <Typography fontWeight={400} marginLeft={-1} color={'text.primary'}>
-              Pricing
-            </Typography>
-          </Button>
-        </Box>
-        <Box>
           <Button href="/contact" variant="text">
             <Typography fontWeight={400} marginLeft={-1} color={'text.primary'}>
               Contact Us

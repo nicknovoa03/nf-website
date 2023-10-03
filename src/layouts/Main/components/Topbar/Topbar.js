@@ -55,13 +55,6 @@ const Topbar = ({ onSidebarOpen, pages }) => {
           />
         </Box>
         <Box marginLeft={2}>
-          <Button href="/pricing" variant="text">
-            <Typography fontWeight={400} color="text.primary">
-              Pricing
-            </Typography>
-          </Button>
-        </Box>
-        <Box marginLeft={2}>
           <Button href="/contact" variant="text">
             <Typography fontWeight={400} color="text.primary">
               Contact Us
