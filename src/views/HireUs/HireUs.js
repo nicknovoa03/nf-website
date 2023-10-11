@@ -35,16 +35,13 @@ const HireUs = () => {
         >
           <Grid
             container
+            justifyContent="center"
+            alignItems="center"
             sx={{
               backgroundColor: '#ffffff',
               borderRadius: '16px',
             }}
           >
-            <Grid item xs={12} md={6}>
-              <Container maxWidth={{ sm: 720, md: 550 }}>
-                <Form />
-              </Container>
-            </Grid>
             <Grid item xs={12} md={6}>
               <Container maxWidth={{ sm: 720, md: 775 }}>
                 <Calendar />
