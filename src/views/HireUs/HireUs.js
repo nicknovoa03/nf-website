@@ -43,7 +43,7 @@ const HireUs = () => {
             }}
           >
             <Grid item xs={12} md={6}>
-              <Container maxWidth={{ sm: 720, md: 775 }}>
+              <Container maxWidth={{ sm: 720, md: 775, lg: 1000 }}>
                 <Calendar />
               </Container>
             </Grid>

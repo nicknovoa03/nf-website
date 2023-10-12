@@ -3,7 +3,7 @@ import Container from 'components/Container';
 import { Main } from 'layouts';
 import React from 'react';
 import Compare from './components/Compare';
-import Cost from './components/Cost';
+import Info from './components/Info';
 
 const Pricing = () => {
   const theme = useTheme();
@@ -11,7 +11,7 @@ const Pricing = () => {
   return (
     <Main>
       <Container>
-        <Cost />
+        <Info />
       </Container>
       <Box
         position={'relative'}
