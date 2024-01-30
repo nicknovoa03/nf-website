@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { Headline } from './components';
-import { Grid, useMediaQuery } from '@mui/material';
+import { useMediaQuery } from '@mui/material';
 import Calendar from './components/Calendar';
 
 const HireUs = () => {
