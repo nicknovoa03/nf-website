@@ -1,7 +1,7 @@
 import React from 'react';
-import { HireUs } from 'views';
+import { Contact } from 'views';
 const IndexPage = () => {
-  return <HireUs />;
+  return <Contact />;
 };
 
 export default IndexPage;
