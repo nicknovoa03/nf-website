@@ -5,13 +5,12 @@ import React from 'react';
 
 const Calendar = () => {
   return (
-    <Box paddingY={3}>
+    <Box paddingTop={9}>
       <Typography
         color={'primary'}
         fontWeight={700}
-        variant="h5"
+        variant="h3"
         align="center"
-        paddingBottom={5}
       >
         Schedule A Meeting
       </Typography>

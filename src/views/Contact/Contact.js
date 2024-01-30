@@ -28,26 +28,23 @@ const HireUs = () => {
             <Headline />
           </Container>
         </Box>
-
         <Container
           maxWidth={{ md: 1500 }}
           data-aos={isMd ? 'fade-left' : 'fade-up'}
         >
-          <Grid
-            container
-            justifyContent="center"
-            alignItems="center"
+          <Box
+            display={'flex'}
+            justifyContent={'center'}
+            alignItems={'center'}
             sx={{
               backgroundColor: '#ffffff',
               borderRadius: '16px',
             }}
           >
-            <Grid item xs={12} md={6}>
-              <Container maxWidth={{ sm: 720, md: 775, lg: 1000 }}>
-                <Calendar />
-              </Container>
-            </Grid>
-          </Grid>
+            <Box minWidth={{ sm: 720, md: 775, lg: 1000 }}>
+              <Calendar />
+            </Box>
+          </Box>
         </Container>
       </Box>
     </Main>
