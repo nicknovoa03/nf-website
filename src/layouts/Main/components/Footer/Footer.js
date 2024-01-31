@@ -26,7 +26,7 @@ const Footer = () => {
           <Box>
             <Box>
               <Typography fontWeight={700} variant="h6">
-                Get In Touch
+                Contacts
               </Typography>
             </Box>
             <Box marginTop={1} marginRight={2}>
