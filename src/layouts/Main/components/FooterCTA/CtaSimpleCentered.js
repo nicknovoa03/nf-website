@@ -43,20 +43,10 @@ const CtaSimpleCentered = () => {
         <Box
           display="flex"
           flexDirection={{ xs: 'column', sm: 'row' }}
-          alignItems={{ xs: 'stretched', sm: 'flex-start' }}
+          alignItems={'center'}
           justifyContent={'center'}
           marginTop={4}
         >
-          <Button
-            component={'a'}
-            variant="contained"
-            color="primary"
-            size="large"
-            fullWidth={isMd ? false : true}
-            href={'/pricing'}
-          >
-            View Pricing
-          </Button>
           <Box
             marginTop={{ xs: 2, sm: 0 }}
             marginLeft={{ sm: 2 }}
