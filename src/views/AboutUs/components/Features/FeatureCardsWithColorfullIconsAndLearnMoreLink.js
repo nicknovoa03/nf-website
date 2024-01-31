@@ -20,40 +20,6 @@ import { useTheme } from '@emotion/react';
 
 const mock = [
   {
-    color: colors.yellow[700],
-    title: 'Online Reviews',
-    subtitle:
-      'Automate your online reviews with a few simple clicks & respond to reviews in 1 place.',
-    icon: (
-      <svg
-        height={30}
-        width={30}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-      >
-        <StarBorderIcon />
-      </svg>
-    ),
-  },
-  {
-    color: colors.green[500],
-    title: 'SEO',
-    subtitle:
-      'Optimize your website for search engine best practices to increase visibility to your organization.',
-    icon: (
-      <svg
-        height={30}
-        width={30}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-      >
-        <AutoGraphOutlinedIcon />
-      </svg>
-    ),
-  },
-  {
     color: colors.red[400],
     title: 'Webchat',
     subtitle:
@@ -70,23 +36,7 @@ const mock = [
       </svg>
     ),
   },
-  {
-    color: colors.lightBlue[300],
-    title: 'Digital Marketing',
-    subtitle:
-      'We leverage digital channels to market products and services in order to reach consumers.',
-    icon: (
-      <svg
-        height={30}
-        width={30}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-      >
-        <ImportantDevicesIcon />
-      </svg>
-    ),
-  },
+
   {
     color: colors.amber[500],
     title: 'Messaging',
@@ -122,23 +72,7 @@ const mock = [
       </svg>
     ),
   },
-  {
-    color: colors.red[500],
-    title: 'Missed Call Text Back',
-    subtitle:
-      'When you\'re away, have Natural Frameworks follow up via text so you never lose another customer.',
-    icon: (
-      <svg
-        height={30}
-        width={30}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-      >
-        <PhoneMissedIcon />
-      </svg>
-    ),
-  },
+
   {
     color: colors.lightBlue[500],
     title: 'CRM',

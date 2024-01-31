@@ -51,13 +51,13 @@ const Home = () => {
       <a id="features" />
       <Container>
         <Info />
-        <OnlineReviews />
-      </Container>
-      <Container paddingY={'0 !important'}>
         <Messaging />
       </Container>
-      <Container>
+      <Container paddingY={'0 !important'}>
         <Payment />
+      </Container>
+      <Container>
+        <OnlineReviews />
       </Container>
     </Main>
   );

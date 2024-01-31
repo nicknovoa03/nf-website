@@ -62,13 +62,14 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/reviews"
+                href="/webchat"
                 color="text.primary"
                 variant={'subtitle2'}
               >
-                Reviews
+                Webchat
               </Link>
             </Box>
+
             <Box marginTop={1} marginRight={2}>
               <Link
                 underline="none"
@@ -80,17 +81,7 @@ const Footer = () => {
                 Messaging
               </Link>
             </Box>
-            <Box marginTop={1} marginRight={2}>
-              <Link
-                underline="none"
-                component="a"
-                href="/webchat"
-                color="text.primary"
-                variant={'subtitle2'}
-              >
-                Webchat
-              </Link>
-            </Box>
+
             <Box marginTop={1} marginRight={2}>
               <Link
                 underline="none"
@@ -106,26 +97,12 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/digital-marketing"
+                href="/reviews"
                 color="text.primary"
                 variant={'subtitle2'}
               >
-                Digital Marketing
+                Reviews
               </Link>
-              <Box
-                padding={0.5}
-                display={'inline-flex'}
-                borderRadius={1}
-                bgcolor={'primary.main'}
-                marginLeft={1}
-              >
-                <Typography
-                  variant={'caption'}
-                  sx={{ color: 'common.white', lineHeight: 1 }}
-                >
-                  new
-                </Typography>
-              </Box>
             </Box>
           </Box>
         </Grid>
@@ -148,26 +125,15 @@ const Footer = () => {
                   Home
                 </Link>
               </Box>
-              <Box marginTop={1} marginRight={2}>
-                <Link
-                  underline="none"
-                  component="a"
-                  href="/contact"
-                  color="text.primary"
-                  variant={'subtitle2'}
-                >
-                  Schedule Call
-                </Link>
-              </Box>
               <Box marginTop={1}>
                 <Button
                   variant="outlined"
                   color="primary"
                   component="a"
-                  href="pricing"
+                  href="/contact"
                   size="small"
                 >
-                  Get Started
+                  Schedule Call
                 </Button>
               </Box>
             </Box>
@@ -180,7 +146,7 @@ const Footer = () => {
             color="text.secondary"
             gutterBottom
           >
-            &copy; Natural Frameworks. 2023, Natural Frameworks. All rights
+            &copy; Natural Frameworks. 2024, Natural Frameworks. All rights
             reserved
           </Typography>
           <Typography

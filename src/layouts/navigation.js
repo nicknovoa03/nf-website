@@ -1,25 +1,20 @@
 const pages = {
   services: [
     {
-      title: 'Reviews',
-      href: '/reviews',
+      title: 'Webchat',
+      href: '/webchat',
     },
     {
       title: 'Messaging',
       href: '/messaging',
     },
     {
-      title: 'Webchat',
-      href: '/webchat',
-    },
-    {
       title: 'Payments',
       href: '/payments',
     },
     {
-      title: 'Digital Marketing',
-      href: '/digital-marketing',
-      isNew: true,
+      title: 'Reviews',
+      href: '/reviews',
     },
   ],
   company: [
