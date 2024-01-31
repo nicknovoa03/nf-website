@@ -31,6 +31,7 @@ const HireUs = () => {
         <Container
           maxWidth={{ md: 1500 }}
           data-aos={isMd ? 'fade-left' : 'fade-up'}
+          paddingX={2}
         >
           <Box
             display={'flex'}
@@ -41,7 +42,7 @@ const HireUs = () => {
               borderRadius: '16px',
             }}
           >
-            <Box minWidth={{ sm: 720, md: 775, lg: 1000 }}>
+            <Box minWidth={{ xs: 390, sm: 500, md: 775, lg: 1000 }}>
               <Calendar />
             </Box>
           </Box>
