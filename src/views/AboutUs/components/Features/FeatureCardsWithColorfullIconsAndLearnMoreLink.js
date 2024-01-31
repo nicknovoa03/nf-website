@@ -8,12 +8,8 @@ import Avatar from '@mui/material/Avatar';
 import { alpha } from '@mui/material/styles';
 import { colors, Divider, useMediaQuery } from '@mui/material';
 
-import AllInboxIcon from '@mui/icons-material/AllInbox';
-import StarBorderIcon from '@mui/icons-material/StarBorder';
 import MarkUnreadChatAltOutlinedIcon from '@mui/icons-material/MarkUnreadChatAltOutlined';
-import PhoneMissedIcon from '@mui/icons-material/PhoneMissed';
 import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
-import AutoGraphOutlinedIcon from '@mui/icons-material/AutoGraphOutlined';
 import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices';
 
 import { useTheme } from '@emotion/react';
@@ -50,7 +46,7 @@ const mock = [
         fill="none"
         viewBox="0 0 24 24"
       >
-        <AllInboxIcon />
+        <ImportantDevicesIcon />
       </svg>
     ),
   },
