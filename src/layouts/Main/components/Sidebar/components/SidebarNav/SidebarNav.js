@@ -47,27 +47,17 @@ const SidebarNav = ({ pages }) => {
             items={servicePages}
           />
         </Box>
+
         <Box>
-          <NavItem
-            title={'Company'}
-            id={'company-pages'}
-            items={companyPages}
-          />
-        </Box>
-        <Box>
-          <Button href="/contact" variant="text">
-            <Typography fontWeight={400} marginLeft={-1} color={'text.primary'}>
-              Contact Us
+          <Button href="/about-us" variant="text">
+            <Typography fontWeight={400} color="text.primary" marginLeft={-1}>
+              About Us
             </Typography>
           </Button>
         </Box>
         <Box marginTop={1}>
-          <Button
-            href="https://app.hexonasystems.com/"
-            target="_blank"
-            variant="contained"
-          >
-            Login
+          <Button href="/contact" variant="contained">
+            Contact Us
           </Button>
         </Box>
       </Box>

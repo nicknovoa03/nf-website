@@ -39,7 +39,6 @@ const Topbar = ({ onSidebarOpen, pages }) => {
             </Typography>
           </Button>
         </Box>
-
         <Box marginLeft={2.5}>
           <NavItem
             title={'Services'}
@@ -47,27 +46,16 @@ const Topbar = ({ onSidebarOpen, pages }) => {
             items={servicePages}
           />
         </Box>
-        <Box marginLeft={3}>
-          <NavItem
-            title={'Company'}
-            id={'company-pages'}
-            items={companyPages}
-          />
-        </Box>
         <Box marginLeft={2}>
-          <Button href="/contact" variant="text">
+          <Button href="/about-us" variant="text">
             <Typography fontWeight={400} color="text.primary">
-              Contact Us
+              About Us
             </Typography>
           </Button>
         </Box>
         <Box marginLeft={2}>
-          <Button
-            href="https://app.hexonasystems.com/"
-            target={'_blank'}
-            variant="contained"
-          >
-            Login
+          <Button href="/contact" variant="contained">
+            Contact
           </Button>
         </Box>
       </Box>
