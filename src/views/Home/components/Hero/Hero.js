@@ -22,6 +22,16 @@ const Hero = () => {
         <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
           <Box marginBottom={2}>
             <Typography
+              sx={{
+                textTransform: 'uppercase',
+                fontWeight: 'medium',
+              }}
+              gutterBottom
+              color={'secondary'}
+            >
+              Serving Small Businesses
+            </Typography>
+            <Typography
               variant="h2"
               color="text.primary"
               sx={{ fontWeight: 700 }}
