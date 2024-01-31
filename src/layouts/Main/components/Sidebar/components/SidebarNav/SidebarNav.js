@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Typography } from '@mui/material';
 
 const SidebarNav = ({ pages }) => {
-  const { services: servicePages, company: companyPages } = pages;
+  const { services: servicePages } = pages;
 
   return (
     <Box>

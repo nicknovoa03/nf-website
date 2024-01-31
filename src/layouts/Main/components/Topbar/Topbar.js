@@ -13,7 +13,7 @@ import { Typography } from '@mui/material';
 
 const Topbar = ({ onSidebarOpen, pages }) => {
   const theme = useTheme();
-  const { services: servicePages, company: companyPages } = pages;
+  const { services: servicePages } = pages;
 
   return (
     <Box

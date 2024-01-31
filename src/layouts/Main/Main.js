@@ -10,7 +10,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Container from 'components/Container';
 import TopNav from 'components/TopNav';
 
-import { Topbar, Sidebar, Footer, Contact, FooterCTA } from './components';
+import { Topbar, Sidebar, Footer,  FooterCTA } from './components';
 
 import pages from '../navigation';
 import Script from 'next/script';
