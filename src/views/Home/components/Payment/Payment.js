@@ -32,6 +32,7 @@ const Payment = () => {
         container
         spacing={isMd ? 4 : 2}
         flexDirection={{ xs: 'column-reverse', md: 'row' }}
+        color={'black'}
       >
         <Grid item xs={12} md={8}>
           <Grid container spacing={isMd ? 4 : 2}>
@@ -82,13 +83,7 @@ const Payment = () => {
               <Typography variant={'h4'} fontWeight={700} gutterBottom>
                 Get Paid Faster Than Ever
               </Typography>
-              <Typography
-                color={
-                  theme.palette.mode === 'light'
-                    ? 'text.secondary'
-                    : 'text.primary'
-                }
-              >
+              <Typography>
                 Collecting payments isn’t anyone’s favorite job. Make paying as
                 quick and convenient as possible for your customers with a
                 secure payment link delivered right to their phone.
