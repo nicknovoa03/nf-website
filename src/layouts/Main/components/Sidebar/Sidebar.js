@@ -7,15 +7,12 @@ import { SidebarNav } from './components';
 const Sidebar = ({ pages, open, variant, onClose }) => {
   return (
     <Drawer
-      anchor="left"
+      anchor="bottom"
       onClose={() => onClose()}
       open={open}
       variant={variant}
       sx={{
-        '& .MuiPaper-root': {
-          width: '100%',
-          maxWidth: 280,
-        },
+        width: 'auto',
       }}
     >
       <Box
