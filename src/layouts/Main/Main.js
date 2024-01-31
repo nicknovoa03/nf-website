@@ -132,13 +132,9 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
           </Box>
         </Box>
       </Box>
-      <Contact />
       <Divider />
       <Box
-        position={'relative'}
-        sx={{
-          backgroundColor: theme.palette.alternate.dark,
-        }}
+
       >
         <Footer />
       </Box>
