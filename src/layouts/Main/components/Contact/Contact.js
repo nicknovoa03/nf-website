@@ -55,7 +55,7 @@ const Contact = () => {
                 sx={{ marginLeft: '20%', marginRight: '20%' }}
               />
             </Box>
-            <Box align="center" paddingX={{ xs: 2 }} marginBottom={{xs:-9}}>
+            <Box align="center" paddingX={{ xs: 2 }} marginBottom={{ xs: -9 }}>
               <iframe
                 src="https://api.leadconnectorhq.com/widget/booking/Q3NcvtVUfeegM4VzJ6lT"
                 style={{ border: 'none', width: '100%', overflow: 'hidden' }}
