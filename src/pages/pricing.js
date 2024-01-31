@@ -1,7 +1,7 @@
 import React from 'react';
-import { Pricing } from 'views';
+import { Contact } from 'views';
 const IndexPage = () => {
-  return <Pricing />;
+  return <Contact />;
 };
 
 export default IndexPage;
