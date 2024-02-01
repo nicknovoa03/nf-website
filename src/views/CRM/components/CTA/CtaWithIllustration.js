@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 
 import Container from 'components/Container';
 
-import GoogleReviews from '../../../../assets/logos/GoogleReviews.png';
+import GoogleReviews from '../../../../assets/OnlineReviews.svg';
 import Image from 'next/image';
 
 const CtaWithIllustration = () => {
@@ -18,8 +18,8 @@ const CtaWithIllustration = () => {
   });
 
   return (
-    <Container>
-      <Grid container spacing={4}>
+    <Container marginY={{ md: -10 }}>
+      <Grid container spacing={1} paddingLeft={{ md: 15 }}>
         <Grid item xs={12} md={6}>
           <Box
             data-aos={isMd ? 'fade-up-right' : 'fade-up'}
@@ -27,7 +27,7 @@ const CtaWithIllustration = () => {
             data-aos-offset={100}
             data-aos-duration={1000}
           >
-            <Box marginBottom={2}>
+            <Box marginBottom={2} marginTop={{ md: 20 }}>
               <Typography
                 sx={{
                   textTransform: 'uppercase',
@@ -73,8 +73,6 @@ const CtaWithIllustration = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Box
-            height={1}
-            width={1}
             display={'flex'}
             justifyContent={'center'}
             data-aos={isMd ? 'fade-down-left' : 'fade-up'}
@@ -83,9 +81,7 @@ const CtaWithIllustration = () => {
             data-aos-duration={1000}
           >
             <Box
-              height={1}
-              width={1}
-              maxWidth={450}
+              maxWidth={750}
               data-aos={isMd ? 'flip-up' : 'fade-up'}
               data-aos-delay={100}
               data-aos-offset={100}
