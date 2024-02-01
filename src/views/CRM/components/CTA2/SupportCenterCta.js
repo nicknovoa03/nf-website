@@ -71,7 +71,7 @@ const SupportCenterCta = () => {
             display: { xs: 'none', md: 'flex' },
           }}
         >
-          <Box component={Card} boxShadow={3} height={1} width={1}>
+          <Box>
             <Image alt="Natural Frameworks Reviews" src={ReviewCTA2} />
           </Box>
         </Grid>
