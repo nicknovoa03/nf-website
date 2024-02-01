@@ -18,7 +18,7 @@ const CtaWithIllustration = () => {
   });
 
   return (
-    <Container marginY={{ md: -10 }}>
+    <Container marginY={{ md: -10 }} marginBottom={{ sm: -10 }}>
       <Grid container spacing={1} paddingLeft={{ md: 15 }}>
         <Grid item xs={12} md={6}>
           <Box

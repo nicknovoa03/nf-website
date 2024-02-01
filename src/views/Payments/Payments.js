@@ -57,11 +57,10 @@ const Payments = () => {
       >
         <Container>
           <CTA2 />
-          <CTA3 />
         </Container>
       </Box>
       <Container>
-        <LogoGrid />
+        <CTA3 />
       </Container>
     </Main>
   );
