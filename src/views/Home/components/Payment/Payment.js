@@ -89,6 +89,17 @@ const Payment = () => {
                 secure payment link delivered right to their phone.
               </Typography>
             </Box>
+            <Box component={Card} marginTop={3} boxShadow={0} borderRadius={2}>
+              <CardContent sx={{ padding: { xs: 2, sm: 4 } }}>
+                <Typography variant={'h6'} fontWeight={700} gutterBottom>
+                  Text-To-Pay Links
+                </Typography>
+                <Typography component={'p'}>
+                  With just a few simple steps, you're able to deliver an
+                  invoice within a conversation
+                </Typography>
+              </CardContent>
+            </Box>
             <Box marginY={{ xs: 4 }}>
               <Button
                 variant="contained"
@@ -102,19 +113,14 @@ const Payment = () => {
                 Learn More
               </Button>
             </Box>
-            <Box
-              component={Card}
-              marginBottom={{ md: 8 }}
-              boxShadow={0}
-              borderRadius={2}
-            >
+            <Box component={Card} boxShadow={0} borderRadius={2}>
               <CardContent sx={{ padding: { xs: 2, sm: 4 } }}>
                 <Typography variant={'h6'} fontWeight={700} gutterBottom>
-                  Text-To-Pay Links
+                  Streamline Payment Management
                 </Typography>
                 <Typography component={'p'}>
-                  With just a few simple steps, you're able to deliver an
-                  invoice within a conversation
+                  Explore cutting-edge payment solutions centralizing financial
+                  transactions for tailored services and heightened security.
                 </Typography>
               </CardContent>
             </Box>
