@@ -35,14 +35,14 @@ const SimpleHeroWithImageAndCtaButtons = () => {
               gutterBottom
               color={'secondary'}
             >
-              Win More Business{' '}
+              Organize Your Clients{' '}
             </Typography>
             <Typography
               variant="h2"
               color="text.primary"
               sx={{ fontWeight: 700 }}
             >
-              Get found with
+              Discover Powerful CRM
               <br />
               <Typography
                 color={'primary'}
@@ -55,15 +55,16 @@ const SimpleHeroWithImageAndCtaButtons = () => {
                   )} 0%)`,
                 }}
               >
-                Reviews
+                Solutions
               </Typography>
             </Typography>
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              Be the obvious choice for people who find you online. Stand out on
-              the sites that matter by easily collecting hundreds of customer
-              reviews.
+              Elevate Your Business Success to New Heights with Intuitive CRM
+              Innovations: Unleashing Comprehensive
+              Solutions Tailored for Seamless Customer Relationships, Enhanced
+              Team Collaboration, and Accelerated Sales Growth.
             </Typography>
           </Box>
           <Box
