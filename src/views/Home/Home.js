@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 
 import { Main } from 'layouts';
 import Container from 'components/Container';
-import { OnlineReviews, AllInOneInboxCard, Payment, Hero } from './components';
+import { AllInOneInboxCard, Payment, Hero, CRMCard } from './components';
 
 import Feature from '../AboutUs/components/Features';
 import Info from './components/Info';
@@ -57,7 +57,7 @@ const Home = () => {
         <Payment />
       </Container>
       <Container>
-        <OnlineReviews />
+        <CRMCard />
       </Container>
     </Main>
   );
