@@ -62,9 +62,9 @@ const SimpleHeroWithImageAndCtaButtons = () => {
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
               Elevate Your Business Success to New Heights with Intuitive CRM
-              Innovations: Unleashing Comprehensive
-              Solutions Tailored for Seamless Customer Relationships, Enhanced
-              Team Collaboration, and Accelerated Sales Growth.
+              Innovations: Unleashing Comprehensive Solutions Tailored for
+              Seamless Customer Relationships, Enhanced Team Collaboration, and
+              Accelerated Sales Growth.
             </Typography>
           </Box>
           <Box

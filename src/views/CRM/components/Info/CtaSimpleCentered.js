@@ -38,7 +38,8 @@ const CtaSimpleCentered = () => {
           data-aos-duration={600}
         >
           Revolutionize Customer Experiences, Foster Team Synergy, and
-          Supercharge Sales with Cutting-edge CRM Innovations from Natural Frameworks.
+          Supercharge Sales with Cutting-edge CRM Innovations from Natural
+          Frameworks.
         </Typography>
       </Box>
     </Container>
