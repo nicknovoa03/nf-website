@@ -8,7 +8,6 @@ import CTA3 from './components/CTA3';
 import Features from './components/Features';
 import Features2 from './components/Features2';
 import Hero from './components/Hero';
-import LogoGrid from './components/LogoGrid';
 
 const Payments = () => {
   const theme = useTheme();
