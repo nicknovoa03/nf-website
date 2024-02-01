@@ -61,16 +61,10 @@ const CRM = () => {
       <Container>
         <CTA2 />
       </Container>
-      <Box
-        position={'relative'}
-        sx={{
-          backgroundColor: theme.palette.alternate.main,
-        }}
-      >
-        <Container>
-          <LogoGrid />
-        </Container>
-      </Box>
+
+      <Container>
+        <LogoGrid />
+      </Container>
     </Main>
   );
 };

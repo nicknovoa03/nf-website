@@ -36,7 +36,7 @@ const CtaWithIllustration = () => {
                 gutterBottom
                 color={'secondary'}
               >
-                Google Direct Review
+                Comprehensive CRM Platform
               </Typography>
               <Typography
                 variant="h4"
@@ -44,13 +44,13 @@ const CtaWithIllustration = () => {
                   fontWeight: 700,
                 }}
               >
-                The power of Google behind every review
+                Revolutionize Customer Relationships
               </Typography>
             </Box>
             <Box marginBottom={3}>
               <Typography variant="h6" component="p" color="text.secondary">
-                Get more customer reviews on Google by leveraging Renown&apos;s
-                direct integration with Google&apos;s private API.
+                Explore innovative CRM solutions centralizing customer data for
+                tailored products/services and improved satisfaction.
               </Typography>
             </Box>
             <Box

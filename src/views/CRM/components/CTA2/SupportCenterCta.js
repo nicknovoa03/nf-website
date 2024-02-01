@@ -37,14 +37,15 @@ const SupportCenterCta = () => {
               gutterBottom
               color={'secondary'}
             >
-              REVIEW MONITORING
+              Transformative Sales Processes
             </Typography>
             <Typography sx={{ fontWeight: 700 }} variant={'h4'} gutterBottom>
-              Monitor all your reviews in one place
+              Accelerate Sales Growth
             </Typography>
             <Typography variant={'h6'} component={'p'} color={'text.secondary'}>
-              Access all your customer reviews, for every location, from every
-              source, in one dashboard.
+              Drive growth with automated tasks, effective lead management, and
+              analytics for elevated marketing strategies and increased
+              conversions.
             </Typography>
           </Box>
           <Box>

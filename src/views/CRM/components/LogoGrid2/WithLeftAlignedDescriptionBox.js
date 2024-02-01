@@ -44,12 +44,12 @@ const WithLeftAlignedDescriptionBox = () => {
             data-aos-duration={1000}
           >
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
-              Get Customer Reviews Automatically
+              Enhance Team Collaboration
             </Typography>
             <Typography variant={'h6'} component={'p'} color={'text.secondary'}>
-              Collecting new reviews has never been easier. Natural Frameworks
-              will send customers to the top review sites to share their
-              feedback!
+              Seamless Team Communication. Experience enhanced collaboration
+              through a CRM hub, fostering efficient data sharing and
+              operational efficiency.
             </Typography>
           </Box>
         </Grid>
