@@ -103,7 +103,7 @@ const CRMCard = () => {
                 variant="contained"
                 size="large"
                 fullWidth={true}
-                href="/reviews"
+                href="/crm"
                 sx={{
                   backgroundColor: theme.palette.primary.light,
                 }}

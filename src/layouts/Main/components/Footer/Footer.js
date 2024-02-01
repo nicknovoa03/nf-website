@@ -97,11 +97,11 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/reviews"
+                href="/crm"
                 color="text.primary"
                 variant={'subtitle2'}
               >
-                Reviews
+                CRM
               </Link>
             </Box>
           </Box>

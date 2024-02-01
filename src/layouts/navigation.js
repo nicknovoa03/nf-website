@@ -13,8 +13,8 @@ const pages = {
       href: '/payments',
     },
     {
-      title: 'Reviews',
-      href: '/reviews',
+      title: 'CRM',
+      href: '/crm',
     },
   ],
   company: [
