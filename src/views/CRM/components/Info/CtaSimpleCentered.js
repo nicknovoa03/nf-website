@@ -37,8 +37,8 @@ const CtaSimpleCentered = () => {
           data-aos-offset={100}
           data-aos-duration={600}
         >
-          Get new reviews, manage them and promote them across the web. All from
-          one dashboard.
+          Revolutionize Customer Experiences, Foster Team Synergy, and
+          Supercharge Sales with Cutting-edge CRM Innovations from Natural Frameworks.
         </Typography>
       </Box>
     </Container>
