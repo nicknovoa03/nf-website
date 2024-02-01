@@ -12,7 +12,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Message from '../../../../assets/template/Messaging.png';
 import Image from 'next/image';
 
-const Messaging = () => {
+const AllInOneInboxCard = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -128,4 +128,4 @@ const Messaging = () => {
   );
 };
 
-export default Messaging;
+export default AllInOneInboxCard;
