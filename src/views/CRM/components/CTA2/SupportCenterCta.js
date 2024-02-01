@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
-import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
@@ -26,7 +25,7 @@ const SupportCenterCta = () => {
       data-aos-offset={100}
       data-aos-duration={1000}
     >
-      <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
+      <Grid container spacing={4} direction={isMd ? 'row' : 'column'}>
         <Grid item xs={12} md={6}>
           <Box marginBottom={4} marginTop={isMd ? 7 : 0}>
             <Typography
@@ -68,7 +67,7 @@ const SupportCenterCta = () => {
           xs={12}
           md={6}
           sx={{
-            display: { xs: 'none', md: 'flex' },
+            display: { md: 'flex' },
           }}
         >
           <Box>
