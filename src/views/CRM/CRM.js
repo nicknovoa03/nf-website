@@ -7,7 +7,7 @@ import CTA2 from './components/CTA2';
 import Hero from './components/Hero';
 import Info from './components/Info';
 import LogoGrid from './components/LogoGrid';
-import LogoGrid2 from './components/LogoGrid2';
+import CollaborationCTA from './components/LogoGrid2';
 
 const CRM = () => {
   const theme = useTheme();
@@ -55,7 +55,7 @@ const CRM = () => {
         }}
       >
         <Container>
-          <LogoGrid2 />
+          <CollaborationCTA />
         </Container>
       </Box>
       <Container>

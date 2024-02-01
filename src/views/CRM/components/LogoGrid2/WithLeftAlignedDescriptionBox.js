@@ -6,11 +6,11 @@ import Typography from '@mui/material/Typography';
 
 import Container from 'components/Container';
 
-import GoogleYelpFacebook from '../../../../assets/logos/GoogleYelpFacebook.png';
+import CollaborationImage from '../../../../assets/Heros/softwares-hero.png';
 import Image from 'next/image';
 import { useMediaQuery, useTheme } from '@mui/material';
 
-const mock = [GoogleYelpFacebook];
+const mock = [CollaborationImage];
 
 const WithLeftAlignedDescriptionBox = () => {
   const theme = useTheme();
@@ -42,7 +42,18 @@ const WithLeftAlignedDescriptionBox = () => {
             data-aos-delay={100}
             data-aos-offset={100}
             data-aos-duration={1000}
+            marginTop={{ md: 15 }}
           >
+            <Typography
+              sx={{
+                textTransform: 'uppercase',
+                fontWeight: 'medium',
+              }}
+              gutterBottom
+              color={'secondary'}
+            >
+              Seamless Team Communication
+            </Typography>
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
               Enhance Team Collaboration
             </Typography>
