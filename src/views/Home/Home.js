@@ -9,6 +9,7 @@ import { OnlineReviews, Messaging, Payment, Hero } from './components';
 import Feature from '../AboutUs/components/Features';
 import Info from './components/Info';
 import { useMediaQuery } from '@mui/material';
+import AllInOneInbox from 'views/AllInOneInbox';
 
 const Home = () => {
   const theme = useTheme();
@@ -51,7 +52,7 @@ const Home = () => {
       <a id="features" />
       <Container>
         <Info />
-        <Messaging />
+        <AllInOneInbox />
       </Container>
       <Container paddingY={'0 !important'}>
         <Payment />

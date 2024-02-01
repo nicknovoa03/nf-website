@@ -71,7 +71,10 @@ const CtaWithIllustration = () => {
             data-aos-offset={100}
             data-aos-duration={600}
           >
-            <Image alt="Natural Frameworks All In One Inbox" src={illustration} />
+            <Image
+              alt="Natural Frameworks All In One Inbox"
+              src={illustration}
+            />
           </Box>
         </Grid>
       </Grid>
