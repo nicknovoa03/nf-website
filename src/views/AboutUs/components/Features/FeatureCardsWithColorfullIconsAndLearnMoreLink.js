@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import Avatar from '@mui/material/Avatar';
 import { alpha } from '@mui/material/styles';
-import { colors, Divider, useMediaQuery } from '@mui/material';
+import { colors, Divider, useMediaQuery, Link } from '@mui/material';
 
 import MarkUnreadChatAltOutlinedIcon from '@mui/icons-material/MarkUnreadChatAltOutlined';
 import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
@@ -20,6 +20,7 @@ const mock = [
     title: 'Webchat',
     subtitle:
       'Convert more website visitors into leads & sales conversations with Webchat.',
+    href: '/webchat',
     icon: (
       <svg
         height={30}
@@ -38,6 +39,7 @@ const mock = [
     title: 'All In One Inbox',
     subtitle:
       'Manage your messages with a single inbox for text, Facebook messages, Google messages, and more.',
+    href: '/allInOneInbox',
     icon: (
       <svg
         height={30}
@@ -56,6 +58,7 @@ const mock = [
     title: 'Payments',
     subtitle:
       'Easy text 2 pay client invoicing. Simplify your client invoicing & get paid faster.',
+    href: '/payments',
     icon: (
       <svg
         height={30}
@@ -74,6 +77,7 @@ const mock = [
     title: 'CRM',
     subtitle:
       'Keep track of all your leads and customers. Grow your audience & know where new leads are coming from.',
+    href: '/crm',
     icon: (
       <svg
         height={24}
@@ -128,40 +132,42 @@ const FeatureCardsWithColorfullIconsAndLearnMoreLink = () => {
                 },
               }}
             >
-              <Box
-                component={Card}
-                padding={4}
-                width={1}
-                height={1}
-                data-aos={isMd ? 'fade-up' : 'fade-up'}
-                data-aos-delay={i * 100}
-                data-aos-offset={100}
-                data-aos-duration={600}
-              >
-                <Box display={'flex'} flexDirection={'column'}>
-                  <Box
-                    component={Avatar}
-                    width={60}
-                    height={60}
-                    marginBottom={2}
-                    bgcolor={alpha(item.color, 0.1)}
-                    color={item.color}
-                    variant={'rounded'}
-                  >
-                    {item.icon}
+              <Link href={item.href} style={{ textDecoration: 'none' }}>
+                <Box
+                  component={Card}
+                  padding={4}
+                  width={1}
+                  height={1}
+                  data-aos={isMd ? 'fade-up' : 'fade-up'}
+                  data-aos-delay={i * 100}
+                  data-aos-offset={100}
+                  data-aos-duration={600}
+                >
+                  <Box display={'flex'} flexDirection={'column'}>
+                    <Box
+                      component={Avatar}
+                      width={60}
+                      height={60}
+                      marginBottom={2}
+                      bgcolor={alpha(item.color, 0.1)}
+                      color={item.color}
+                      variant={'rounded'}
+                    >
+                      {item.icon}
+                    </Box>
+                    <Typography
+                      variant={'h6'}
+                      gutterBottom
+                      sx={{ fontWeight: 700 }}
+                    >
+                      {item.title}
+                    </Typography>
+                    <Typography color="text.secondary">
+                      {item.subtitle}
+                    </Typography>
                   </Box>
-                  <Typography
-                    variant={'h6'}
-                    gutterBottom
-                    sx={{ fontWeight: 700 }}
-                  >
-                    {item.title}
-                  </Typography>
-                  <Typography color="text.secondary">
-                    {item.subtitle}
-                  </Typography>
                 </Box>
-              </Box>
+              </Link>
             </Box>
           </Grid>
         ))}
