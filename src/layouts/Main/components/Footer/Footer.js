@@ -42,7 +42,7 @@ const Footer = () => {
             </Box>
             <Box marginTop={2} marginRight={2}>
               <Typography variant={'subtitle2'}>
-                Phone: (210) 791-8336
+                Phone: (210) 796-2820
               </Typography>
             </Box>
             <Box marginTop={2} marginRight={2}>
