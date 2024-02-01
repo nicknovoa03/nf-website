@@ -24,7 +24,7 @@ const features = [
     id: 1,
   },
   {
-    title: 'Messaging',
+    title: 'All In One Inbox',
     id: 2,
   },
   {

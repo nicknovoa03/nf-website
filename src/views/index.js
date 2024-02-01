@@ -1,6 +1,6 @@
 export { default as Home } from './Home';
 export { default as Reviews } from './Reviews';
-export { default as Messaging } from './Messaging';
+export { default as AllInOneInbox } from './AllInOneInbox';
 export { default as Webchat } from './Webchat';
 export { default as Payments } from './Payments';
 export { default as Contact } from './Contact';

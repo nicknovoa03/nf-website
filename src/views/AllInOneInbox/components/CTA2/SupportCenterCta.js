@@ -41,7 +41,7 @@ const SupportCenterCta = () => {
             data-aos-offset={100}
             data-aos-duration={600}
           >
-            <Image alt="Natural Frameworks Messaging" src={oneInbox} />
+            <Image alt="Natural Frameworks All In One Inbox" src={oneInbox} />
           </Box>
         </Grid>
         <Grid

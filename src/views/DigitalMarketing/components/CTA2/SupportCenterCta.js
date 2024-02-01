@@ -32,7 +32,7 @@ const SupportCenterCta = () => {
         data-aos-duration={600}
       >
         <Box height={1} width={1} minWidth={{ md: 800 }}>
-          <Image alt="Natural Frameworks Messaging" src={illustration} />
+          <Image alt="Natural Frameworks All In One Inbox" src={illustration} />
         </Box>
       </Grid>
       <Grid

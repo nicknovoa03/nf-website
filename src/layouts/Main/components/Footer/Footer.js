@@ -74,11 +74,11 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/messaging"
+                href="/allInOneInbox"
                 color="text.primary"
                 variant={'subtitle2'}
               >
-                Messaging
+                All In One Inbox
               </Link>
             </Box>
 

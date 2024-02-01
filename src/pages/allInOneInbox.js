@@ -1,7 +1,7 @@
 import React from 'react';
-import { Messaging } from 'views';
+import { AllInOneInbox } from 'views';
 const IndexPage = () => {
-  return <Messaging />;
+  return <AllInOneInbox />;
 };
 
 export default IndexPage;

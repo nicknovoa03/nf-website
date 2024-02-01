@@ -82,7 +82,7 @@ const Messaging = () => {
                 variant="contained"
                 size="large"
                 fullWidth={true}
-                href="/messaging"
+                href="/allInOneInbox"
                 sx={{
                   backgroundColor: theme.palette.primary.light,
                 }}

@@ -25,7 +25,7 @@ const mock = [
   {
     title: 'Essential',
     price: '$699',
-    features: ['Reviews', 'Messaging', 'Webchat', 'Textable Business Number'],
+    features: ['Reviews', 'All In One Inbox', 'Webchat', 'Textable Business Number'],
     isHighlighted: true,
     paymentLink: 'https://buy.stripe.com/14kdTf54g1oc0ZGeV1',
   },

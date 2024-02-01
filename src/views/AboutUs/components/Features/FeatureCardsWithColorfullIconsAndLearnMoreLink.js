@@ -35,7 +35,7 @@ const mock = [
 
   {
     color: colors.amber[500],
-    title: 'Messaging',
+    title: 'All In One Inbox',
     subtitle:
       'Manage your messages with a single inbox for text, Facebook messages, Google messages, and more.',
     icon: (

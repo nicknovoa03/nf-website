@@ -5,8 +5,8 @@ const pages = {
       href: '/webchat',
     },
     {
-      title: 'Messaging',
-      href: '/messaging',
+      title: 'All In On Inbox',
+      href: '/allInOneInbox',
     },
     {
       title: 'Payments',

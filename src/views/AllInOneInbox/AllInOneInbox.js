@@ -11,7 +11,7 @@ import Info2 from './components/Info2';
 import CTA3 from './components/CTA3';
 import Stats from './components/Stats';
 
-const Messaging = () => {
+const AllInOneInbox = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -83,4 +83,4 @@ const Messaging = () => {
     </Main>
   );
 };
-export default Messaging;
+export default AllInOneInbox;
