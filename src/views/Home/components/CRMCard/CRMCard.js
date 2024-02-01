@@ -34,7 +34,7 @@ const CRMCard = () => {
       <Grid
         container
         spacing={isMd ? 4 : 2}
-        flexDirection={{ xs: 'column', md: 'row' }}
+        flexDirection={{ xs: 'column-reverse', md: 'row' }}
       >
         <Grid item xs={12} md={8}>
           <Grid container spacing={isMd ? 4 : 2}>
